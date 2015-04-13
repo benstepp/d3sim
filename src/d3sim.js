@@ -276,7 +276,27 @@ function rollStats(item, rarity, slot, dClass) {
 	}
 
 	//revisit the random properties
-	getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'primary');
+	if (randomPrimariesIndex !== -1) {
+		//count of random primaries
+		var pCount = primaries.RANDOM;
+
+		while(pCount--) {
+			var affixP = getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'primary');
+			primariesFinal[affixP] = {};
+		}
+	}
+	if (randomSecondariesIndex !== -1) {
+		var sCount = secondaries.RANDOM;
+
+		while(sCount--) {
+			var affixS = getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'secondary');
+			secondariesFinal[affixS] = {};
+		}
+	}
+
+	//replace primary and secondary objects
+	item.primaries = primariesFinal;
+	item.secondaries = secondariesFinal;
 
 	return item;
 }
@@ -291,6 +311,7 @@ function getRandomAffix(current,slot,dClass,ps) {
 	//dump possible affixes to roll here
 	var affixList = [];
 
+	outer:
 	for(var i = 0; i < allAffixesLength; i++) {
 		var affix = allAffixes[i];
 		var affixData = affixes[slot.toLowerCase()][ps][affix];
@@ -299,7 +320,7 @@ function getRandomAffix(current,slot,dClass,ps) {
 
 		//continue loop if affix is already on the item
 		if (current.indexOf(affix) !== -1) {
-			continue;
+			continue outer;
 		}
 		//check the excludes for current
 		if (affixMap[affix].hasOwnProperty('exclude')) {
@@ -307,26 +328,25 @@ function getRandomAffix(current,slot,dClass,ps) {
 
 			//if the class is in this exlude array continue
 			if (excludes.indexOf(dClass) !== -1) {
-				continue;
+				continue outer;
 			}
 
 			//if any of the current affixes are in the excludes array, continue
+			inner:
 			for(var j = 0; j < currentLength;j++) {
 				if (excludes.indexOf(current[j])!== -1) {
 					//break this inner loop as soon as it is found
-					found = true;
-					break;
+					continue outer;
 				}
 			}
 
 		}
-		//add if exludes werent found
-		if (!found) {
-			affixList.push(affix);
-		}
-		
+
+		//if it made it this far into the outer loop, push into possible affixes
+		affixList.push(affix);
+
 	}
-	
+
 	//return a random affix from possibles
 	return affixList[intRandom(0,affixList.length - 1)];
 }

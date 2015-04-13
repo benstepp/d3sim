@@ -117,32 +117,32 @@ var affixMap = {
 	//Secondary Resists
 	'PhysRes': {
 		text_en:'{+$} Physical Resistance',
-		exclude:['AllRes','ColdRes','FireRes','LightRes','ArcRes','PoisRes'],
+		exclude:['AllResist','ColdRes','FireRes','LightRes','ArcRes','PoisRes'],
 		prefix_en:'Hermetic'
 	},
 	'ColdRes': {
 		text_en:'{+$} Cold Resistance',
-		exclude:['AllRes','PhysRes','FireRes','LightRes','ArcRes','PoisRes'],
+		exclude:['AllResist','PhysRes','FireRes','LightRes','ArcRes','PoisRes'],
 		prefix_en:'Sheltering'
 	},
 	'FireRes': {
 		text_en:'{+$} Fire Resistance',
-		exclude:['AllRes','PhysRes','ColdRes','LightRes','ArcRes','PoisRes'],
+		exclude:['AllResist','PhysRes','ColdRes','LightRes','ArcRes','PoisRes'],
 		prefix_en:'Charred'
 	},
 	'LightRes': {
 		text_en:'{+$} Lightning Resistance',
-		exclude:['AllRes','PhysRes','ColdRes','FireRes','ArcRes','PoisRes'],
+		exclude:['AllResist','PhysRes','ColdRes','FireRes','ArcRes','PoisRes'],
 		prefix_en:'Tranquil'
 	},
 	'ArcRes': {
 		text_en:'{+$} Arcane Resistance',
-		exclude:['AllRes','PhysRes','ColdRes','FireRes','LightRes','PoisRes'],
+		exclude:['AllResist','PhysRes','ColdRes','FireRes','LightRes','PoisRes'],
 		prefix_en:'Beguiling'
 	},
 	'PoisRes': {
 		text_en:'{+$} Poison Resistance',
-		exclude:['AllRes','PhysRes','ColdRes','FireRes','LightRes','ArcRes'],
+		exclude:['AllResist','PhysRes','ColdRes','FireRes','LightRes','ArcRes'],
 		prefix_en:'Untarnished'
 	},
 
