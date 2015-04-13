@@ -1,7 +1,7 @@
-var Amulet = require('./slot/Amulet.js');
+var amulet = require('./slot/amulet.js');
 
 var legendary = {
-	Amulet:Amulet
+	amulet:amulet
 };
 
 module.exports = legendary;

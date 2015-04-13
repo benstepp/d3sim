@@ -55,7 +55,7 @@ var d3Item = function(rarity, slot, dClass) {
 	this.slot = slot;
 	this.rarity = rarity;
 
-	//roll the item type if rare or magic
+	//if rare or magic roll item type and save image
 	if (rarity.toLowerCase() === 'magic' || rarity.toLowerCase() === 'rare') {
 
 		//a reference to itemtype object to test for excludes
@@ -80,6 +80,7 @@ var d3Item = function(rarity, slot, dClass) {
 
 		//random through possible item types
 		this.type = itemTypes[intRandom(0,itemTypes.length - 1)];
+		this.image = affixes[slot.toLowerCase()].type[this.type].image[dClass] || affixes[slot.toLowerCase()].type[this.type].image.default ;
 	}
 
 };
@@ -173,6 +174,29 @@ var legendaryItem = function(rarity, slot, dClass,legendaryName) {
 
 	//inherit properties from base d3item object
 	d3Item.call(this, rarity, slot, dClass);
+
+	//pull primaries and secondaries based on name given
+	 var data = (function pullData() {
+		var slotItems = legendaryData[slot.toLowerCase()];
+
+		var slotItemsLength = slotItems.length;
+		while(slotItemsLength--) {
+			if (slotItems[slotItemsLength].name === legendaryName){
+				return slotItems[slotItemsLength];
+			}
+		}
+	})();
+
+	this.type = data.type;
+
+	this.primaries = data.primary;
+	this.secondaries = data.secondary;
+
+	if (data.hasOwnProperty('set')) {
+		this.set = data.set;
+	}
+	this.image = data.image;
+	this.flavor = data.flavor;
 };
 
 function createItem(rarity, slot, dClass, legendaryName) {
@@ -224,22 +248,10 @@ function createItem(rarity, slot, dClass, legendaryName) {
 	return newItem;
 }
 
-
-function pullData(slot,name) {
-	var slotItems = legendaryData[slot];
-	var slotItemsLength = slotItems.length;
-
-	while(slotItemsLength--) {
-		if (slotItems[slotItemsLength].name === name){
-			return slotItems[slotItemLength];
-		}
-	}
-}
-
 function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
 
-
-var testing = new rareItem('Rare','belt','Barbarian');
-console.log(testing);
+var test = new magicItem('magic','boots','Barbarian');
+var testing = new legendaryItem('Legendary','amulet','Barbarian','Blackthorne\'s Duncraig Cross');
+console.log(test);
