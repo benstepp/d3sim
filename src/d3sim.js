@@ -223,7 +223,9 @@ function createItem(rarity, slot, dClass, legendaryName) {
 
 	//execute item creation using a new object from constructor
 	var newItem = new constructor(rarity,slot,dClass,legendaryName);
+	//roll for affixes
 	rollStats(newItem, rarity, slot, dClass);
+
 	return newItem;
 }
 
@@ -294,6 +296,22 @@ function rollStats(item, rarity, slot, dClass) {
 		}
 	}
 
+	//check if primaries/secondaries were given forced values 
+	for (var primary in primariesFinal) {
+
+		//if min/max was given use those
+		if(primaries.hasOwnProperty(primary) && primaries[primary] !== null) {
+			primariesFinal[primary].value = intRandom(primaries[primary].min,primaries[primary].max);
+		}
+	}
+	for (var secondary in secondariesFinal) {
+
+		//if min/max was given use those
+		if(secondaries.hasOwnProperty(secondary) && secondaries[secondary] !== null) {
+
+		}
+	}
+
 	//replace primary and secondary objects
 	item.primaries = primariesFinal;
 	item.secondaries = secondariesFinal;
@@ -315,8 +333,6 @@ function getRandomAffix(current,slot,dClass,ps) {
 	for(var i = 0; i < allAffixesLength; i++) {
 		var affix = allAffixes[i];
 		var affixData = affixes[slot.toLowerCase()][ps][affix];
-
-		var found;
 
 		//continue loop if affix is already on the item
 		if (current.indexOf(affix) !== -1) {
@@ -351,13 +367,18 @@ function getRandomAffix(current,slot,dClass,ps) {
 	return affixList[intRandom(0,affixList.length - 1)];
 }
 
-function rollAffix(affix,rarity) {
+function rollAffix(affix,rarity,min,max) {
+
+	var newAffix = {};
+	newAffix.text = affixMap[affix].text_en;
 	
+	return newAffix;
 }
 
 function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
 
-var test = createItem('Ancient','Amulet','Demon Hunter','Blackthorne\'s Duncraig Cross');
+//var test = createItem('Rare','Amulet','Demon Hunter');
+var test = createItem('Ancient','Amulet','Demon Hunter','Countess Julia\'s Cameo');
 console.log(test);
