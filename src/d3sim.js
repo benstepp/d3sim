@@ -12,12 +12,7 @@ var classMap = {
 
 //create the object to export
 var d3sim = {
-	createItem:createItem,
-
-	magicItem:magicItem,
-	rareItem:rareItem,
-	legendaryItem:legendaryItem
-
+	createItem:createItem
 };
 
 
@@ -80,6 +75,7 @@ var d3Item = function(rarity, slot, dClass) {
 
 		//random through possible item types
 		this.type = itemTypes[intRandom(0,itemTypes.length - 1)];
+		//use class based image if available, otherwise use default
 		this.image = affixes[slot.toLowerCase()].type[this.type].image[dClass] || affixes[slot.toLowerCase()].type[this.type].image.default ;
 	}
 
@@ -175,7 +171,7 @@ var legendaryItem = function(rarity, slot, dClass,legendaryName) {
 	//inherit properties from base d3item object
 	d3Item.call(this, rarity, slot, dClass);
 
-	//pull primaries and secondaries based on name given
+	//pull legendaryData based on name given
 	 var data = (function pullData() {
 		var slotItems = legendaryData[slot.toLowerCase()];
 
@@ -187,6 +183,10 @@ var legendaryItem = function(rarity, slot, dClass,legendaryName) {
 		}
 	})();
 
+	//name the object
+	this.name = legendaryName;
+
+	//save data to this object
 	this.type = data.type;
 
 	this.primaries = data.primary;
@@ -222,36 +222,122 @@ function createItem(rarity, slot, dClass, legendaryName) {
 	}
 
 	//execute item creation using a new object from constructor
-	var newItem = new constructor();
+	var newItem = new constructor(rarity,slot,dClass,legendaryName);
+	rollStats(newItem, rarity, slot, dClass);
+	return newItem;
+}
 
-	//pull legendary data
-	var legData;
-	if (typeof legendaryName !== 'undefined') {
-		legData = pullData(legendaryName);
-	}
-	else {
-		legData = false;
-	}
-
-	//determine primary and secondary stats (not the brackets)
+function rollStats(item, rarity, slot, dClass) {
 	var primaries;
 	var secondaries;
 
-	//for legendary/ancient items with data
-	if (typeof legData === 'object' && legData.hasOwnProperty('primary')) {
-		primaries = legData.primary;
+	//if the item given has primary and secondary objects set them
+	if (item.hasOwnProperty('primaries')) {
+		primaries = item.primaries;
 	}
-	if (typeof legData === 'object' && legData.hasOwnProperty('secondary')) {
-		secondaries = legData.secondaries;
+	if (item.hasOwnProperty('secondaries')) {
+		secondaries = item.secondaries;
 	}
 
-	return newItem;
+	//get a list of keys for primaries/secondaries
+	//use the length of this array to determine if we need to roll for it
+	var primaryKeys = Object.keys(primaries);
+	var secondaryKeys = Object.keys(secondaries);
+
+	//final primary/secondary stats
+	var primariesFinal = {};
+	var secondariesFinal = {};
+
+	//if a main stat is specified add to finals and splice
+	var mainIndex = primaryKeys.indexOf('MAIN');
+	if (mainIndex !== -1) {
+		primariesFinal[classMap[dClass]] = {};
+		primaryKeys.splice(mainIndex,1);
+	}
+
+	//if a random primary stat is specified splice from list
+	var randomPrimariesIndex = primaryKeys.indexOf('RANDOM');
+	if (randomPrimariesIndex !== -1) {
+		primaryKeys.splice(randomPrimariesIndex,1);
+	}
+	var randomSecondariesIndex = secondaryKeys.indexOf('RANDOM');
+	if (randomSecondariesIndex !== -1) {
+		secondaryKeys.splice(randomSecondariesIndex,1);
+	}
+
+	//loop through the remaining keys and push to the thing
+	var primaryKeysLength = primaryKeys.length;
+	var secondaryKeysLength = secondaryKeys.length;
+	for (var i = 0; i < primaryKeysLength;i++) {
+		primariesFinal[primaryKeys[i]] = {};
+	}
+	for (var j = 0; j < secondaryKeysLength; j++) {
+		secondariesFinal[secondaryKeys[j]] = {};
+	}
+
+	//revisit the random properties
+	getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'primary');
+
+	return item;
+}
+
+function getRandomAffix(current,slot,dClass,ps) {
+	var currentLength = current.length;
+
+	//all primary or secondary affixes for the slot
+	var allAffixes = Object.keys(affixes[slot.toLowerCase()][ps]);
+	var allAffixesLength = allAffixes.length;
+
+	//dump possible affixes to roll here
+	var affixList = [];
+
+	for(var i = 0; i < allAffixesLength; i++) {
+		var affix = allAffixes[i];
+		var affixData = affixes[slot.toLowerCase()][ps][affix];
+
+		var found;
+
+		//continue loop if affix is already on the item
+		if (current.indexOf(affix) !== -1) {
+			continue;
+		}
+		//check the excludes for current
+		if (affixMap[affix].hasOwnProperty('exclude')) {
+			var excludes = affixMap[affix].exclude;
+
+			//if the class is in this exlude array continue
+			if (excludes.indexOf(dClass) !== -1) {
+				continue;
+			}
+
+			//if any of the current affixes are in the excludes array, continue
+			for(var j = 0; j < currentLength;j++) {
+				if (excludes.indexOf(current[j])!== -1) {
+					//break this inner loop as soon as it is found
+					found = true;
+					break;
+				}
+			}
+
+		}
+		//add if exludes werent found
+		if (!found) {
+			affixList.push(affix);
+		}
+		
+	}
+	
+	//return a random affix from possibles
+	return affixList[intRandom(0,affixList.length - 1)];
+}
+
+function rollAffix(affix,rarity) {
+	
 }
 
 function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
 
-var test = new magicItem('magic','boots','Barbarian');
-var testing = new legendaryItem('Legendary','amulet','Barbarian','Blackthorne\'s Duncraig Cross');
+var test = createItem('Ancient','Amulet','Demon Hunter','Blackthorne\'s Duncraig Cross');
 console.log(test);
