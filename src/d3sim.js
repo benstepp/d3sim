@@ -55,6 +55,33 @@ var d3Item = function(rarity, slot, dClass) {
 	this.slot = slot;
 	this.rarity = rarity;
 
+	//roll the item type if rare or magic
+	if (rarity.toLowerCase() === 'magic' || rarity.toLowerCase() === 'rare') {
+
+		//a reference to itemtype object to test for excludes
+		var itemTypesRef = affixes[slot.toLowerCase()].type;
+		var itemTypesKeys = Object.keys(itemTypesRef);
+		var itemTypesLength = itemTypesKeys.length;
+
+		var itemTypes = [];
+		for (var i = 0; i < itemTypesLength; i++) {
+			//if it has exclude property and class is not in it add to possibles
+			if (itemTypesRef[itemTypesKeys[i]].hasOwnProperty('exclude')) {
+				var exclude = itemTypesRef[itemTypesKeys[i]].exclude;
+				if (exclude.indexOf(dClass) === -1) {
+					itemTypes.push(itemTypesKeys[i]);
+				}
+			}
+			//no excludes so just add to possibles
+			else {
+				itemTypes.push(itemTypesKeys[i]);
+			}
+		}
+
+		//random through possible item types
+		this.type = itemTypes[intRandom(0,itemTypes.length - 1)];
+	}
+
 };
 
 //for magic (blue) items with prefix and suffix rolling
@@ -107,6 +134,10 @@ var magicItem = function(rarity, slot, dClass) {
 	else {
 		this.secondaries[suffix] = null;
 	}
+
+	//name the object using prefix, suffix, and item type
+	this.name = affixMap[prefix].prefix_en + ' '+affixes[slot.toLowerCase()].type[this.type].name_en+' '+ affixMap[suffix].suffix_en;
+
 };
 
 //for rare (yellow) items with random primary and suffix rolling
@@ -132,11 +163,17 @@ var rareItem = function(rarity, slot, dClass) {
 	//roll for secondaries;
 	this.secondaries.RANDOM = intRandom(1,2);
 
+	//placeholder name for now;
+	this.name = 'Rare ' + affixes[slot.toLowerCase()].type[this.type].name_en;
+
 };
 
 //for legendary and ancient (orange) items with specific properties to be rolled
-var legendaryItem = function(rarity, slot, dClass,legendaryName) {};
-var ancientItem = function(rarity, slot, dClass,legendaryName) {};
+var legendaryItem = function(rarity, slot, dClass,legendaryName) {
+
+	//inherit properties from base d3item object
+	d3Item.call(this, rarity, slot, dClass);
+};
 
 function createItem(rarity, slot, dClass, legendaryName) {
 
@@ -204,5 +241,5 @@ function intRandom(min,max) {
 }
 
 
-var testing = new magicItem('Magic','Amulet','Wizard');
+var testing = new rareItem('Rare','belt','Barbarian');
 console.log(testing);

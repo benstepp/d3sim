@@ -16,7 +16,8 @@ var belt = {
 			name_en:'Mighty Scourge',
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/barbbelt_206_demonhunter_male.png'
-			}
+			},
+			exclude:['Demon Hunter','Monk','Crusader','Witch Doctor','Wizard']
 		}
 	},
 	primary:{
@@ -52,7 +53,7 @@ var belt = {
 			mina:550,
 			maxa:650
 		},
-		AllRes:{
+		AllResist:{
 			min:86,
 			max:90,
 			minl:91,

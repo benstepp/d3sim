@@ -185,6 +185,14 @@ var affixMap = {
 	'IgnoreDura':{
 		text_en:'Ignores Durability Loss'
 	},
+	'LifeAfterKill':{
+
+	},
+	'LevelReduc':{},
+
+
+	//onhit
+	'FreezeHit':{},
 
 
 	//Class based
@@ -194,6 +202,9 @@ var affixMap = {
 	},
 	'MaxFury':{
 		text_en:'{+$} Maximum Fury'
+	},
+	'LifePerFury':{
+
 	},
 
 	//Special Effects
