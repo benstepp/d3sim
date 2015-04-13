@@ -1,35 +1,167 @@
-var legendaryData = require('./legendary/index.js');
-var affixes = require('./affixes/index.js');
-var affixMap = require('./affixes/affixMap.js');
-
-//create the object to export
-var d3item = {
-	createItem:createItem
+var legendaryData = require('./data/legendary/index.js');
+var affixes = require('./data/affixes/index.js');
+var affixMap = require('./data/affixes/affixMap.js');
+var classMap = {
+	'Demon Hunter':'Dexterity',
+	Monk:'Dexterity',
+	Barbarian:'Strength',
+	Crusader:'Strength',
+	'Witch Doctor':'Intelligence',
+	Wizard:'Intelligence'
 };
 
-function createItem(rarity, slot, dClass, legendaryName) {
-	var newItem = {};
+//create the object to export
+var d3sim = {
+	createItem:createItem,
 
-	var rarities = ['Magic','Rare','Legendary','Ancient'];
+	magicItem:magicItem,
+	rareItem:rareItem,
+	legendaryItem:legendaryItem
+
+};
+
+
+//shared properties accross diablo 3 items regardless of parameters
+var d3Item = function(rarity, slot, dClass) {
+
 	var slots = Object.keys(affixes);
-	var classMap = {
-		'Demon Hunter':'Dexterity',
-		Monk:'Dexterity',
-		Barbarian:'Strength',
-		Crusader:'Strength',
-		'Witch Doctor':'Intelligence',
-		Wizard:Intelligence
-	};
+	var classes = Object.keys(classMap);
 
-	//if the rarity/slot/class are not valid let the user know
-	if (rarities.indexOf(rarity) === -1) {
-		var message = 'Invalid Rarity given. Valid rarities are:';
-		var raritiesLength = rarities.Length;
-		while(raritiesLength--) {
-			message+=' ';
-			message+=rarities[raritiesLength];
+	//if the class isnt in an array of valid classes derived from classMap
+	if (classes.indexOf(dClass) === -1) {
+		var cMessage = 'Invalid Diablo 3 Class given. Valid classes are:';
+		var classLength = classes.length;
+		while(classLength--) {
+			cMessage += ' ';
+			cMessage += classes[classLength];
+		}
+		console.error(cMessage);
+		return;
+	}
+
+	//check slot now
+	if (slots.indexOf(slot.toLowerCase()) === -1) {
+		var sMessage = 'Invalid Slot given. Valid slots are:';
+		var slotLength = slots.length;
+		while(slotLength--) {
+			sMessage += ' ';
+			sMessage += slots[slotLength];
+		}
+		console.error(sMessage);
+		return;
+	}
+
+	//save this given data to the new item after checks have been done
+	this.slot = slot;
+	this.rarity = rarity;
+
+};
+
+//for magic (blue) items with prefix and suffix rolling
+var magicItem = function(rarity, slot, dClass) {
+
+	//inherit properties from base d3item object
+	d3Item.call(this, rarity, slot, dClass);
+
+	//initialize the primary and secondary objects
+	this.primaries = {};
+	this.secondaries = {};
+
+	//pull all of the primaries and secondaries for a given slot
+	var affixDumpPri = Object.keys(affixes[slot.toLowerCase()].primary);
+	var affixDumpSec = Object.keys(affixes[slot.toLowerCase()].secondary);
+
+	var affixDump = affixDumpPri.concat(affixDumpSec);
+	var affixDumpLength = affixDump.length;
+
+	//initialize possible prefixes and suffix arrays to push the affixes into
+	var prefixes = [];
+	var suffixes = [];
+
+	//loop through all affixes and push the key into the appropriate array
+	//need to check the affixMap here to determine prefix or suffix
+	for (var i = 0; i < affixDumpLength; i++) {
+		var affix = affixMap[affixDump[i]];
+		if (affix.hasOwnProperty('prefix_en')){
+			prefixes.push(affixDump[i]);
+		}
+		else if (affix.hasOwnProperty('suffix_en')) {
+			suffixes.push(affixDump[i]);
 		}
 	}
+
+	//random a prefix and a suffix
+	var prefix = prefixes[intRandom(0,prefixes.length - 1)];
+	var suffix = suffixes[intRandom(0,suffixes.length - 1)];
+
+	//now determine wheter the prefix and suffix is a primary or a secondary
+	if (affixDumpPri.indexOf(prefix) !== -1) {
+		this.primaries[prefix] = null;
+	}
+	else {
+		this.secondaries[prefix] = null;
+	}
+	if (affixDumpPri.indexOf(suffix) !== -1) {
+		this.primaries[suffix] = null;
+	}
+	else {
+		this.secondaries[suffix] = null;
+	}
+};
+
+//for rare (yellow) items with random primary and suffix rolling
+var rareItem = function(rarity, slot, dClass) {
+
+	//inherit properties from base d3item object
+	d3Item.call(this, rarity, slot, dClass);
+
+	//initialize the primary and secondary objects
+	this.primaries = {};
+	this.secondaries = {};
+
+	//if a class is given, ensure that there is a main stat primary;
+	if (Object.keys(classMap).indexOf(dClass) !== -1) {
+		this.primaries.MAIN = null;
+		//then roll between 1-3 primaries
+		this.primaries.RANDOM = intRandom(1,3);
+	}
+	else{
+		this.primaries.RANDOM = intRandom(1,4);
+	}
+
+	//roll for secondaries;
+	this.secondaries.RANDOM = intRandom(1,2);
+
+};
+
+//for legendary and ancient (orange) items with specific properties to be rolled
+var legendaryItem = function(rarity, slot, dClass,legendaryName) {};
+var ancientItem = function(rarity, slot, dClass,legendaryName) {};
+
+function createItem(rarity, slot, dClass, legendaryName) {
+
+	//determine what constructor to use when creating the item
+	//also serves as a check for valid rarity
+	var constructor;
+	switch(rarity.toLowerCase()) {
+		case 'magic':
+			constructor = magicItem;
+			break;
+		case 'rare':
+			constructor = rareItem;
+			break;
+		case 'legendary':
+			constructor = legendaryItem;
+			break;
+		case 'ancient':
+			constructor = legendaryItem;
+			break;
+		default:
+			console.error('Invalid rarity given');
+	}
+
+	//execute item creation using a new object from constructor
+	var newItem = new constructor();
 
 	//pull legendary data
 	var legData;
@@ -52,54 +184,6 @@ function createItem(rarity, slot, dClass, legendaryName) {
 		secondaries = legData.secondaries;
 	}
 
-	//for rare items we random between 2-4 primaries and 1-2 secondaries
-	if (rarity === 'Rare') {
-		//initialize the objects
-		primaries = {};
-		secondaries = {};
-
-		//if a proper class was given, make sure there is a main stat on the item
-		if (Object.keys(classMap).indexOf(dClass) !== -1) {
-			primaries.MAIN = null;
-			//then roll between 1-3 primaries
-			primaries.RANDOM = intRandom(1,3);
-		}
-		else{
-			primaries.RANDOM = intRandom(1,4);
-		}
-
-		//roll for secondaries;
-		secondaries.RANDOM = intRandom(1,2);
-	}
-
-	//for magic items primary/secondary is less important
-	//we need to determine if an item is prefix or suffix first
-	if (rarity === 'Magic') {
-		var affixDumpPri = Object.keys(affixes[slot].primary);
-		var affixDumpSec = Object.keys(affixes[slot].secondary);
-		var affixDump = Array.prototype.push.apply(affixDumpPri, affixDumpSec);
-		var affixDumpLength = affixDump.length;
-
-		var prefixes = [];
-		var suffixes = [];
-
-		//loop through all affixes and push the key into the appropriate array
-		for (var i = 0; i < affixDumpLength; i++) {
-			var affix = affixMap[affixDump[i]];
-			if (affix.hasOwnProperty('prefix_en')){
-				prefixes.push(affixDump[i]);
-			}
-			else if (affix.hasOwnProperty('suffix_en')) {
-				suffixes.push(affixDump[i]);
-			}
-		}
-
-		//random a prefix and a suffix
-		var prefix = prefixes[intRandom(0,prefixes.length - 1)];
-		var suffix = suffixes[intRandom(0,suffixes.length - 1)];
-
-	}
-
 	return newItem;
 }
 
@@ -116,9 +200,9 @@ function pullData(slot,name) {
 }
 
 function intRandom(min,max) {
-	return (Math.random()*(max-min)) + min;
+	return Math.round((Math.random()*(max-min)) + min);
 }
 
 
-
-module.exports = d3item;
+var testing = new magicItem('Magic','Amulet','Wizard');
+console.log(testing);
