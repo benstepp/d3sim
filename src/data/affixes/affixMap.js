@@ -42,30 +42,32 @@ var affixMap = {
 	//Elemental
 	'PhysDamage': {
 		text_en: 'Physical Skills deal {$%} more damage',
+		exclude:['PhysDamage','ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage']
 	},
 	'ArcaneDamage': {
 		text_en: 'Arcane Skills deal {$%} more damage',
-		exclude:['Demon Hunter','Monk','Barbarian','Crusader','Witch Doctor']
+		exclude:['Demon Hunter','Monk','Barbarian','Crusader','Witch Doctor','PhysDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage']
 	},
 	'ColdDamage': {
 		text_en: 'Cold Skills deal {$%} more damage',
-		exclude:['Crusader']
+		exclude:['Crusader','PhysDamage','ArcaneDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage']
 	},
 	'FireDamage': {
 		text_en: 'Fire Skills deal {$%} more damage',
+		exclude:['PhysDamage','ArcaneDamage','ColdDamage','PoisonDamage','HolyDamage','LightningDamage']
 	},
 	'PoisonDamage': {
 		text_en: 'Poison Skills deal {$%} more damage',
-		exclude:['Demon Hunter','Monk','Barbarian','Crusader','Wizard']
+		exclude:['Demon Hunter','Monk','Barbarian','Crusader','Wizard','PhysDamage','ArcaneDamage','ColdDamage','FireDamage','HolyDamage','LightningDamage']
 	},
 	'HolyDamage': {
 		text_en: 'Holy Skills deal {$%} more damage',
 		prefix_en:'Hallowed',
-		exclude:['Demon Hunter','Barbarian','Wizard','Witch Doctor']
+		exclude:['Demon Hunter','Barbarian','Wizard','Witch Doctor','PhysDamage','ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','LightningDamage']
 	},
 	'LightningDamage': {
 		text_en: 'Lightning Skills deal {$%} more damage',
-		exclude:['Witch Doctor'],
+		exclude:['Witch Doctor','PhysDamage','ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage'],
 		prefix_en:'Shocking'
 	},
 

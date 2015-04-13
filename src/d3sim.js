@@ -301,14 +301,24 @@ function rollStats(item, rarity, slot, dClass) {
 
 		//if min/max was given use those
 		if(primaries.hasOwnProperty(primary) && primaries[primary] !== null) {
-			primariesFinal[primary].value = intRandom(primaries[primary].min,primaries[primary].max);
+			primariesFinal[primary].value = rollAffix(primary,rarity,slot,'primary',primaries[primary].min,primaries[primary].max);
+		}
+
+		//otherwise just roll using slot defaults
+		else {
+			primariesFinal[primary].value = rollAffix(primary,rarity,slot,'primary');
 		}
 	}
 	for (var secondary in secondariesFinal) {
 
 		//if min/max was given use those
 		if(secondaries.hasOwnProperty(secondary) && secondaries[secondary] !== null) {
+			secondariesFinal[secondary].value = rollAffix(secondary,rarity,slot,'secondary',secondaries[secondary].min,secondaries[secondary].max);
+		}
 
+		//otherwise just roll using slot defaults
+		else {
+			secondariesFinal[secondary].value = rollAffix(secondary,rarity,slot,'secondary');
 		}
 	}
 
@@ -367,12 +377,38 @@ function getRandomAffix(current,slot,dClass,ps) {
 	return affixList[intRandom(0,affixList.length - 1)];
 }
 
-function rollAffix(affix,rarity,min,max) {
+function rollAffix(affix,rarity,slot,ps,min,max) {
+	var value;
 
-	var newAffix = {};
-	newAffix.text = affixMap[affix].text_en;
-	
-	return newAffix;
+	//we need to get min and max values if they were not provided
+	var minName = 'min'+rarity.toLowerCase().slice(0,1);
+	var maxName = 'max'+rarity.toLowerCase().slice(0,1);
+	if (typeof min === 'undefined' || typeof max === 'undefined') {
+		//fallback to lower values if not found
+		min = affixes[slot.toLowerCase()][ps][affix][minName] || 
+		affixes[slot.toLowerCase()][ps][affix].minl || 
+		affixes[slot.toLowerCase()][ps][affix].min;
+
+		max = affixes[slot.toLowerCase()][ps][affix][maxName] || 
+		affixes[slot.toLowerCase()][ps][affix].maxl || 
+		affixes[slot.toLowerCase()][ps][affix].max;
+	}
+
+	//if given an array we need to roll all values
+	if (Array.isArray(min) && Array.isArray(max)) {
+		value = [];
+
+		//length of given parameters (likely 2)
+		var length = min.length;
+		for (var i = 0; i < length; i ++) {
+			value.push(intRandom(min[i],max[i]));
+		}
+	}
+	else {
+		value = intRandom(min,max);
+	}
+
+	return value;
 }
 
 function intRandom(min,max) {
@@ -381,4 +417,5 @@ function intRandom(min,max) {
 
 //var test = createItem('Rare','Amulet','Demon Hunter');
 var test = createItem('Ancient','Amulet','Demon Hunter','Countess Julia\'s Cameo');
+//var test = rollAffix('Dexterity','Ancient','Amulet','primary');
 console.log(test);
