@@ -868,6 +868,42 @@ var affixMap = {
 	'Crudest':{
 		type:'legendary',
 		text_en:'Mystic Ally summons two Mystic Allies that fight by your side.'
+	},
+	'ParthanDefenders':{
+		type:'legendary',
+		text_en:'Each stunned enemy within 25 yards reduces your damage taken by {$%}'
+	},
+	'Custerian':{
+		type:'legendary',
+		text_en:'Picking up gold grants experience'
+	},
+	'Gungdo':{
+		type:'legendary',
+		text_en:'Exploding Palm\'s on-death explosion applies Exploding Palm.'
+	},
+	'KrelmBracer':{
+		type:'legendary',
+		text_en:'You are immune to Knockback and Stun effects.'
+	},
+	'Nemesis':{
+		type:'legendary',
+		text_en:'Shrines and Pylons will spawn an enemy champion'
+	},
+	'PromiseOfGlory':{
+		type:'legendary',
+		text_en:'{$%} chance to spawn a Nephalem Glory globe when you Blind an enemy.'
+	},
+	'StrongArm':{
+		type:'legendary',
+		text_en:'Enemies hit by knockbacks suffer {$%} more damage for 5 seconds when they land.'
+	},
+	'Tragoul':{
+		type:'legendary',
+		text_en:'Healing wells replenish all resources and reduce all cooldowns by {$} seconds.'
+	},
+	'Warzechian':{
+		type:'legendary',
+		text_en:'Every time you destroy a wreckable object, you gain a short burst of speed.'
 	}
 
 

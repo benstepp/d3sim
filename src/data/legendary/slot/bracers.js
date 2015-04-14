@@ -1,0 +1,359 @@
+var Bracers = [
+	{
+		name: "Ancient Parthan Defenders",
+		type: "Bracers",
+		weight: 50,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			RANDOM:3
+		},
+		secondary:{
+			ParthanDefenders:{
+				min:9,
+				max:12
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_102_x1_demonhunter_male.png',
+		flavor:'These bracers were first worn in the distant past by members of the Partha Guard. Though musty from age, they retain power that has protected the city for centuries.'
+	},
+	{
+		name: "Custerian Wristguards",
+		type: "Bracers",
+		weight: 100,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			Custerian:null,
+			GoldFind:null
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_107_x1_demonhunter_male.png',
+		flavor:'"In ancient times, there lived a strange race of people—the Custerians. No one knows who they were, or what they were doing, but their legacy remains beaten into the very metal of these wristguards." —Yuan, wise man of Tufnyl'
+	},
+	{
+		name: "Gungdo Gear",
+		type: "Bracers",
+		weight: 100,
+		hc: false,
+		season: true,
+		smartLoot: [
+			"Monk"
+		],
+		primary:{
+			Dexterity:null,
+			RANDOM:3,
+		},
+		secondary:{
+			Gungdo:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_bracer_006_demonhunter_male.png',
+		flavor:'"Cover your wrists in righteousness that you may strike with the will of the gods." —Tenets of the Veradani'
+	},
+	{
+		name: "Krelm's Buff Bracers",
+		type: "Bracers",
+		weight: 100,
+		hc: false,
+		season: true,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:1,
+			RANDOM:3
+		},
+		secondary:{
+			KrelmBracer:null,
+			RANDOM:1
+		},
+		set:'Krelm\'s Buff Bulwark',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_set_02_x1_demonhunter_male.png',
+		flavor:'“Twas hitherto eons past from whence Krelm the Immodest didst thitherward dash forth upon the Blazing Wastes clad only in his bogodile skin belt and bracers to face the loathsome Oglak beast and slew him thence mightily with nigh but his bare hands thereupon.” -Excerpt from Stories Meant to Frighten Small Children'
+	},
+	{
+		name: "Lacuni Prowlers",
+		type: "Bracers",
+		weight: 25,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			AttackSpeed:{
+				min:5,
+				max:6
+			},
+			MoveSpeed:{
+				min:10,
+				max:12
+			},
+			RANDOM:1
+		},
+		secondary:{
+			Thorns:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_005_x1_demonhunter_male.png',
+		flavor:'The savage fierceness of the lacuni is unrivaled in all of Sanctuary.'
+	},
+	{
+		name: "Nemesis Bracers",
+		type: "Bracers",
+		weight: 50,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:1,
+			RANDOM:3
+		},
+		secondary:{
+			Nemesis:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_106_x1_demonhunter_male.png',
+		flavor:'Wear these armguards at your own risk. Only for the heartiest of adventurers.'
+	},
+	{
+		name: "Promise of Glory",
+		type: "Bracers",
+		weight: 50,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			PromiseOfGlory:{
+				min:4,
+				max:6
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_002_x1_demonhunter_male.png',
+		flavor:'Lost and found again through the ages, these bracers bear the names of all who have worn them. Each one found great glory, but not all survived to reap the rewards.'
+	},
+	{
+		name: "Shackles of the Invoker",
+		type: "Bracers",
+		weight: 100,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			RANDOM:3
+		},
+		secondary:{
+			Thorns:null,
+			RANDOM:1
+		},
+		set:'Thorns of the Invoker',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_set_12_x1_demonhunter_male.png',
+		flavor:'Each of these bracers is charred and scored with gouges, as if whoever once wore the armor had tried desperately to cast it off.'
+	},
+	{
+		name: "Slave Bonds",
+		type: "Bracers",
+		weight: 100,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			MoveSpeed:{
+				min:10,
+				max:12
+			},
+			RANDOM:2
+		},
+		secondary:{
+			LifeAfterKill:{
+				min:2083,
+				max:4251
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_003_104_demonhunter_male.png',
+		flavor:'Broken chains still dangle from these heavy iron shackles.'
+	},
+	{
+		name: "Steady Strikers",
+		type: "Bracers",
+		weight: 100,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			AttackSpeed:{
+				min:5,
+				max:6
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_004_x1_demonhunter_male.png',
+		flavor:'You need only intend to strike your target, and your hands will wield the weapon with the confidence of a seasoned veteran.'
+	},
+	{
+		name: "Strongarm Bracers",
+		type: "Bracers",
+		weight: 50,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			Vitality:null,
+			CritChance:null,
+			RANDOM:1
+		},
+		secondary:{
+			Strongarm:{
+				min:20,
+				max:30
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_007_x1_demonhunter_male.png',
+		flavor:'A warrior wearing bracers made of Skartaran metal can best monsters twice his size.'
+	},
+	{
+		name: "Trag'Oul Coils",
+		type: "Bracers",
+		weight: 100,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			RANDOM:3
+		},
+		secondary:{
+			Tragoul:{
+				min:45,
+				max:60
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_104_x1_demonhunter_male.png',
+		flavor:'"The guardian shall ever maintain his eternal watch over those who serve and protect the balance." —Excerpt from the Books of Kalan'
+	},
+	{
+		name: "Warzechian Armguards",
+		type: "Bracers",
+		weight: 50,
+		hc: false,
+		season: false,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			PickupRadius:null,
+			Warzechian:null
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_101_x1_demonhunter_male.png',
+		flavor:'"After a long search through the eastern lands, the noble leaders of House Chien chose the Artoun Clan for their personal guard. These loyal protectors are easily recognized by the distinctive armguards they wear out of pride for their service." —Abd al-Hazir, The Xiansai Chronicles'
+	}
+];
+
+module.exports = Bracers;
