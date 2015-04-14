@@ -83,12 +83,12 @@ var ring = {
 			maxa:[105,210]
 		},
 		CritChance:{
-			min:4.5,
-			max:6,
-			//minl:4.5,
-			//maxl:6,
-			//mina:4.5,
-			//maxa:6
+			min:9,
+			max:12,
+			//minl:9,
+			//maxl:12,
+			//mina:9,
+			//maxa:12
 		},
 		CritDamage:{
 			min:26,

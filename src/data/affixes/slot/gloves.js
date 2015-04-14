@@ -73,12 +73,12 @@ var gloves = {
 		},
 
 		CritChance:{
-			min:7,
-			max:10,
-			minl:8,
-			maxl:10,
-			//mina:8,
-			//maxa:10
+			min:14,
+			max:20,
+			minl:16,
+			maxl:20,
+			//mina:16,
+			//maxa:20
 		},
 		CritDamage:{
 			min:26,
@@ -196,12 +196,12 @@ var gloves = {
 			maxa:260
 		},
 		SlowHit:{
-			min:1,
-			max:4.5,
-			minl:1,
-			maxl:5.1,
-			//mina:1,
-			//maxa:5.1
+			min:10,
+			max:45,
+			minl:10,
+			maxl:51,
+			//mina:10,
+			//maxa:51
 		},
 		IgnoreDura:{
 			min:1,

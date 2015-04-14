@@ -308,6 +308,9 @@ function rollStats(item, rarity, slot, dClass) {
 		else {
 			primariesFinal[primary].value = rollAffix(primary,rarity,slot,'primary');
 		}
+
+		//set text for primary
+		primariesFinal[primary].text = affixMap[primary].text_en;
 	}
 	for (var secondary in secondariesFinal) {
 
@@ -320,6 +323,9 @@ function rollStats(item, rarity, slot, dClass) {
 		else {
 			secondariesFinal[secondary].value = rollAffix(secondary,rarity,slot,'secondary');
 		}
+
+		//set text for secondary
+		secondariesFinal[secondary].text = affixMap[secondary].text_en;
 	}
 
 	//replace primary and secondary objects
@@ -378,6 +384,18 @@ function getRandomAffix(current,slot,dClass,ps) {
 }
 
 function rollAffix(affix,rarity,slot,ps,min,max) {
+	var affixDiv = {
+		CritChance:2,
+		BlindHit:10,
+		FearHit:10,
+		FreezeHit:10,
+		ChillHit:10,
+		SlowHit:10,
+		KnockHit:10,
+		StunHit:10,
+		SpiritRegen:100,
+		HatredRegen:100
+	};
 	var value;
 
 	//we need to get min and max values if they were not provided
@@ -408,6 +426,19 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 		value = intRandom(min,max);
 	}
 
+	//if we need to divide value do so here
+	if (affixDiv.hasOwnProperty(affix)) {
+		value = parseFloat(value/affixDiv[affix]);
+
+		//setting the decimal length based on number divided
+		if (affixDiv[affix].length === 3) {
+			value.toFixed(3);
+		}
+		else {
+			value.toFixed(2);
+		}
+	}
+
 	return value;
 }
 
@@ -415,7 +446,7 @@ function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
 
-//var test = createItem('Rare','Amulet','Demon Hunter');
-var test = createItem('Ancient','Amulet','Demon Hunter','Countess Julia\'s Cameo');
+var test = createItem('Rare','Chest','Demon Hunter');
+//var test = createItem('Ancient','Amulet','Demon Hunter','Ouroboros');
 //var test = rollAffix('Dexterity','Ancient','Amulet','primary');
 console.log(test);

@@ -125,12 +125,12 @@ var bracers = {
 		},
 
 		CritChance:{
-			min:4.5,
-			max:6,
-			//minl:4.5,
-			//maxl:6,
-			//mina:4.5,
-			//maxa:6
+			min:9,
+			max:12,
+			//minl:9,
+			//maxl:12,
+			//mina:9,
+			//maxa:12
 		},
 
 	},
@@ -224,12 +224,12 @@ var bracers = {
 			//maxa:2
 		},
 		KnockbackOnHit:{
-			min:1,
-			max:4.5,
-			minl:1,
-			maxl:5.1,
-			//mina:1,
-			//maxa:5.1
+			min:10,
+			max:45,
+			minl:10,
+			maxl:51,
+			//mina:10,
+			//maxa:51
 		},
 		IgnoreDura:{
 			min:1,

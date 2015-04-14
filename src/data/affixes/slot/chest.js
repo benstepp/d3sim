@@ -103,13 +103,12 @@ var chest = {
 			//maxa:3
 		},
 		HatredRegen:{
-			min:1.18,
-			max:1.33,
-			minl:1.35,
-			maxl:1.5,
-			//mina:1.35,
-			//maxa:1.5,
-			exclude:['Chest Armor','Monk','Barbarian','Witch Doctor','Wizard','Crusader']
+			min:118,
+			max:133,
+			minl:135,
+			maxl:150,
+			//mina:135,
+			//maxa:150,
 		},
 		RainOfVengeanceDmg:{
 			min:8,
@@ -118,8 +117,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-			'FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 		},
 		FanOfKnivesDmg:{
 			min:8,
@@ -128,8 +125,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-			'RainOfVengeanceDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 		},
 		CompanionDmg:{
 			min:8,
@@ -138,8 +133,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-			'RainOfVengeanceDmg','FanOfKnivesDmg','SpikeTrapDmg','SentryDmg']
 		},
 		SpikeTrapDmg:{
 			min:8,
@@ -148,8 +141,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-			'RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SentryDmg']
 		},
 		SentryDmg:{
 			min:8,
@@ -158,8 +149,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-			'RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg']
 		},
 		AvalancheDmg:{
 			min:8,
@@ -168,8 +157,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Crusader','Witch Doctor','Wizard',
-			'CallOfTheAncientsDmg','EarthquakeDmg','FuriousChargeDmg','OverpowerDmg','RendDmg','RevengeDmg']
 		},
 		CallOfTheAncientsDmg:{
 			min:8,
@@ -178,8 +165,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Crusader','Witch Doctor','Wizard',
-			'AvalancheDmg','EarthquakeDmg','FuriousChargeDmg','OverpowerDmg','RendDmg','RevengeDmg']
 		},
 		EarthquakeDmg:{
 			min:8,
@@ -188,8 +173,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Crusader','Witch Doctor','Wizard',
-			'AvalancheDmg','CallOfTheAncientsDmg','FuriousChargeDmg','OverpowerDmg','RendDmg','RevengeDmg']
 		},
 		FuriousChargeDmg:{
 			min:8,
@@ -198,8 +181,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Crusader','Witch Doctor','Wizard',
-			'AvalancheDmg','CallOfTheAncientsDmg','EarthquakeDmg','OverpowerDmg','RendDmg','RevengeDmg']
 		},
 		OverpowerDmg:{
 			min:8,
@@ -208,8 +189,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Crusader','Witch Doctor','Wizard',
-			'AvalancheDmg','CallOfTheAncientsDmg','EarthquakeDmg','FuriousChargeDmg','RendDmg','RevengeDmg']
 		},
 		RendDmg:{
 			min:8,
@@ -218,8 +197,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Crusader','Witch Doctor','Wizard',
-			'AvalancheDmg','CallOfTheAncientsDmg','EarthquakeDmg','FuriousChargeDmg','OverpowerDmg','RevengeDmg']
 		},
 		RevengeDmg:{
 			min:8,
@@ -228,8 +205,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Crusader','Witch Doctor','Wizard',
-			'AvalancheDmg','CallOfTheAncientsDmg','EarthquakeDmg','FuriousChargeDmg','OverpowerDmg','RendDmg']
 		},
 		BombardmentDmg:{
 			min:8,
@@ -238,8 +213,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'CondemnDmg','FallingSwordDmg','HeavensFuryDmg']
 		},
 		CondemnDmg:{
 			min:8,
@@ -248,8 +221,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'BombardmentDmg','FallingSwordDmg','HeavensFuryDmg']
 		},
 		FallingSwordDmg:{
 			min:8,
@@ -258,8 +229,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'BombardmentDmg','CondemnDmg','HeavensFuryDmg']
 		},
 		HeavensFuryDmg:{
 			min:8,
@@ -268,8 +237,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'BombardmentDmg','CondemnDmg','FallingSwordDmg']
 		},
 		CycloneDmg:{
 			min:8,
@@ -278,8 +245,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Crusader','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'DashingStrikeDmg','MysticAllyDmg','SevenSidedStrikeDmg','SweepingWindDmg']
 		},
 		DashingStrikeDmg:{
 			min:8,
@@ -288,8 +253,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Crusader','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'CycloneDmg','MysticAllyDmg','SevenSidedStrikeDmg','SweepingWindDmg']
 		},
 		MysticAllyDmg:{
 			min:8,
@@ -298,8 +261,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Crusader','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'CycloneDmg','DashingStrikeDmg','SevenSidedStrikeDmg','SweepingWindDmg']
 		},
 		SevenSidedStrikeDmg:{
 			min:8,
@@ -308,8 +269,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Crusader','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'CycloneDmg','DashingStrikeDmg','MysticAllyDmg','SweepingWindDmg']
 		},
 		SweepingWindDmg:{
 			min:8,
@@ -318,8 +277,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Crusader','Demon Hunter','Barbarian','Witch Doctor','Wizard',
-			'CycloneDmg','DashingStrikeDmg','MysticAllyDmg','SevenSidedStrikeDmg']
 		},
 		WallOfZombiesDmg:{
 			min:8,
@@ -328,8 +285,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 		},
 		GraspOfTheDeadDmg:{
 			min:8,
@@ -338,8 +293,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'WallOfZombiesDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 		},
 		GargantuanDmg:{
 			min:8,
@@ -348,8 +301,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'WallOfZombiesDmg','GraspOfTheDeadDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 		},
 		HauntDmg:{
 			min:8,
@@ -358,8 +309,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 		},
 		PiranhasDmg:{
 			min:8,
@@ -368,8 +317,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 		},
 		LocustSwarmDmg:{
 			min:8,
@@ -378,8 +325,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','FetishArmyDmg','SummonZombieDogsDmg']
 		},
 		FetishArmyDmg:{
 			min:8,
@@ -388,8 +333,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','SummonZombieDogsDmg']
 		},
 		SummonZombieDogsDmg:{
 			min:8,
@@ -398,8 +341,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-			'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg']
 		},
 		BlackHoleDmg:{
 			min:8,
@@ -408,8 +349,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-			'BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg']
 		},
 		BlizzardDmg:{
 			min:8,
@@ -418,8 +357,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-			'BlackHoleDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg']
 		},
 		ExplosiveBlastDmg:{
 			min:8,
@@ -428,8 +365,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-			'BlackHoleDmg','BlizzardDmg','FamiliarDmg','HydraDmg']
 		},
 		FamiliarDmg:{
 			min:8,
@@ -438,8 +373,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-			'BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','HydraDmg']
 		},
 		HydraDmg:{
 			min:8,
@@ -448,8 +381,6 @@ var chest = {
 			maxl:15,
 			//mina:10,
 			//maxa:15,
-			exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-			'BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg']
 		}
 	},
 	secondary:{
