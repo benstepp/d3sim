@@ -845,6 +845,29 @@ var affixMap = {
 	'Thundergod':{
 		type:'legendary',
 		text_en:'Blocking,dodging or being hit causes you to discharge bolts of electricity that deal {$%} weapon damage as Lightning.'
+	},
+	'FireWalker':{
+		type:'legendary',
+		text_en:'Burn the ground you walk on, dealing {$%} weapon damage each second.'
+	},
+	'ColdReduc':{
+		text_en:'Reduces damage from Cold attacks by {$%}.'
+	},
+	'FreezeImmune':{
+		type:'legendary',
+		text_en:'Gain immunity to Freeze and Immobilize effects.'
+	},
+	'Irontoe':{
+		type:'legendary',
+		text_en:'Gain up to {$%} increased movement speed based on amount of Life missing.'
+	},
+	'LutSocks':{
+		type:'legendary',
+		text_en:'Leap can be cast again within 2 seconds before the cooldown begins.'
+	},
+	'Crudest':{
+		type:'legendary',
+		text_en:'Mystic Ally summons two Mystic Allies that fight by your side.'
 	}
 
 

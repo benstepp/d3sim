@@ -237,7 +237,6 @@ var Belt = [
 		weight: 100,
 		hc: false,
 		season: false,
-		set:'Blackthorne\'s Battlegear',
 		smartLoot: [
 			"Demon Hunter",
 			"Monk",
@@ -255,6 +254,7 @@ var Belt = [
 			GoldFind:null,
 			RANDOM:1
 		},
+		set:'Blackthorne\'s Battlegear',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_015_x1_demonhunter_male.png',
 		flavor:'A thick leather belt, notched once for each enemy noble captured in battle, each man ransomed back to his family for a handsome fee.'
 	},
@@ -399,7 +399,6 @@ var Belt = [
 		weight: 100,
 		hc: false,
 		season: false,
-		set:'Inna\'s Mantra',
 		smartLoot: [
 			"Monk"
 		],
@@ -411,6 +410,7 @@ var Belt = [
 		secondary:{
 			RANDOM:2
 		},
+		set:'Inna\'s Mantra',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_007_x1_demonhunter_male.png',
 		flavor:'Gird yourself with the wisdom of Inna that you may gain her favor.'
 	},
@@ -443,7 +443,6 @@ var Belt = [
 		weight: 100,
 		hc: false,
 		season: true,
-		set:'Krelm\'s Buff Bulwark',
 		smartLoot: [
 			"Demon Hunter",
 			"Monk",
@@ -460,6 +459,7 @@ var Belt = [
 			KrelmBelt:null,
 			RANDOM:1
 		},
+		set:'Krelm\'s Buff Bulwark',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_set_02_x1_demonhunter_male.png',
 		flavor:'“Whereupon having vanquished the Oglak beast that had devoured a ten-stone weight worth of villagers, didst they hitherto beseech Krelm the Immodest to remain henceforth as the village champion and erected a statue to honor his name hereinafter.” -Excerpt from Stories Meant to Frighten Small Children'
 	},
@@ -610,7 +610,6 @@ var Belt = [
 		weight: 100,
 		hc: false,
 		season: false,
-		set:'Tal Rasha\'s Elements',
 		smartLoot: [
 			"Wizard"
 		],
@@ -622,6 +621,7 @@ var Belt = [
 		secondary:{
 			RANDOM:2
 		},
+		set:'Tal Rasha\'s Elements',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_006_x1_demonhunter_male.png',
 		flavor:'Every aspect of the Horadrim\'s dress was carefully chosen to augment his magical abilities.'
 	},
