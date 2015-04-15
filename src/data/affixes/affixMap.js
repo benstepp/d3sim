@@ -904,6 +904,22 @@ var affixMap = {
 	'Warzechian':{
 		type:'legendary',
 		text_en:'Every time you destroy a wreckable object, you gain a short burst of speed.'
+	},
+	'KindRegent':{
+		type:'legendary',
+		text_en:'Smite will now also be cast at a second nearby enemy.'
+	},
+	'Chaingmail':{
+		type:'legendary',
+		text_en:'After earning a survival bonus, quickly heal to full Life.'
+	},
+	'FireReduc':{
+		type:'legendary',
+		text_en:'Reduces the resource cost of Fire skills by {$%}.'
+	},
+	'Goldskin':{
+		type:'legendary',
+		text_en:'Chance for enemies to drop gold when you hit them.'
 	}
 
 
