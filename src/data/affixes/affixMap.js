@@ -920,6 +920,29 @@ var affixMap = {
 	'Goldskin':{
 		type:'legendary',
 		text_en:'Chance for enemies to drop gold when you hit them.'
+	},
+	'ShiMizu':{
+		type:'legendary',
+		text_en:'While below {$%} Life, all attacks are guaranteed Critical Hits.'
+	},
+	'DemonDamage':{
+		text_en:'{+$%} Damage to Demons'
+	},
+	'BeckonSail':{
+		type:'legendary',
+		text_en:'When receiving fatal damage, you instead automatically cast Smoke Screen and are healed to {25%} Life. This effect may occur once every {120} seconds.'
+	},
+	'Blackfeather':{
+		type:'legendary',
+		text_en:'Dodging or getting hit by a ranged attack automatically shoots a homing rocket back at the attacker for {$%} weapon damage as Physical.'
+	},
+	'DarkNight':{
+		type:'legendary',
+		text_en:'Automatically drop Caltrops when you are hit. This effect may only occur once every 6 seconds.'
+	},
+	'Garwulf':{
+		type:'legendary',
+		text_en:'Companion - Wolf Companion now summons 3 wolves.'
 	}
 
 

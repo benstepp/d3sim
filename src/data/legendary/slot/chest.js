@@ -315,11 +315,20 @@ var chest = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Inna\'s Mantra',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_015_x1_demonhunter_male.png',
+		flavor:'Only the holy will find refuge in Inna\'s arms.'
 	},
 	{
 		name: "Jade Harvester's Peace",
@@ -330,11 +339,20 @@ var chest = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Intelligence:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Raiment of the Jade Harvester',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_09_x1_demonhunter_male.png',
+		flavor:'Tukam had outlived both his children and grandchildren by the time he finally fell in battle. As his rivals prepared him for ritual sacrifice, he wept tears of joy at the thought of meeting his loved ones again.'
 	},
 	{
 		name: "Marauder's Carapace",
@@ -345,11 +363,20 @@ var chest = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Embodiment of the Marauder',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_07_x1_demonhunter_male.png',
+		flavor:'"We can wear the demons\' armaments, their very flesh, upon our bodies, and become something more than human—a nightmare reflection of demonkind—to sow chaos and death among them."—Hunter Esche Maithe'
 	},
 	{
 		name: "Raekor's Heart",
@@ -360,11 +387,20 @@ var chest = [
 		smartLoot: [
 			"Barbarian"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Strength:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'The Legacy of Raekor',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_05_x1_demonhunter_male.png',
+		flavor:'Joritz the Mighty dedicated his life to Raekor after she liberated him from a Samaurenian labor camp. This magnificent brigandine was his gift to her on their wedding day.'
 	},
 	{
 		name: "Roland's Bearing",
@@ -375,11 +411,20 @@ var chest = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Strength:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Roland\'s Legacy',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_01_p1_demonhunter_male.png',
+		flavor:'"My master believed salvation knows no bounds. I was a soul to be saved, so he saved me. That is why I proudly bear his name. The name of a great man." —Meditations on My Redemption'
 	},
 	{
 		name: "Shi Mizu's Haori",
@@ -395,11 +440,19 @@ var chest = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			MAIN:null,
+			RANDOM:1
+		},
+		secondary:{
+			ShiMizu:{
+				min:20,
+				max:25
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_101_x1_demonhunter_male.png',
+		flavor:'"Being near death tends to focus the mind." —Shi Mizu, Warrior-Philosopher'
 	},
 	{
 		name: "Tal Rasha's Relentless Pursuit",
@@ -410,11 +463,24 @@ var chest = [
 		smartLoot: [
 			"Wizard"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Intelligence:null,
+			Vitality:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			AttackSpeed:{
+				min:5,
+				max:6
+			}
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Tal Rasha\'s Elements',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_014_x1_demonhunter_male.png',
+		flavor:'The Horadrim dedicated themselves to tracking down and imprisoning the Prime Evils to protect all of mankind from Hell\'s dark corruption.'
 	},
 	{
 		name: "The Shadow's Bane",
@@ -425,11 +491,20 @@ var chest = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'The Shadow\'s Mantle',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_14_x1_demonhunter_male.png',
+		flavor:'Legends in the Dreadlands speak of an uncanny demon hunter named Kunai who could become one with shadow.'
 	},
 	{
 		name: "Tyrael's Might",
@@ -445,11 +520,20 @@ var chest = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			MAIN:null,
+			AllResist:null,
+			RANDOM:2
+		},
+		secondary:{
+			DemonDamage:{
+				min:10,
+				max:15
+			},
+			IgnoreDura:null
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_002_x1_demonhunter_male.png',
+		flavor:'"And lo, the Angel of Justice did cast his judgment in favor of the nephalem." —The Books of Jarl, Volume III'
 	},
 	{
 		name: "Vyr's Astonishing Aura",
@@ -460,11 +544,20 @@ var chest = [
 		smartLoot: [
 			"Wizard"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Intelligence:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Vyr\'s Amazing Arcana',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_13_x1_demonhunter_male.png',
+		flavor:'"Vyr created his famed obelisk to gather the power of the Archon, a being he claimed existed on a different plane of reality. He is even reputed to have stored this macabre power in armor of his own design." —Abd al-Hazir'
 	},
 	{
 		name: "Zunimassa's Marrow",
@@ -475,11 +568,20 @@ var chest = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Intelligence:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Zunimassa\'s Haunt',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_016_x1_demonhunter_male.png',
+		flavor:'The warrior who dons this armor will always have the spirit of Zunimassa upon them.'
 	},
 	{
 		name: "Beckon Sail",
@@ -490,11 +592,20 @@ var chest = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			BeckonSail:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_cloak_005_x1_demonhunter_male.png',
+		flavor:'Favored by those who do their fighting in the underworld.'
 	},
 	{
 		name: "Blackfeather",
@@ -505,11 +616,23 @@ var chest = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			Blackfeather:{
+				min:600,
+				max:800
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_cloak_101_x1_demonhunter_male.png',
+		flavor:'This cloak matches the description of the one worn by the hero in the popular children\'s tale Yorgie and the Giants.'
 	},
 	{
 		name: "Cape of the Dark Night",
@@ -520,11 +643,16 @@ var chest = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			RANDOM:3
+		},
+		secondary:{
+			DarkNight:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_cloak_001_x1_demonhunter_male.png',
+		flavor:'"Those who seek to do evil are a cowardly and superstitious lot." —Demon Hunter Bayne'
 	},
 	{
 		name: "Natalya's Embrace",
@@ -535,11 +663,20 @@ var chest = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Natalya\'s Vengeance',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_cloak_006_x1_demonhunter_male.png',
+		flavor:'Natalya knew how to use the darkness as a weapon.'
 	},
 	{
 		name: "The Cloak of the Garwulf",
@@ -550,11 +687,16 @@ var chest = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			RANDOM:3
+		},
+		secondary:{
+			Garwulf:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_cloak_002_p1_demonhunter_male.png',
+		flavor:'The cloak of one with an affinity toward wolves.'
 	}
 ];
 
