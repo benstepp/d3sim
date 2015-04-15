@@ -1,4 +1,4 @@
-var Bracers = [
+var bracers = [
 	{
 		name: "Ancient Parthan Defenders",
 		type: "Bracers",
@@ -356,4 +356,4 @@ var Bracers = [
 	}
 ];
 
-module.exports = Bracers;
+module.exports = bracers;

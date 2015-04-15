@@ -1,4 +1,4 @@
-var Amulet = [
+var amulet = [
 	{
 		name: "Ancestors' Grace",
 		type: "Amulet",
@@ -613,4 +613,4 @@ var Amulet = [
 	}
 	];
 
-	module.exports = Amulet;
+	module.exports = amulet;

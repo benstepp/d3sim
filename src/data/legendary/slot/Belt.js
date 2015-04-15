@@ -1,4 +1,4 @@
-var Belt = [
+var belt = [
 	{
 		name: "Chilanik's Chain",
 		type: "Mighty Belt",
@@ -720,4 +720,4 @@ var Belt = [
 	}
 ];
 
-module.exports = Belt;
+module.exports = belt;

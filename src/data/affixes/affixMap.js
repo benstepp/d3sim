@@ -893,7 +893,7 @@ var affixMap = {
 		type:'legendary',
 		text_en:'{$%} chance to spawn a Nephalem Glory globe when you Blind an enemy.'
 	},
-	'StrongArm':{
+	'Strongarm':{
 		type:'legendary',
 		text_en:'Enemies hit by knockbacks suffer {$%} more damage for 5 seconds when they land.'
 	},

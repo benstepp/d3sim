@@ -1,4 +1,4 @@
-var Boots = [
+var boots = [
 	{
 		name: "Blackthorne's Spurs",
 		type: "Boots",
@@ -451,4 +451,4 @@ var Boots = [
 		flavor:'Zunimassa spread her wisdom further than any other witch doctor of the Teganze.'
 	}
 ];
-module.exports = Boots;
+module.exports = boots;
