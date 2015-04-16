@@ -42,7 +42,7 @@ var affixMap = {
 	//Elemental
 	'PhysDamage': {
 		text_en: 'Physical Skills deal {$%} more damage',
-		exclude:['PhysDamage','ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage']
+		exclude:['ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage']
 	},
 	'ArcaneDamage': {
 		text_en: 'Arcane Skills deal {$%} more damage',
@@ -193,33 +193,42 @@ var affixMap = {
 		text_en:'Ignores Durability Loss'
 	},
 	'LifeAfterKill':{
-		suffix_en:'of Extermination'
+		suffix_en:'of Extermination',
+		text_en:'{+$} Life After Each Kill'
 
 	},
 	'LevelReduc':{
-		suffix_en:'of Courage'
+		suffix_en:'of Courage',
+		text_en:'Level Requirement Reduced by {$}.'
 	},
 
 
 	//onhit
-	'FreezeHit':{},
+	'FreezeHit':{
+		text_en:'{$%} Chance to Freeze on Hit',
+	},
 	'BlindHit': {
 		text_en:'{$%} Chance to Blind on Hit',
 		prefix_en:'Perplexing'
 	},
 	'FearHit':{
+		text_en:'{$%} Chance to Fear on Hit',
 		suffix_en:'of Horror'
 	},
 	'ChillHit':{
+		text_en:'{$%} Chance to Chill on Hit',
 		prefix_en:'Glacial'
 	},
 	'SlowHit':{
+		text_en:'{$%} Chance to Slow on Hit',
 		prefix_en:'Persecuting'
 	},
 	'KnockHit':{
+		text_en:'{$%} Chance to Knockback on Hit',
 		prefix_en:'Smashing'
 	},
 	'StunHit':{
+		text_en:'{$%} Chance to Stun on Hit',
 		suffix_en:'of Ruin'
 	},
 	'ImmobHit':{
@@ -233,27 +242,31 @@ var affixMap = {
 	},
 
 	'MaxFury':{
-		text_en:'{+$} Maximum Fury'
+		text_en:'{+$} Maximum Fury (Barbarian Only)'
 	},
 	'LifePerFury':{
-
+		text_en:'Gain {$} Life per Fury Spent (Barbarian Only)'
 	},
 
 	'LifePerWrath':{
-		prefix_en:'Dedicated'
+		prefix_en:'Dedicated',
+		text_en:'Gain {$} Life per Wrath Spent (Crusader Only)'
 	},
 
 	'MaxDisc':{
 		prefix_en:'Confident',
+		text_en:'{+$} Maximum Discipline (Demon Hunter Only)',
 		exclude:['Monk','Barbarian','Witch Doctor','Wizard','Crusader'],
 	},
 	'HatredRegen':{
 		prefix_en:'Vengeful',
+		text_en:'Increases Hatred Regeneration by {$} per Second (Demon Hunter Only)',
 		exclude:['Chest Armor','Monk','Barbarian','Witch Doctor','Wizard','Crusader']
 	},
 
 	'MaxAp':{
-		prefix_en:'Mental'
+		prefix_en:'Mental',
+		text_en:'{+$} Maximum Arcane Power (Witch Doctor Only)'
 	},
 
 	'MaxMana':{

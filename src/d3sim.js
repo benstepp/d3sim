@@ -269,6 +269,27 @@ function rollStats(item, rarity, slot, dClass) {
 		secondaryKeys.splice(randomSecondariesIndex,1);
 	}
 
+	//if an elemental primary stat is specified
+	var elementalIndex = primaryKeys.indexOf('ELEMENTAL');
+	if(elementalIndex !== -1) {
+		var elements = ['PhysDamage','ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage'];
+		var elementsLength = elements.length;
+
+		//getting a list of class possible elements based on damage type
+		var classPossibleElements = [];
+		for (var k = 0; k < elementsLength; k++) {
+			if (affixMap[elements[k]].hasOwnProperty('exclude') && 
+				affixMap[elements[k]].exclude.indexOf(dClass) === -1){
+					classPossibleElements.push(elements[k]);
+			}
+		}
+
+		//pick one of these elemental damage types
+		var picked = intRandom(0,classPossibleElements.length-1);
+		primariesFinal[classPossibleElements[picked]] = {};
+		primaryKeys.splice(elementalIndex,1);
+	}
+
 	//loop through the remaining keys and push to the thing
 	var primaryKeysLength = primaryKeys.length;
 	var secondaryKeysLength = secondaryKeys.length;
@@ -403,6 +424,12 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 	//we need to get min and max values if they were not provided
 	var minName = 'min'+rarity.toLowerCase().slice(0,1);
 	var maxName = 'max'+rarity.toLowerCase().slice(0,1);
+
+	//if there are no values we dont need to roll them, just return
+	if (!affixes[slot.toLowerCase()][ps].hasOwnProperty(affix)) {
+		return null;
+	}
+
 	if (typeof min === 'undefined' || typeof max === 'undefined') {
 		//fallback to lower values if not found
 		min = affixes[slot.toLowerCase()][ps][affix][minName] || 
@@ -534,6 +561,12 @@ var rollLegendary = function(slot) {
 
 function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
+}
+
+setKadala('Demon Hunter', true, false);
+for (var i =0; i < 100; i++) {
+	var it = kadalaRoll('amulet');
+	console.log(it.name);
 }
 
 module.exports = d3sim;

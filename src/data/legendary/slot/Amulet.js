@@ -124,7 +124,7 @@ var amulet = [
 			"Witch Doctor"
 		],
 		primary:{
-			ELEMENTALDAMAGE:null,
+			ELEMENTAL:null,
 			RANDOM:3
 		},
 		secondary:{
@@ -368,7 +368,10 @@ var amulet = [
 		},
 		secondary:{
 			Globes:null,
-			PickupRadius:null
+			PickupRadius:{
+				min:1,
+				max:2
+			}
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_amulet_009_x1_demonhunter_male.png',
 		flavor:'"To Rondal—When you carry this, you carry my heart. Love always, Marta."'
