@@ -258,7 +258,7 @@ var affixMap = {
 
 	'MaxMana':{
 		text_en:'{+$} Maximum Mana (Witch Doctor Only)'
-	}
+	},
 
 	//SkillEffects
 	'RainOfVengeanceDmg':{
@@ -1056,7 +1056,7 @@ var affixMap = {
 		text_en:'Your Mirror Images have a chance to multiply when killed by enemies.'
 	},
 	'DarkMage':{
-		type:'legendary'
+		type:'legendary',
 		text_en:'Automatically cast Diamond Skin when you fall below 35% Life. This effect may occur once every 15–20 seconds.'
 	},
 	'Magistrate':{
@@ -1064,7 +1064,7 @@ var affixMap = {
 		text_en:'Frost Hydra now periodically casts Frost Nova.'
 	},
 	'Swami':{
-		type:'legendary'
+		type:'legendary',
 		text_en:'The damage bonus from kills while in Archon form now lasts for {$} seconds after Archon expires.'
 	},
 	'Camaral':{

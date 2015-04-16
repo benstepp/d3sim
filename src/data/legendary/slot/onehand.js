@@ -5,7 +5,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -23,7 +23,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -41,7 +41,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -59,7 +59,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -77,7 +77,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -95,7 +95,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -109,7 +109,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -123,7 +123,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -137,7 +137,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -151,7 +151,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -165,7 +165,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: true,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -179,7 +179,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -193,7 +193,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -207,7 +207,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -221,7 +221,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Witch Doctor"
 		],
 		primary:{},
@@ -235,7 +235,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -253,7 +253,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -271,7 +271,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -289,7 +289,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -303,7 +303,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -317,7 +317,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -331,7 +331,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -345,7 +345,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -359,7 +359,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -373,7 +373,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -387,7 +387,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -401,7 +401,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -415,7 +415,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -429,7 +429,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -443,7 +443,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: true,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -457,7 +457,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk"
 		],
 		primary:{},
@@ -471,7 +471,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Crusader"
 		],
 		primary:{},
@@ -485,7 +485,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Crusader"
 		],
 		primary:{},
@@ -499,7 +499,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Crusader"
 		],
 		primary:{},
@@ -513,7 +513,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Crusader"
 		],
 		primary:{},
@@ -527,7 +527,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Crusader"
 		],
 		primary:{},
@@ -541,7 +541,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Crusader"
 		],
 		primary:{},
@@ -555,7 +555,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -569,7 +569,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -583,7 +583,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -597,7 +597,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -611,7 +611,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -625,7 +625,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -639,7 +639,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -653,7 +653,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Demon Hunter"
 		],
 		primary:{},
@@ -667,7 +667,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -685,7 +685,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Crusader"
 		],
 		primary:{},
@@ -699,7 +699,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -717,7 +717,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -735,7 +735,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -753,7 +753,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -770,7 +770,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -788,7 +788,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -806,7 +806,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -824,7 +824,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Barbarian"
 		],
 		primary:{},
@@ -838,7 +838,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Barbarian"
 		],
 		primary:{},
@@ -852,7 +852,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Barbarian"
 		],
 		primary:{},
@@ -866,7 +866,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Barbarian"
 		],
 		primary:{},
@@ -880,7 +880,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Barbarian"
 		],
 		primary:{},
@@ -894,7 +894,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: true,
-		smartloot: [
+		smartLoot: [
 			"Barbarian"
 		],
 		primary:{},
@@ -908,7 +908,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Crusader"
 		],
@@ -923,7 +923,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -941,7 +941,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -959,7 +959,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -977,7 +977,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Barbarian"
 		],
 		primary:{},
@@ -991,7 +991,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Wizard",
@@ -1008,7 +1008,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1026,7 +1026,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1043,7 +1043,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1061,7 +1061,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1078,7 +1078,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1096,7 +1096,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian"
 		],
@@ -1111,7 +1111,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1129,7 +1129,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Wizard",
@@ -1146,7 +1146,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1164,7 +1164,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1182,7 +1182,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Crusader"
 		],
@@ -1197,7 +1197,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1215,7 +1215,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian"
 		],
@@ -1230,7 +1230,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1248,7 +1248,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Monk",
 			"Barbarian",
 			"Crusader",
@@ -1266,7 +1266,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: true,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1280,7 +1280,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1294,7 +1294,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1308,7 +1308,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1322,7 +1322,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1336,7 +1336,7 @@ var onehand = [
 		weight: 50,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1350,7 +1350,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1364,7 +1364,7 @@ var onehand = [
 		weight: 100,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},
@@ -1378,7 +1378,7 @@ var onehand = [
 		weight: 25,
 		hc: false,
 		season: false,
-		smartloot: [
+		smartLoot: [
 			"Wizard"
 		],
 		primary:{},

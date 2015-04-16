@@ -12,7 +12,9 @@ var classMap = {
 
 //create the object to export
 var d3sim = {
-	createItem:createItem
+	createItem:createItem,
+	setKadala:setKadala,
+	kadalaRoll:kadalaRoll
 };
 
 
@@ -442,11 +444,96 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 	return value;
 }
 
+//these two variables act as privates to hold persistent data between rolls
+//this way we dont have to calculate it every roll
+var kadalaItems = {};
+var kadalaClass;
+
+var setKadala = function(dClass,seasonal,hardcore) {
+
+	var slots = Object.keys(legendaryData);
+	kadalaClass = dClass;
+	var slotCount = slots.length;
+	for (var i = 0; i < slotCount; i++) {
+
+		//initialize this slot object
+		kadalaItems[slots[i]] = {};
+		//set the total slot weight to zero
+		kadalaItems[slots[i]].total = 0;
+
+		//array of all items for a given slot
+		var items = legendaryData[slots[i]];
+		var itemLength = items.length;
+
+		//sort out all of the smart and not so smart loot
+		//to determine if we roll through all items or just smart ones
+		var smartLoot = [];
+		var notSmartLoot = [];
+
+		for (var j =0; j < itemLength; j++) {
+			//keep seasonal/hc items out of non-seasonal/softcore
+			if((!seasonal && items[j].season) || (!hardcore && items[j].hc)) {
+				continue;
+			}
+			else {
+				//push into correct loot pool
+				(items[j].smartLoot.indexOf(dClass) !== -1) ? smartLoot.push(items[j]) : notSmartLoot.push(items[j]);
+			}
+		}
+
+		//set up loot pool
+		(smartLoot.length === 0) ? kadalaItems[slots[i]].items = notSmartLoot : kadalaItems[slots[i]].items = smartLoot;
+
+		//overwrite these and loop through again to get total weight
+		items = kadalaItems[slots[i]].items;
+		itemLength = items.length;
+		for(var k = 0; k < itemLength; k ++) {
+			kadalaItems[slots[i]].total += items[k].weight;
+		}
+
+	}
+
+};
+
+var kadalaRoll = function(slot) {
+	var newItem = {};
+
+	newItem.slot = slot;
+	newItem.rarity = rollRarity();
+
+	//if the item is legendary we need to roll for one
+	if (newItem.rarity === 'legendary' || newItem.rarity === 'ancient') {
+		newItem.name = rollLegendary(slot);
+	}
+
+	var returnableItem = createItem(newItem.rarity, slot,kadalaClass, newItem.name || false);
+	return returnableItem;
+};
+
+var rollRarity = function() {
+	var val = Math.random()*100;
+	if (val >= 99) {return 'ancient';}
+	if (val >= 90) {return 'legendary';}
+	if (val < 60) {return 'rare';}
+	else {return 'magic';}
+};
+
+var rollLegendary = function(slot) {
+	var val = Math.random()*kadalaItems[slot].total;
+
+	var itemsLength = kadalaItems[slot].items.length;
+	for (var i =0; i < itemsLength; i++) {
+		val -= kadalaItems[slot].items[i].weight;
+		if (val < 0 ) {
+			return kadalaItems[slot].items[i].name;
+		}
+	}
+
+};
+
+
 function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
 
-var test = createItem('Rare','Chest','Demon Hunter');
-//var test = createItem('Ancient','Amulet','Demon Hunter','Ouroboros');
-//var test = rollAffix('Dexterity','Ancient','Amulet','primary');
-console.log(test);
+module.exports = d3sim;
