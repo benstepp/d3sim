@@ -1,36 +1,21 @@
 var gulp = require('gulp'),
 	source = require('vinyl-source-stream'),
 	concat = require('gulp-concat'),
-	sass = require('gulp-sass'),
+	uglify = require('gulp-uglify'),
 
-	browserify = require('browserify'),
-	browserifyShim = require('browserify-shim'),
-	watchify = require('watchify'),
-	reactify = require('reactify');
+	browserify = require('gulp-browserify');
 
-gulp.task('browserify', function() {
-	var bundler = browserify({
-		entries: ['./src/d3sim.js'],
-		transform: [reactify,browserifyShim],
-		debug: true,
-		cache:{},
-		packageCache: {},
-		fullpaths:true
-	});
 
-	var watcher = watchify(bundler);
-
-	return watcher
-		.on('update', function() {
-			console.log('updating js');
-			watcher.bundle()
-				.pipe(source('./src/d3sim.js'))
-				.pipe(gulp.dest('./'));
-		})
-	.bundle()
-	.pipe(source('./src/d3sim.js'))
-	.pipe(gulp.dest('./'));
-
+gulp.task('default', function() {
+	gulp.src('src/d3sim.js')
+		.pipe(browserify({
+			entries: ['./d3sim.js'],
+			debug: true,
+			standalone:'d3sim',
+			cache:{},
+			packageCache: {},
+			fullpaths:true
+		}))
+		.pipe(uglify())
+		.pipe(gulp.dest('./build/'));
 });
-
-gulp.start('browserify');
