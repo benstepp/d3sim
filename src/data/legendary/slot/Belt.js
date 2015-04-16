@@ -85,7 +85,7 @@ var belt = [
 		],
 		primary:{
 			Strength:null,
-			AllRes:null,
+			AllResist:null,
 			SKILLDAMAGE:null,
 			RANDOM:1
 		},

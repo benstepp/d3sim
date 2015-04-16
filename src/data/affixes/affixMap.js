@@ -201,6 +201,9 @@ var affixMap = {
 		suffix_en:'of Courage',
 		text_en:'Level Requirement Reduced by {$}.'
 	},
+	'Block':{
+		text_en:'{+$%} Chance to Block'
+	},
 
 
 	//onhit

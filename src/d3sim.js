@@ -290,6 +290,26 @@ function rollStats(item, rarity, slot, dClass) {
 		primaryKeys.splice(elementalIndex,1);
 	}
 
+	//if a skill damage stat is specified
+	var skillIndex = primaryKeys.indexOf('SKILLDAMAGE');
+	if(skillIndex !== -1) {
+
+		//getting a list of skill damage affixes
+		var allPrimaries = affixes[slot.toLowerCase()].primary;
+		var skillAffixes = [];
+		for(var prim in allPrimaries) {
+			if (prim.indexOf('Dmg', prim.length - 3) !== -1 &&
+				affixMap[prim].exclude.indexOf(dClass) === -1) {
+				skillAffixes.push(prim);
+			}
+		}
+
+		var pickedSkill = intRandom(0,skillAffixes.length - 1);
+		primariesFinal[skillAffixes[pickedSkill]] = {};
+
+		primaryKeys.splice(skillIndex,1);
+	}
+
 	//loop through the remaining keys and push to the thing
 	var primaryKeysLength = primaryKeys.length;
 	var secondaryKeysLength = secondaryKeys.length;
@@ -563,9 +583,9 @@ function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
 
-setKadala('Demon Hunter', true, false);
-for (var i =0; i < 100; i++) {
-	var it = kadalaRoll('amulet');
+setKadala('Barbarian', true, false);
+for (var i =0; i < 1000; i++) {
+	var it = kadalaRoll('belt');
 	console.log(it.name);
 }
 
