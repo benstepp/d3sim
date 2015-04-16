@@ -223,7 +223,7 @@ var bracers = {
 			//mina:1,
 			//maxa:2
 		},
-		KnockbackOnHit:{
+		KnockHit:{
 			min:10,
 			max:45,
 			minl:10,

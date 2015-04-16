@@ -64,7 +64,8 @@ var bracers = [
 		],
 		primary:{
 			Dexterity:null,
-			RANDOM:3,
+			ELEMENTAL:null,
+			RANDOM:2,
 		},
 		secondary:{
 			Gungdo:null,

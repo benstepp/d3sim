@@ -243,6 +243,9 @@ var affixMap = {
 		text_en:'Increases Spirit Regeneration by {} per Second (Monk Only)',
 		prefix_en:'Avaricious'
 	},
+	'MaxSpirit':{
+		text_en:'{+$} Maximum Spirit (Monk Only)'
+	},
 
 	'MaxFury':{
 		text_en:'{+$} Maximum Fury (Barbarian Only)'
@@ -254,6 +257,9 @@ var affixMap = {
 	'LifePerWrath':{
 		prefix_en:'Dedicated',
 		text_en:'Gain {$} Life per Wrath Spent (Crusader Only)'
+	},
+	'LifePerSpirit':{
+		text_en:'Gain {$} Life per Spirit Spent (Monk Only)'
 	},
 
 	'MaxDisc':{
@@ -274,6 +280,9 @@ var affixMap = {
 
 	'MaxMana':{
 		text_en:'{+$} Maximum Mana (Witch Doctor Only)'
+	},
+	'ManaRegen':{
+		text_en:'Increases Mana Regeneration by {$} per Second(Witch Doctor Only)'
 	},
 
 	//SkillEffects
@@ -1126,6 +1135,14 @@ var affixMap = {
 	'HollowWhispers':{
 		type:'legendary',
 		text_en:'This ring occasionally haunts nearby enemies.'
+	},
+	'Nagelring':{
+		type:'legendary',
+		text_en:'Summons a Fallen Lunatic to your side every {$} seconds.'
+	},
+	'RechelsRing':{
+		type:'legendary',
+		text_en:'Gain {$%} increased movement speed for 4 seconds after Fearing an enemy.'
 	},
 	'RueChambers':{
 		type:'legendary',

@@ -41,7 +41,8 @@ var boots = [
 		],
 		primary:{
 			MAIN:null,
-			RANDOM:3
+			SKILLDAMAGE:null,
+			RANDOM:2
 		},
 		secondary:{
 			RANDOM:2
@@ -420,7 +421,8 @@ var boots = [
 		],
 		primary:{
 			Intelligence:null,
-			RANDOM:3
+			SKILLDAMAGE:null,
+			RANDOM:2
 		},
 		secondary:{
 			RANDOM:2

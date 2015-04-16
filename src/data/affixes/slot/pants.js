@@ -47,7 +47,7 @@ var pants = {
 			maxa:650
 		},
 
-		AllRes:{
+		AllResist:{
 			min:86,
 			max:90,
 			minl:91,

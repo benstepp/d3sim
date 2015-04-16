@@ -30,11 +30,11 @@ var helm = [
 			RANDOM:1
 		},
 		secondary:{
-			PosionNova:{
+			PoisonNova:{
 				min:350,
 				max:450
 			},
-			PoisonRes:{
+			PoisRes:{
 				min:150,
 				max:200
 			}
@@ -527,7 +527,7 @@ var helm = [
 		],
 		primary:{
 			Dexterity:null,
-			SKILL:null,
+			SKILLDAMAGE:null,
 			RANDOM:2
 		},
 		secondary:{
@@ -947,7 +947,7 @@ var helm = [
 		],
 		primary:{
 			Intelligence:null,
-			RANODOM:3
+			RANDOM:3
 		},
 		secondary:{
 			Vicalyke:null,

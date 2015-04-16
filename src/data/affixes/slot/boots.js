@@ -348,7 +348,7 @@ var Boots = {
 			minl:140,
 			maxl:200
 		},
-		ImmobOnHit:{
+		ImmobHit:{
 			min:1,
 			max:4.5,
 			minl:1,
@@ -406,13 +406,13 @@ var Boots = {
 			minl:141,
 			maxl:160
 		},
-		ArcaneRes:{
+		ArcRes:{
 			min:121,
 			max:140,
 			minl:141,
 			maxl:160
 		},
-		PoisonRes:{
+		PoisRes:{
 			min:121,
 			max:140,
 			minl:141,

@@ -496,7 +496,7 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 var kadalaItems = {};
 var kadalaClass;
 
-var setKadala = function(dClass,seasonal,hardcore) {
+function setKadala(dClass,seasonal,hardcore) {
 
 	var slots = Object.keys(legendaryData);
 	kadalaClass = dClass;
@@ -540,9 +540,9 @@ var setKadala = function(dClass,seasonal,hardcore) {
 
 	}
 
-};
+}
 
-var kadalaRoll = function(slot) {
+function kadalaRoll(slot) {
 	var newItem = {};
 
 	newItem.slot = slot;
@@ -555,7 +555,7 @@ var kadalaRoll = function(slot) {
 
 	var returnableItem = createItem(newItem.rarity, slot,kadalaClass, newItem.name || false);
 	return returnableItem;
-};
+}
 
 var rollRarity = function() {
 	var val = Math.random()*100;
@@ -583,10 +583,24 @@ function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
 
-setKadala('Barbarian', true, false);
-for (var i =0; i < 1000; i++) {
-	var it = kadalaRoll('belt');
-	console.log(it.name);
+
+function test() {
+	var dClasses = ['Barbarian','Crusader','Monk','Demon Hunter','Wizard','Witch Doctor'];
+	var dClassLength = dClasses.length;
+	var slots = ['amulet','belt','boots','bracers','chest','gloves','helm','pants','ring','shoulders'];
+	var slotLength = slots.length;
+
+	for (var y = 0; y < dClassLength; y++) {
+		console.log(dClasses[y]);
+		setKadala(dClasses[y], true, true);
+		for (var t = 0; t < slotLength; t++) {
+			console.log(slots[t]);
+			for (var i =0; i < 10000; i++) {
+				var it = kadalaRoll(slots[t]);
+			}
+		}
+	}
 }
+
 
 module.exports = d3sim;

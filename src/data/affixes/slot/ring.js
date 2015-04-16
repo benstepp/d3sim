@@ -41,7 +41,7 @@ var ring = {
 			mina:550,
 			maxa:650
 		},
-		AllRes:{
+		AllResist:{
 			min:86,
 			max:90,
 			minl:91,
@@ -74,7 +74,7 @@ var ring = {
 			maxa:10000
 		},
 
-		AvgDmg:{
+		AvgDamage:{
 			min:[40,80],
 			max:[60,120],
 			minl:[60,120],

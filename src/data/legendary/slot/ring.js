@@ -470,7 +470,7 @@ var ring = [
 			RANDOM:3
 		},
 		secondary:{
-			RachelsRing:{
+			RechelsRing:{
 				min:45,
 				max:60
 			},

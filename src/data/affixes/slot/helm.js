@@ -70,7 +70,7 @@ var helm = {
 			maxa:1000
 		},
 
-		AllRes:{
+		AllResist:{
 			min:86,
 			max:90,
 			minl:91,
