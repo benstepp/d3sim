@@ -1166,6 +1166,22 @@ var affixMap = {
 	'Wyrdward':{
 		type:'legendary',
 		text_en:'Lightning damage has a {$%} chance to Stun for 1.5 seconds.'
+	},
+	'DeathWatch':{
+		type:'legendary',
+		text_en:'{$%} chance to explode in a fan of knives for {$%} weapon damage when hit.'
+	},
+	'HomingPads':{
+		type:'legendary',
+		text_en:'Your Town Portal is no longer interrupted by taking damage. While casting Town Portal you gain a protective bubble that reduces damage taken by {$%}.'
+	},
+	'Zakara':{
+		type:'legendary',
+		text_en:'Your items become indestructible.'
+	},
+	'VileWard':{
+		type:'legendary',
+		text_en:'Furious Charge deals {$%} increased damage for every enemy hit while charging.'
 	}
 
 
