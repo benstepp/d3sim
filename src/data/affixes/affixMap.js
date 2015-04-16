@@ -247,6 +247,10 @@ var affixMap = {
 		prefix_en:'Mental'
 	},
 
+	'MaxMana':{
+		text_en:'{+$} Maximum Mana (Witch Doctor Only)'
+	}
+
 	//SkillEffects
 	'RainOfVengeanceDmg':{
 		text_en:'Increases {Rain of Vengeance} Damage by {$%}',
@@ -962,6 +966,101 @@ var affixMap = {
 	'Tasker':{
 		type:'legendary',
 		text_en:'Increase attack speed of your pets by {$%}.'
+	},
+	'PoisonNova':{
+		type:'legendary',
+		text_en:'Attacks release a Poison Nova that deals {$%} weapon damage as Poison to enemies within 10 yards.'
+	},
+	'FireTaken':{
+		text_en:'{$%} more fire damage taken.'
+	},
+	'BrokenCrown':{
+		type:'legendary',
+		text_en:'Whenever a gem drops, a gem of the type socketed into this item also drops.'
+	},
+	'Deathseer':{
+		type:'legendary',
+		text_en:'{$%} chance on being hit by an Undead enemy to charm it for 2 seconds.'
+	},
+	'LeoricsCrown':{
+		type:'legendary',
+		text_en:'Increase the effect of any gem socketed into this item by {$%}.'
+	},
+	'SkullResonance':{
+		type:'legendary',
+		text_en:'Threatening Shout has a chance to Charm enemies and cause them to join your side.'
+	},
+	'Peshkov':{
+		type:'legendary',
+		text_en:'Reduce the cooldown of Breath of Heaven by {$%}.'
+	},
+	'Gyana':{
+		type:'legendary',
+		text_en:'Lashing Tail Kick releases a piercing fireball that deals {$%} weapon damage as Fire to enemies within 10 yards on impact.'
+	},
+	'Kekegi':{
+		type:'legendary',
+		text_en:'Damaging enemies has a chance to grant you an effect that removes the Spirit cost of your abilities for {$} seconds.'
+	},
+	'Madstone':{
+		type:'legendary',
+		text_en:'Your Seven-Sided Strike applies Exploding Palm.'
+	},
+	'Seph':{
+		type:'legendary',
+		text_en:'Using Blinding Flash restores {$} Spirit.'
+	},
+	'MindsEye':{
+		type:'legendary',
+		text_en:'Inner Sanctuary increases Spirit Regeneration per second by {$}.'
+	},
+	'TzoKrin':{
+		type:'legendary',
+		text_en:'Wave of Light is now cast at your enemy.'
+	},
+	'Carnevil':{
+		type:'legendary',
+		text_en:'Your Fetishes shoot a Poison Dart every time you do.'
+	},
+	'Jeram':{
+		type:'legendary',
+		text_en:'Pets deal {$%} more damage.'
+	},
+	'Quetzalcoatl':{
+		type:'legendary',
+		text_en:'Locust Swarm and Haunt now deal their damage in half of the normal duration.'
+	},
+	'GrinReaper':{
+		type:'legendary',
+		text_en:'Chance to summon horrific Mimics when attacking.'
+	},
+	'Tiklandian':{
+		type:'legendary',
+		text_en:'Horrify causes you to Fear and Root enemies around you for {$} seconds.'
+	},
+	'Giyua':{
+		type:'legendary',
+		text_en:'Summon a Fetish Army after you kill 2 Elites.'
+	},
+	'Vicalyke':{
+		type:'legendary',
+		text_en:'Your Mirror Images have a chance to multiply when killed by enemies.'
+	},
+	'DarkMage':{
+		type:'legendary'
+		text_en:'Automatically cast Diamond Skin when you fall below 35% Life. This effect may occur once every 15–20 seconds.'
+	},
+	'Magistrate':{
+		type:'legendary',
+		text_en:'Frost Hydra now periodically casts Frost Nova.'
+	},
+	'Swami':{
+		type:'legendary'
+		text_en:'The damage bonus from kills while in Archon form now lasts for {$} seconds after Archon expires.'
+	},
+	'Camaral':{
+		type:'legendary',
+		text_en:'Double the number of enemies your Electrocute jumps to.'
 	}
 
 
