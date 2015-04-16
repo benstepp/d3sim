@@ -213,6 +213,9 @@ var affixMap = {
 	'StunHit':{
 		suffix_en:'of Ruin'
 	},
+	'ImmobHit':{
+		text_en:'{$%} Chance to Immobolize on Hit'
+	},
 
 	//Class based
 	'SpiritRegen':{
@@ -943,6 +946,22 @@ var affixMap = {
 	'Garwulf':{
 		type:'legendary',
 		text_en:'Companion - Wolf Companion now summons 3 wolves.'
+	},
+	'Frostburn':{
+		type:'legendary',
+		text_en:'Your Cold damage has up to a {$%} chance to Freeze enemies.'
+	},
+	'GladGaunts':{
+		type:'legendary',
+		text_en:'After earning a massacre bonus, gold rains from sky.'
+	},
+	'Archew':{
+		type:'legendary',
+		text_en:'The first time an elite pack damages you, gain an absorb shield equal to {$%} of your maximum Life for 10 seconds.'
+	},
+	'Tasker':{
+		type:'legendary',
+		text_en:'Increase attack speed of your pets by {$%}.'
 	}
 
 
