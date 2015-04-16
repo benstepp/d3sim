@@ -23,6 +23,6 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 .gitattributes
-build
+
 templates.js
 bundle.js
