@@ -115,6 +115,9 @@ var affixMap = {
 		text_en:'{+$%} Movement Speed',
 		prefix_en:'Fleet'
 	},
+	'EliteDamage':{
+		text_en:'Increases damage against elites by {$%}'
+	},
 
 	//Secondary Resists
 	'PhysRes': {
@@ -161,9 +164,15 @@ var affixMap = {
 		text_en:'{$%} Extra Gold from Monsters',
 		prefix_en:'Prosperous'
 	},
+	'MagicFind':{
+		text_en:'{$%} Better Chance of Finding Magical Items'
+	},
 	'BonusXp': {
 		text_en:'Monster kills grant{+$} experience.',
 		prefix_en:'Restless'
+	},
+	'BonusXpPerc':{
+		text_en:'Increases Bonus Experience by {$%}'
 	},
 	'CcReduc': {
 		text_en:'Reduces duration of control impairing effects by {$%}',
@@ -1097,6 +1106,66 @@ var affixMap = {
 	'NinthCirri':{
 		type:'legendary',
 		text_en:'Hungering Arrow has {$%} additional chance to pierce.'
+	},
+	'HollowWhispers':{
+		type:'legendary',
+		text_en:'This ring occasionally haunts nearby enemies.'
+	},
+	'RueChambers':{
+		type:'legendary',
+		text_en:'Your Spirit Generators generate {$%} more Spirit.'
+	},
+	'BrokenPromises':{
+		type:'legendary',
+		text_en:'After 5 consecutive non-critical hits, your chance to critically hit is increased to {100%} for {3} seconds.'
+	},
+	'WeddingBand':{
+		type:'legendary',
+		text_en:'You drain life from enemies around you.'
+	},
+	'EternalUnion':{
+		type:'legendary',
+		text_en:'Increases the duration of Phalanx avatars by {200%}.'
+	},
+	'Arlyse':{
+		type:'legendary',
+		text_en:'Your Ice Armor now reduces damage from melee attacks by {$%} and automatically casts Frost Nova whenever you take {10%} of your Life in damage.'
+	},
+	'Kredes':{
+		type:'legendary',
+		text_en:'Taking Fire damage restores your primary resource.'
+	},
+	'ObsidianRing':{
+		type:'legendary',
+		text_en:'Reduce the remaining cooldown of one of your skills by {1} seconds when you hit with a resource-spending attack.'
+	},
+	'OculusRing':{
+		type:'legendary',
+		text_en:'Chance to create an area of focused power on killing a monster. Damage is increased by {$%} while standing in the area.'
+	},
+	'PuzzleRing':{
+		type:'legendary',
+		text_en:'Summon a treasure goblin who picks up normal-quality items for you. After picking up {$%} items, he drops a rare item with a chance for a legendary.'
+	},
+	'Rogars':{
+		type:'legendary',
+		text_en:'Increase your Life per Second by up to {$%} based on your missing Life.'
+	},
+	'SkullGrasp':{
+		type:'legendary',
+		text_en:'Increase the damage of Whirlwind by {$%} weapon damage.'
+	},
+	'TallMans':{
+		type:'legendary',
+		text_en:'Zombie Dogs instead summons a single gargantuan dog with more damage and health than all other dogs combined.'
+	},
+	'Unity':{
+		type:'legendary',
+		text_en:'All damage taken is split between wearers of this item.'
+	},
+	'Wyrdward':{
+		type:'legendary',
+		text_en:'Lightning damage has a {$%} chance to Stun for 1.5 seconds.'
 	}
 
 
