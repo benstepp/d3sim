@@ -1073,6 +1073,30 @@ var affixMap = {
 	'PoxFaulds':{
 		type:'legendary',
 		text_en:'When 3 or more enemies are within 12 yards, you release a vile stench that deals {$%} weapon damage as Poison every second for 5 seconds to enemies within 15 yards.'
+	},
+	'Rucksack':{
+		type:'legendary',
+		text_en:'You may have 2 additional Sentries.'
+	},
+	'DeadMans':{
+		type:'legendary',
+		text_en:'Multishot hits enemies below {$%} health twice.'
+	},
+	'Emimei':{
+		type:'legendary',
+		text_en:'Bolas now explode instantly.'
+	},
+	'Meticulous':{
+		type:'legendary',
+		text_en:'Elemental Arrow - Ball Lightning now travels at {$%} speed.'
+	},
+	'SeetingHatred':{
+		type:'legendary',
+		text_en:'Chakram now generates {$} Hatred.'
+	},
+	'NinthCirri':{
+		type:'legendary',
+		text_en:'Hungering Arrow has {$%} additional chance to pierce.'
 	}
 
 
