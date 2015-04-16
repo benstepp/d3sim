@@ -1061,6 +1061,18 @@ var affixMap = {
 	'Camaral':{
 		type:'legendary',
 		text_en:'Double the number of enemies your Electrocute jumps to.'
+	},
+	'DepthDiggers':{
+		type:'legendary',
+		text_en:'Primary skills that generate resource deal {$%} additional damage.'
+	},
+	'HexingPants':{
+		type:'legendary',
+		text_en:'Your resource generation and damage is increased by {25%} while moving and decreased by {$%} while standing still.'
+	},
+	'PoxFaulds':{
+		type:'legendary',
+		text_en:'When 3 or more enemies are within 12 yards, you release a vile stench that deals {$%} weapon damage as Poison every second for 5 seconds to enemies within 15 yards.'
 	}
 
 
