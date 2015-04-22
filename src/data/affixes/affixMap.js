@@ -186,7 +186,7 @@ var affixMap = {
 		suffix_en:'of Razors'
 	},
 	'PickupRadius': {
-		text_en:'Increases Gold and Health Pickup by {} Yards.',
+		text_en:'Increases Gold and Health Pickup by {$} Yards.',
 		prefix_en:'Avaricious'
 	},	
 	'IgnoreDura':{
