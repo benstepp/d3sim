@@ -88,6 +88,7 @@ var magicItem = function(rarity, slot, dClass) {
 
 	//inherit properties from base d3item object
 	d3Item.call(this, rarity, slot, dClass);
+	this.color='blue';
 
 	//initialize the primary and secondary objects
 	this.primaries = {};
@@ -144,6 +145,7 @@ var rareItem = function(rarity, slot, dClass) {
 
 	//inherit properties from base d3item object
 	d3Item.call(this, rarity, slot, dClass);
+	this.color='yellow';
 
 	//initialize the primary and secondary objects
 	this.primaries = {};
@@ -184,6 +186,13 @@ var legendaryItem = function(rarity, slot, dClass,legendaryName) {
 			}
 		}
 	})();
+
+	if (data.hasOwnProperty('set')) {
+		this.color='green';
+	}
+	else {
+		this.color='orange';
+	}
 
 	//name the object
 	this.name = legendaryName;
