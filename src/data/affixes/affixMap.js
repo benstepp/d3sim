@@ -241,25 +241,31 @@ var affixMap = {
 	//Class based
 	'SpiritRegen':{
 		text_en:'Increases Spirit Regeneration by {} per Second (Monk Only)',
-		prefix_en:'Avaricious'
+		prefix_en:'Avaricious',
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
 	},
 	'MaxSpirit':{
-		text_en:'{+$} Maximum Spirit (Monk Only)'
+		text_en:'{+$} Maximum Spirit (Monk Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
 	},
 
 	'MaxFury':{
-		text_en:'{+$} Maximum Fury (Barbarian Only)'
+		text_en:'{+$} Maximum Fury (Barbarian Only)',
+		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard']
 	},
 	'LifePerFury':{
-		text_en:'Gain {$} Life per Fury Spent (Barbarian Only)'
+		text_en:'Gain {$} Life per Fury Spent (Barbarian Only)',
+		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard']
 	},
 
 	'LifePerWrath':{
 		prefix_en:'Dedicated',
-		text_en:'Gain {$} Life per Wrath Spent (Crusader Only)'
+		text_en:'Gain {$} Life per Wrath Spent (Crusader Only)',
+		exclude:['Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
 	},
 	'LifePerSpirit':{
-		text_en:'Gain {$} Life per Spirit Spent (Monk Only)'
+		text_en:'Gain {$} Life per Spirit Spent (Monk Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
 	},
 
 	'MaxDisc':{
@@ -275,14 +281,17 @@ var affixMap = {
 
 	'MaxAp':{
 		prefix_en:'Mental',
-		text_en:'{+$} Maximum Arcane Power (Witch Doctor Only)'
+		text_en:'{+$} Maximum Arcane Power (Wizard Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor']
 	},
 
 	'MaxMana':{
-		text_en:'{+$} Maximum Mana (Witch Doctor Only)'
+		text_en:'{+$} Maximum Mana (Witch Doctor Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard']
 	},
 	'ManaRegen':{
-		text_en:'Increases Mana Regeneration by {$} per Second(Witch Doctor Only)'
+		text_en:'Increases Mana Regeneration by {$} per Second(Witch Doctor Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard']
 	},
 
 	//SkillEffects

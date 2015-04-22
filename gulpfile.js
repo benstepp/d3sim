@@ -2,11 +2,15 @@ var gulp = require('gulp'),
 	source = require('vinyl-source-stream'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
+	rimraf = require('gulp-rimraf'),
 
 	browserify = require('gulp-browserify');
 
 
 gulp.task('default', function() {
+	gulp.src('build/riftloot/*', {read: false})
+		.pipe(rimraf());
+
 	gulp.src('src/d3sim.js')
 		.pipe(browserify({
 			entries: ['./d3sim.js'],
