@@ -436,6 +436,7 @@ function getRandomAffix(current,slot,dClass,ps) {
 }
 
 function rollAffix(affix,rarity,slot,ps,min,max) {
+
 	var affixDiv = {
 		CritChance:2,
 		BlindHit:10,
@@ -455,11 +456,11 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 	var maxName = 'max'+rarity.toLowerCase().slice(0,1);
 
 	//if there are no values we dont need to roll them, just return
-	if (!affixes[slot.toLowerCase()][ps].hasOwnProperty(affix)) {
+	if (!affixes[slot.toLowerCase()][ps].hasOwnProperty(affix) && typeof min === 'undefined' && typeof min === 'undefined') {
 		return null;
 	}
 
-	if (typeof min === 'undefined' || typeof max === 'undefined') {
+	if (typeof min === 'undefined' && typeof max === 'undefined') {
 		//fallback to lower values if not found
 		min = affixes[slot.toLowerCase()][ps][affix][minName] || 
 		affixes[slot.toLowerCase()][ps][affix].minl || 
@@ -587,11 +588,9 @@ var rollLegendary = function(slot) {
 
 };
 
-
 function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
 }
-
 
 function test() {
 	var dClasses = ['Barbarian','Crusader','Monk','Demon Hunter','Wizard','Witch Doctor'];
@@ -610,6 +609,5 @@ function test() {
 		}
 	}
 }
-
 
 module.exports = d3sim;
