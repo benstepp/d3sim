@@ -323,10 +323,10 @@ function rollStats(item, rarity, slot, dClass) {
 	var primaryKeysLength = primaryKeys.length;
 	var secondaryKeysLength = secondaryKeys.length;
 	for (var i = 0; i < primaryKeysLength;i++) {
-		primariesFinal[primaryKeys[i]] = {};
+		primariesFinal[primaryKeys[i]] = (primaries[primaryKeys[i]] === null) ? {} : primaries[primaryKeys[i]];
 	}
 	for (var j = 0; j < secondaryKeysLength; j++) {
-		secondariesFinal[secondaryKeys[j]] = {};
+		secondariesFinal[secondaryKeys[j]] = (secondaries[secondaryKeys[i]] === null) ? {} : secondaries[secondaryKeys[i]];
 	}
 
 	//revisit the random properties
