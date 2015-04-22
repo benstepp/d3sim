@@ -1,5 +1,47 @@
 var gloves = [
 	{
+		name:"Fiendish Grips",
+		type:"Gloves",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Unhallowed Essence',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_set_03_p2_demonhunter_male.png',
+		flavor:'"If you cannot learn to direct your hatred, it will consume you."-Kovan the Merciless'
+	},
+	{
+		name:"Fierce Gauntlets",
+		type:"Gloves",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Delsere\'s Magnum Opus',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_set_02_p2_demonhunter_male.png',
+		flavor:'"When Delsere delivered these gauntlets for critique, he wanted to know how looking at them made me feel. When I did not understand his question, he stormed off."- High Councilor Valthek'
+	},
+	{
 		name: "Firebird's Talons",
 		type: "Gloves",
 		weight: 100,

@@ -230,6 +230,24 @@ var onehand = [
 		flavor:''
 	},
 	{
+		name:"Eun-jang-do",
+		type:"Dagger",
+		weight:50,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{},
+		secondary:{},
+		image:'',
+		flavor:''
+	},
+	{
 		name: "Kill",
 		type: "Dagger",
 		weight: 100,
@@ -442,7 +460,7 @@ var onehand = [
 		type: "Fist Weapon",
 		weight: 100,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Monk"
 		],

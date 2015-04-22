@@ -18,7 +18,7 @@ var shield = [
 		type: "Crusader Shield",
 		weight: 50,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Crusader"
 		],

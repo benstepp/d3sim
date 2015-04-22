@@ -157,6 +157,30 @@ var chest = [
 		flavor:'One could withstand the fires of Hell itself wearing armor such as this.'
 	},
 	{
+		name:"Cuirass of the Wastes",
+		type:"Chest Armor",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Barbarian"
+		],
+		primary:{
+			Strength:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Wrath of the Wastes',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_01_p2_demonhunter_male.png',
+		flavor:'Narthal of the Bear Tribe discovered the aftermath of a great battle in the wastes. He did not recognize the dead, but noticed that many had filed their teeth to points. Among the debris of the battle, he found this cuirass.'
+	},
+	{
 		name: "Firebird's Breast",
 		type: "Chest Armor",
 		weight: 100,
@@ -208,6 +232,30 @@ var chest = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_001_x1_demonhunter_male.png',
 		flavor:'The darkness of the low places is shattered by the raiment of gold.'
+	},
+	{
+		name:"Harness of Truth",
+		type:"Chest Armor",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Delsere\'s Magnum Opus',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_02_p2_demonhunter_male.png',
+		flavor:'“Delsere described this armor as resplendent. When asked why that mattered, he would rant that form is function. Any praise for his advanced magical crafting skills only infuriated him more.”- High Councilor Valthek'
 	},
 	{
 		name: "Heart of Iron",
@@ -633,6 +681,21 @@ var chest = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_cloak_101_x1_demonhunter_male.png',
 		flavor:'This cloak matches the description of the one worn by the hero in the popular children\'s tale Yorgie and the Giants.'
+	},
+	{
+		name:"Cage of the Hellborn",
+		type:"Cloak",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{},
+		secondary:{},
+		set:'Unhallowed Essence',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_03_p2_demonhunter_male.png',
+		flavor:'"When a demon peers into your heart of hearts, demon hunter, what will he find? Death. Whether it is his or yours depends solely on you. "-Kovan the Merciless'
 	},
 	{
 		name: "Cape of the Dark Night",

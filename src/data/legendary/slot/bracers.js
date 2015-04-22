@@ -54,11 +54,33 @@ var bracers = [
 		flavor:'"In ancient times, there lived a strange race of people—the Custerians. No one knows who they were, or what they were doing, but their legacy remains beaten into the very metal of these wristguards." —Yuan, wise man of Tufnyl'
 	},
 	{
+		name:"Drakon's Lesson",
+		type:"Bracers",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot: ["Crusader"],
+		primary:{
+			Strength:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			Drakon:{
+				min:150,
+				max:200
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_bracer_110_demonhunter_male.png',
+		flavor:'The Elder Crusader Drakon believed in precision, and trained his apprentice to strike fewer targets, but with more power. "Would you rather face ten opponents who are slightly injured? Or seven healthy opponents, who are distracted by the three corpses at your feet?"'
+	},
+	{
 		name: "Gungdo Gear",
 		type: "Bracers",
 		weight: 100,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Monk"
 		],
@@ -188,6 +210,27 @@ var bracers = [
 		flavor:'Lost and found again through the ages, these bracers bear the names of all who have worn them. Each one found great glory, but not all survived to reap the rewards.'
 	},
 	{
+		name:"Ranslor's Folly",
+		type:"Bracers",
+		weight:100,
+		hc:false,
+		season:true,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			Ranslor:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_108_x1_demonhunter_male.png',
+		flavor:'Ranslor, the chief crafter to the High Vizjerei, was concerned that the power contained within these bracers would prove too much for even the most seasoned warrior, so he scoured waterfront taverns for unfortunate souls to test them. After several catastrophic failures, he was so certain he had solved the problem he tried them himself. The bracers were found by his assistant in a pile of ash.'
+	},
+	{
 		name: "Shackles of the Invoker",
 		type: "Bracers",
 		weight: 100,
@@ -242,6 +285,30 @@ var bracers = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_003_104_demonhunter_male.png',
 		flavor:'Broken chains still dangle from these heavy iron shackles.'
+	},
+	{
+		name:"Spirit Guards",
+		type:"Bracers",
+		weight:100,
+		hc:false,
+		season:true,
+		smartLoot: [
+			"Monk"
+		],
+		primary:{
+			Dexterity:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			SpiritGuard:{
+				min:30,
+				max:40
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_bracer_109_demonhunter_male.png',
+		flavor:'The Patriarchs say that when the spirit waxes, the dangers of this world wane.'
 	},
 	{
 		name: "Steady Strikers",

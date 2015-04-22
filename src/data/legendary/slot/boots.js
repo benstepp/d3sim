@@ -122,6 +122,27 @@ var boots = [
 		flavor:'"The metal plates of these greaves hang on swivels, permitting them to swing. The plates exaggerate the soma of a casting wizard. From a design standpoint, truly remarkable feats!" —Landes the Keeth'
 	},
 	{
+		name:"Hell Walkers",
+		type:"Boots",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot: [
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			Vitality:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Unhallowed Essence',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_set_03_p2_demonhunter_male.png',
+		flavor:'"Hell is a state of mind."-Kovan the Merciless'
+	},
+	{
 		name: "Helltooth Greaves",
 		type: "Boots",
 		weight: 100,
@@ -192,6 +213,27 @@ var boots = [
 		set:'Immortal King\'s Call',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_012_x1_demonhunter_male.png',
 		flavor:'The king of the barbarians strode the world like a god.'
+	},
+	{
+		name:"Inna's Sandals",
+		type:"Boots",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+
+		],
+		primary:{
+			Dexterity:null,
+			AllResist:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Inna\'s Mantra',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_boots_02_demonhunter_male.png',
+		flavor:'Inna, the goddess of the sky, treads upon clouds in the winter and the summer, in the night and the day.'
 	},
 	{
 		name: "Irontoe Mudsputters",
@@ -304,6 +346,30 @@ var boots = [
 		set:'Natalya\'s Vengeance',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_011_x1_demonhunter_male.png',
 		flavor:'Treading through the blood of demons brought her some small semblance of peace.'
+	},
+	{
+		name:"Nilfur's Boast",
+		type:"Boots",
+		weight:100,
+		hc:false,
+		season:true,
+		smartLoot: [
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			AllResist:null,
+			RANDOM:2
+		},
+		secondary:{
+			Nilfur:{
+				min:150,
+				max:200
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_boots_01_demonhunter_male.png',
+		flavor:'The Horadrim Nilfur was so accurate in her spellcasting that she could call meteors to land at her feet.'
 	},
 	{
 		name: "Raekor's Striders",

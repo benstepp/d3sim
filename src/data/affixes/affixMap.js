@@ -1224,6 +1224,42 @@ var affixMap = {
 	'VileWard':{
 		type:'legendary',
 		text_en:'Furious Charge deals {$%} increased damage for every enemy hit while charging.'
+	},
+	'Nilfur':{
+		type:'legendary',
+		text_en:'Increases the damage of Meteor by {100%}. When your Meteor hits 3 or less enemies, the damage is increased by {$%}'
+	},
+	'Ranslor':{
+		type:'legendary',
+		text_en:'Energy Twister periodically pulls in enemies within {30} yards.'
+	},
+	'SpiritGuard':{
+		type:'legendary',
+		text_en:'Your Spirit Generators reduce your damage taken by {$%} for 3 seconds.'
+	},
+	'TransBelt':{
+		type:'legendary',
+		text_en:'Summon a Fetish Sycophant when you hit with a Mana spender.'
+	},
+	'Haull':{
+		type:'legendary',
+		text_en:'Justice spawns a Blessed Hammer when it hits an enemy.'
+	},
+	'CrashingRain':{
+		type:'legendary',
+		text_en:'Rain of Vengeance also summons a crashing beast that deals {$%} weapon damage.'
+	},
+	'HauntingGirdle':{
+		type:'legendary',
+		text_en:'Haunt releases {1} extra spirit.'
+	},
+	'Omnislash':{
+		type:'legendary',
+		text_en:'Slash attacks in all directions.'
+	},
+	'Omryns':{
+		type:'legendary',
+		text_en:'Drop Caltrops when using Vault.'
 	}
 
 

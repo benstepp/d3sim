@@ -209,7 +209,7 @@ var belt = [
 		type: "Belt",
 		weight: 100,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Crusader"
 		],
@@ -230,6 +230,27 @@ var belt = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_belt_008_demonhunter_male.png',
 		flavor:'Rumors have persisted for centuries that the crusaders maintain a secret bunker in Kehjistan, filled with ancient relics of unbelievable power. When the need is great, Crusaders are allowed to borrow one of these relics. The existence of this crusader belt would seem to confirm the existence of this bunker.'
+	},
+	{
+		name:"Belt of Transcendence",
+		type:"Belt",
+		weight:50,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Witch Doctor"
+		],
+		primary:{
+			Invelligence:null,
+			Vitality:null,
+			RANDOM:2
+		},
+		secondary:{
+			TransBelt:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_belt_02_demonhunter_male.png',
+		flavor:'Witch doctors learned long ago that some spirits wish to visit our world, and that certain materials will act as a beacon to them.'
 	},
 	{
 		name: "Blackthorne's Notched Belt",
@@ -257,6 +278,51 @@ var belt = [
 		set:'Blackthorne\'s Battlegear',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_015_x1_demonhunter_male.png',
 		flavor:'A thick leather belt, notched once for each enemy noble captured in battle, each man ransomed back to his family for a handsome fee.'
+	},
+	{
+		name:"Blessed of Haull",
+		type:"Belt",
+		weight:100,
+		hc:false,
+		season:true,
+		smartLoot:[
+			"Crusader"
+		],
+		primary:{
+			Strength:null,
+			AllResist:null,
+			RANDOM:2
+		},
+		secondary:{
+			Haull:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_belt_05_demonhunter_male.png',
+		flavor:'The Crusader Haull traveled with three others; Inhora, Drakon, and Roland. They shared knowledge and wine. While instructing his apprentice in the application of Justice the next day, Haull was struck by an insight, and set to work modifying his belt.'
+	},
+	{
+		name:"Crashing Rain",
+		type:"Belt",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			Vitality:null,
+			RANDOM:2
+		},
+		secondary:{
+			CrashingRain:{
+				min:3000,
+				max:4000
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_belt_01_demonhunter_male.png',
+		flavor:'When it rains, it crashes.'
 	},
 	{
 		name: "Cord of the Sherma",
@@ -339,6 +405,27 @@ var belt = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_105_x1_demonhunter_male.png',
 		flavor:'"The thrill of successfully looting a chest makes one feel as if one may conquer any challenge. The Harrington Waistguard turns this feeling of invincibility into a reality." —Lyndon\'s Tales of Fortune and Glory'
+	},
+	{
+		name:"Haunting Girdle",
+		type:"Belt",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Witch Doctor"
+		],
+		primary:{
+			Intelligence:null,
+			Vitality:null,
+			RANDOM:2
+		},
+		secondary:{
+			HauntingGirdle:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_belt_03_demonhunter_male.png',
+		flavor:'This belt seethes with strange and disturbing magic. It upsets the fine balance between this world and the Unformed Land. To wear this is to tempt the fates.'
 	},
 	{
 		name: "Hellcat Waistguard",
@@ -442,7 +529,7 @@ var belt = [
 		type: "Belt",
 		weight: 100,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Demon Hunter",
 			"Monk",
@@ -462,6 +549,47 @@ var belt = [
 		set:'Krelm\'s Buff Bulwark',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_set_02_x1_demonhunter_male.png',
 		flavor:'“Whereupon having vanquished the Oglak beast that had devoured a ten-stone weight worth of villagers, didst they hitherto beseech Krelm the Immodest to remain henceforth as the village champion and erected a statue to honor his name hereinafter.” -Excerpt from Stories Meant to Frighten Small Children'
+	},
+	{
+		name:"Omnislash",
+		type:"Belt",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Crusader"
+		],
+		primary:{
+			Strength:null,
+			AllResist:null,
+			RANDOM:2
+		},
+		secondary:{
+			Omnislash:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_belt_04_demonhunter_male.png',
+		flavor:'A gift from the Patriarch Seph to Inhora, a crusader who came to the aid of Ivgorod at a crucial time.'
+	},
+	{
+		name:"Omryn's Chain",
+		type:"Belt",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			RANDOM:3
+		},
+		secondary:{
+			Omryns:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_belt_06_demonhunter_male.png',
+		flavor:'"I bought this from an ancient conjurer named Omryn. I believe it traps your enemies while you escape or something? To be honest, I just thought it made me look dangerous. No, the other demon hunters won’t talk to me, why do you ask?"-Darnal of the Wastes'
 	},
 	{
 		name: "Razor Strop",
