@@ -6,11 +6,12 @@ var gulp = require('gulp'),
 
 	browserify = require('gulp-browserify');
 
-
-gulp.task('default', function() {
+gulp.task('clean', function() {
 	gulp.src('build/riftloot/*', {read: false})
 		.pipe(rimraf());
+});
 
+gulp.task('default',['clean'], function() {
 	gulp.src('src/d3sim.js')
 		.pipe(browserify({
 			entries: ['./d3sim.js'],
