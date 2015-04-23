@@ -162,7 +162,10 @@ var helm = [
 			RANDOM:2
 		},
 		secondary:{
-			Deathseer:null,
+			Deathseer:{
+				min:15,
+				max:20
+			},
 			RANDOM:1
 		},
 

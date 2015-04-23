@@ -168,7 +168,7 @@ var affixMap = {
 		text_en:'{$%} Better Chance of Finding Magical Items'
 	},
 	'BonusXp': {
-		text_en:'Monster kills grant{+$} experience.',
+		text_en:'Monster kills grant {+$} experience.',
 		prefix_en:'Restless'
 	},
 	'BonusXpPerc':{
@@ -240,7 +240,7 @@ var affixMap = {
 
 	//Class based
 	'SpiritRegen':{
-		text_en:'Increases Spirit Regeneration by {} per Second (Monk Only)',
+		text_en:'Increases Spirit Regeneration by {$} per Second (Monk Only)',
 		prefix_en:'Avaricious',
 		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
 	},
