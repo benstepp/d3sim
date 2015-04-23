@@ -572,7 +572,7 @@ var rollRarity = function() {
 	var val = Math.random()*100;
 	if (val >= 99) {return 'ancient';}
 	if (val >= 90) {return 'legendary';}
-	if (val < 60) {return 'rare';}
+	if (val < 80) {return 'rare';}
 	else {return 'magic';}
 };
 
