@@ -1280,6 +1280,18 @@ var affixMap = {
 	'Primus':{
 		type:'legendary',
 		text_en:'Slow Time gains the effect of every rune.'
+	},
+	'Homunculus':{
+		type:'legendary',
+		text_en:'A Zombie Dog is automatically summoned to your side every {2} seconds.'
+	},
+	'Shukrani':{
+		type:'legendary',
+		text_en:'Spirit Walk lasts until you attack or until an enemy is within 30 yards of you.'
+	},
+	'Uhkapian':{
+		type:'legendary',
+		text_en:'{$%} of the damage you take is redirected to your Zombie Dogs.'
 	}
 
 
