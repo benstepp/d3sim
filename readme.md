@@ -25,3 +25,13 @@ slot is a string and must be one of ['amulet','belt','boots','bracers','chest','
 ###Suffixes/Prefixes
 
 ###Values
+
+####Mojo
+Ancient Cooldown Reduction
+Ancient Area Damage
+Ancient Cost Reduction
+Ancient Life%
+Ancient GoldFind
+Ancient onHit Effects
+Ancient Globes
+Ancient Level Reduction
