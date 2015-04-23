@@ -21,7 +21,7 @@ var shield = {
 		Strength:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
 		Vitality:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
 
-		LifePerc:{min:8,max:16,minl:10,maxl:18},
+		PercLife:{min:8,max:16,minl:10,maxl:18},
 		Armor:{min:509,max:545,minl:559,maxl:595,mina:654,maxa:775},
 		AllResist:{minl:91,maxl:100},
 		LifeRegen:{min:2753,max:4642,minl:4643,maxl:5528},

@@ -9,7 +9,7 @@ var mojo = [
 			"Witch Doctor"
 		],
 		primary:{
-			AvgDmg:null,
+			AvgDamage:null,
 			Intelligence:null,
 			LifeRegen:null,
 			ManaRegen:null,
@@ -31,7 +31,7 @@ var mojo = [
 			"Witch Doctor"
 		],
 		primary:{
-			AvgDmg:null,
+			AvgDamage:null,
 			Intelligence:null,
 			CritChance:null,
 			SacrificeDmg:{
@@ -57,7 +57,7 @@ var mojo = [
 			"Witch Doctor"
 		],
 		primary:{
-			AvgDmg:null,
+			AvgDamage:null,
 			Intelligence:null,
 			ManaRegen:null,
 			RANDOM:2
@@ -78,7 +78,7 @@ var mojo = [
 			"Witch Doctor"
 		],
 		primary:{
-			AvgDmg:null,
+			AvgDamage:null,
 			Intelligence:null,
 			CritChance:null,
 			ManaRegen:null,
@@ -101,7 +101,7 @@ var mojo = [
 			"Witch Doctor"
 		],
 		primary:{
-			AvgDmg:null,
+			AvgDamage:null,
 			Intelligence:null,
 			CritChance:null,
 			ManaRegen:null,
@@ -127,7 +127,7 @@ var mojo = [
 			"Witch Doctor"
 		],
 		primary:{
-			AvgDmg:null,
+			AvgDamage:null,
 			Intelligence:null,
 			CritChance:null,
 			RANDOM:2
@@ -152,7 +152,7 @@ var mojo = [
 			"Witch Doctor"
 		],
 		primary:{
-			AvgDmg:null,
+			AvgDamage:null,
 			Intelligence:null,
 			Vitality:null,
 			CritChance:null,

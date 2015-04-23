@@ -121,6 +121,9 @@ var affixMap = {
 	'EliteDamage':{
 		text_en:'Increases damage against elites by {$%}'
 	},
+	'Bleed':{
+		text_en:'{$%} chance to inflict Bleed for {$%} weapon damage over {5} seconds'
+	},
 
 	//Secondary Resists
 	'PhysRes': {

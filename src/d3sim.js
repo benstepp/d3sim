@@ -108,7 +108,7 @@ var magicItem = function(rarity, slot, dClass) {
 	//loop through all affixes and push the key into the appropriate array
 	//need to check the affixMap here to determine prefix or suffix
 	for (var i = 0; i < affixDumpLength; i++) {
-		var affix = affixMap[affixDump[i]];
+		var affix = affixMap[affixDump[i]];console.log(affixDump[i]);
 		if (affix.hasOwnProperty('prefix_en')){
 			prefixes.push(affixDump[i]);
 		}
@@ -595,7 +595,7 @@ function intRandom(min,max) {
 function test() {
 	var dClasses = ['Barbarian','Crusader','Monk','Demon Hunter','Wizard','Witch Doctor'];
 	var dClassLength = dClasses.length;
-	var slots = ['amulet','belt','boots','bracers','chest','gloves','helm','pants','ring','shoulders'];
+	var slots = [/*'amulet','belt','boots','bracers','chest','gloves','helm','pants','ring','shoulders',*/'mojo','shield'];
 	var slotLength = slots.length;
 
 	for (var y = 0; y < dClassLength; y++) {
@@ -609,5 +609,5 @@ function test() {
 		}
 	}
 }
-
+test();
 module.exports = d3sim;

@@ -12,7 +12,7 @@ var mojo = {
 		Intelligence:{min:330,max:625,minl:626,maxl:750,mina:825,maxa:1000},
 		Vitality:{min:330,max:524,minl:626,maxl:750,mina:825,maxa:1000},
 
-		AvgDmg:{
+		AvgDamage:{
 			min:[126,158],
 			max:[159,190],
 			minl:[340,396],
@@ -21,7 +21,7 @@ var mojo = {
 			maxa:[504,600]
 		},
 
-		LifePerc:{min:6,max:12,minl:10,maxl:15},
+		PercLife:{min:6,max:12,minl:10,maxl:15},
 		LifeRegen:{min:812,max:2046,minl:4642,maxl:5528},
 
 		CritChance:{min:12,max:20,minl:16,maxl:20/*,mina:16,maxa:20*/},
@@ -44,8 +44,8 @@ var mojo = {
 		SacrificeDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
 		LocustSwarmDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
 		CorpseSpidersDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
-		ZombieChargeDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
-		WallOfZombieDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
+		ZombieChargerDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
+		WallOfZombiesDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
 		PiranhasDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
 		GargantuanDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
 		FirebatsDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
