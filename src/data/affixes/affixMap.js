@@ -87,6 +87,9 @@ var affixMap = {
 	'AvgDamage': {
 		text_en:'{$} - {$} Damage',
 	},
+	'FlatDamage':{
+		text_en:'{+$%} Damage'
+	},
 
 	//Utility
 	'AreaDamage': {
@@ -106,7 +109,8 @@ var affixMap = {
 	},
 	'LifePerHit': {
 		text_en:'{+$} Life per Hit',
-		suffix_en:'of Gore'
+		suffix_en:'of Gore',
+		exclude:['LifeAfterKill']
 	},
 	'Socket': {
 		prefix_en:'Socketed'
@@ -200,8 +204,8 @@ var affixMap = {
 	},
 	'LifeAfterKill':{
 		suffix_en:'of Extermination',
-		text_en:'{+$} Life After Each Kill'
-
+		text_en:'{+$} Life After Each Kill',
+		exclude:['LifePerHit']
 	},
 	'LevelReduc':{
 		suffix_en:'of Courage',
@@ -306,6 +310,92 @@ var affixMap = {
 	'ManaRegen':{
 		text_en:'Increases Mana Regeneration by {$} per Second(Witch Doctor Only)',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard']
+	},
+
+	//weapon damages
+	Dmg_Black:{
+		text_en:'{+$}-{$} Damage',
+		exclude:['Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+	},
+	Dmg_Cold:{
+		text_en:'{+$}-{$} Cold Damage',
+		exclude:['Dmg_Black','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+	},
+	Dmg_Fire:{
+		text_en:'{+$}-{$} Fire Damage',
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+	},
+	Dmg_Lightning:{
+		text_en:'{+$}-{$} Lightning Damage',
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+	},
+	Dmg_Poison:{
+		text_en:'{+$}-{$} Poison Damage',
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+	},
+	Dmg_Arcane:{
+		text_en:'{+$}-{$} Arcane Damage',
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Holy','Dagger','Hand Crossbow']
+	},
+	Dmg_Holy:{
+		text_en:'{+$}-{$} Holy Damage',
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dagger','Hand Crossbow']
+	},
+	Dmg_Black_hc:{
+		text_en:'{+$}-{$} Damage',
+		exclude:['Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Cold_hc:{
+		text_en:'{+$}-{$} Cold Damage',
+		exclude:['Dmg_Black_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Fire_hc:{
+		text_en:'{+$}-{$} Fire Damage',
+		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Lightning_hc:{
+		text_en:'{+$}-{$} Lightning Damage',
+		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Poison_hc:{
+		text_en:'{+$}-{$} Poison Damage',
+		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Arcane_hc:{
+		text_en:'{+$}-{$} Arcane Damage',
+		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Holy_hc:{
+		text_en:'{+$}-{$} Holy Damage',
+		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Black_dagger:{
+		text_en:'{+$}-{$} Damage',
+		exclude:['Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+		},
+	Dmg_Cold_dagger:{
+		text_en:'{+$}-{$} Cold Damage',
+		exclude:['Dmg_Black_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Fire_dagger:{
+		text_en:'{+$}-{$} Fire Damage',
+		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Lightning_dagger:{
+		text_en:'{+$}-{$} Lightning Damage',
+		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Poison_dagger:{
+		text_en:'{+$}-{$} Poison Damage',
+		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Arcane_dagger:{
+		text_en:'{+$}-{$} Arcane Damage',
+		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
+	},
+	Dmg_Holy_dagger:{
+		text_en:'{+$}-{$} Holy Damage',
+		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 
 	//SkillEffects

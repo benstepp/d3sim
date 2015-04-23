@@ -614,7 +614,7 @@ function intRandom(min,max) {
 function test() {
 	var dClasses = ['Barbarian','Crusader','Monk','Demon Hunter','Wizard','Witch Doctor'];
 	var dClassLength = dClasses.length;
-	var slots = [/*'amulet','belt','boots','bracers','chest','gloves','helm','pants','ring','shoulders',*/'mojo','shield'];
+	var slots = [/*'amulet','belt','boots','bracers','chest','gloves','helm','pants','ring','shoulders','mojo','shield'*/'onehand'];
 	var slotLength = slots.length;
 
 	for (var y = 0; y < dClassLength; y++) {
@@ -628,5 +628,5 @@ function test() {
 		}
 	}
 }
-
+test();
 module.exports = d3sim;

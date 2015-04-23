@@ -134,8 +134,71 @@ var onehand = {
 			exclude:['Demon Hunter','Monk','Barbarian','Crusader','Witch Doctor']
 		}
 	},
-	primary:{},
-	secondary:{}
+	primary:{
+		Dmg_Black:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+		Dmg_Cold:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+		Dmg_Fire:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+		Dmg_Lightning:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+		Dmg_Poison:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+		Dmg_Arcane:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+		Dmg_Holy:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+
+		//for the hand crossbow
+		Dmg_Black_hc:{min:[747,895],max:[912,1134],minl:[858, 1028],maxl:[1049,1304],mina:[1153,1408],maxa:[1365,1700]},
+		Dmg_Cold_hc:{min:[747,895],max:[912,1134],minl:[858, 1028],maxl:[1049,1304],mina:[1153,1408],maxa:[1365,1700]},
+		Dmg_Fire_hc:{min:[747,895],max:[912,1134],minl:[858, 1028],maxl:[1049,1304],mina:[1153,1408],maxa:[1365,1700]},
+		Dmg_Lightning_hc:{min:[747,895],max:[912,1134],minl:[858, 1028],maxl:[1049,1304],mina:[1153,1408],maxa:[1365,1700]},
+		Dmg_Poison_hc:{min:[747,895],max:[912,1134],minl:[858, 1028],maxl:[1049,1304],mina:[1153,1408],maxa:[1365,1700]},
+		Dmg_Arcane_hc:{min:[747,895],max:[912,1134],minl:[858, 1028],maxl:[1049,1304],mina:[1153,1408],maxa:[1365,1700]},
+		Dmg_Holy_hc:{min:[747,895],max:[912,1134],minl:[858, 1028],maxl:[1049,1304],mina:[1153,1408],maxa:[1365,1700]},
+
+		//for the dagger
+		Dmg_Black_dagger:{min:[747,895],max:[912,1134]},
+		Dmg_Cold_dagger:{min:[747,895],max:[912,1134]},
+		Dmg_Fire_dagger:{min:[747,895],max:[912,1134]},
+		Dmg_Lightning_dagger:{min:[747,895],max:[912,1134]},
+		Dmg_Poison_dagger:{min:[747,895],max:[912,1134]},
+		Dmg_Arcane_dagger:{min:[747,895],max:[912,1134]},
+		Dmg_Holy_dagger:{min:[747,895],max:[912,1134]},
+
+		Dexterity:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
+		Intelligence:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
+		Strength:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
+		Vitality:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
+
+		AttackSpeed:{min:5,max:6,minl:5,maxl:7/*,mina:5,maxa:7*/},
+		FlatDamage:{min:5,max:8,minl:6,maxl:10/*,mina:6,maxa:10*/},
+
+		AreaDamage:{min:14,max:20,minl:16,maxl:24/*,mina:16,maxa:24*/},
+		EliteDamage:{min:4,max:7,minl:5,maxl:8/*,mina:5,maxa:8*/},
+		CdReduc:{min:5,max:9,minl:6,maxl:10/*,mina:6,maxa:10*/},
+		CostReduc:{min:7,max:9,minl:8,maxl:10/*,mina:8,maxa:10*/},
+		Bleed:{min:[32,300],max:[37,400],minl:[34,300],maxl:[39,400]/*,mina:[34,300],maxa:[39,400]*/},
+		Socket:{min:1,max:1/*,minl:1,maxl:1,mina:1,maxa:1*/},
+		LifePerHit:{min:6823,max:15473,minl:15474,maxl:18429,mina:20271,maxa:23950}
+
+	},
+	secondary:{
+		LifeAfterKill:{min:3124,max:6427,minl:6428,maxl:8914,mina:9805,maxa:11590},
+		FearHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		StunHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		BlindHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		FreezeHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		ChillHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		SlowHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		ImmobHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		KnockHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
+		IgnoreDura:{min:1,max:1/*,minl:1,maxl:1,mina:1,maxa:1*/},
+		LevelReduc:{min:2,max:30,minl:2,maxl:30,mina:30,maxa:40},
+		BonusXp:{min:100,max:139,minl:140,maxl:200,mina:220,maxa:260},
+
+		MaxAp:{minl:10,maxl:14,mina:13,maxa:14},
+		MaxDisc:{},
+		MaxSpirit:{mina:13,maxa:15},
+		MaxFury:{},
+		MaxMana:{},
+		MaxWrath:{}
+	}
 };
 
 module.exports = onehand;
