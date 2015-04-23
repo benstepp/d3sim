@@ -1341,7 +1341,7 @@ var affixMap = {
 	},
 	'Denial':{
 		type:'legendary',
-		text_en:'Each enemy hit by your Sweep Attack increases the damage of your next Sweep Attack by 3{$%}, stacking up to 5 times.'
+		text_en:'Each enemy hit by your Sweep Attack increases the damage of your next Sweep Attack by {$%}, stacking up to 5 times.'
 	},
 	'Eberli':{
 		type:'legendary',
