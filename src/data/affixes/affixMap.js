@@ -1306,6 +1306,58 @@ var affixMap = {
 	'Uhkapian':{
 		type:'legendary',
 		text_en:'{$%} of the damage you take is redirected to your Zombie Dogs.'
+	},
+	'AkaratShield':{
+		type:'legendary',
+		text_en:'Every successful block has a {$%} chance to reduce all cooldowns by 1 second.'
+	},
+	'Frydehr':{
+		type:'legendary',
+		text_en:'Condemn has no cooldown but instead costs 40 Wrath.'
+	},
+	'HallowedBulwark':{
+		type:'legendary',
+		text_en:'Iron Skin also increases your Block Amount by {$%}.'
+	},
+	'Hellskull':{
+		type:'legendary',
+		text_en:'Gain {10%} increased damage while wielding a two-handed weapon.'
+	},
+	'Jekangbord':{
+		type:'legendary',
+		text_en:'Blessed Shield ricochets to {$} additional enemies.'
+	},
+	'FinalWitness':{
+		type:'legendary',
+		text_en:'When you block, you have up to a {$%} chance to Stun the attacker for 1.5 seconds based on your current Wrath.'
+	},
+	'UnrelentingPhalanx':{
+		type:'legendary',
+		text_en:'Phalanx now casts twice.'
+	},
+	'Westmarch':{
+		type:'legendary',
+		text_en:'Blocks have a chance of summoning a charging wolf that deals {$%} weapon damage to all enemies it passes through.'
+	},
+	'Denial':{
+		type:'legendary',
+		text_en:'Each enemy hit by your Sweep Attack increases the damage of your next Sweep Attack by 3{$%}, stacking up to 5 times.'
+	},
+	'Eberli':{
+		type:'legendary',
+		text_en:'Reduces the cooldown of Heaven\'s Fury by {$%}'
+	},
+	'FreezeShield':{
+		type:'legendary',
+		text_en:'Blocking an attack has a chance to Freeze the attacker for {$} seconds.'
+	},
+	'IvoryTower':{
+		type:'legendary',
+		text_en:'Blocks release forward a Fires of Heaven.'
+	},
+	'Votoyias':{
+		type:'legendary',
+		text_en:'Enemies affected by Provoke take double damage from Thorns.'
 	}
 
 

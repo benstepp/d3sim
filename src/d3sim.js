@@ -108,7 +108,7 @@ var magicItem = function(rarity, slot, dClass) {
 	//loop through all affixes and push the key into the appropriate array
 	//need to check the affixMap here to determine prefix or suffix
 	for (var i = 0; i < affixDumpLength; i++) {
-		var affix = affixMap[affixDump[i]];console.log(affixDump[i]);
+		var affix = affixMap[affixDump[i]];
 		if (affix.hasOwnProperty('prefix_en')){
 			prefixes.push(affixDump[i]);
 		}
@@ -447,7 +447,8 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 		KnockHit:10,
 		StunHit:10,
 		SpiritRegen:100,
-		HatredRegen:100
+		HatredRegen:100,
+		FreezeShield:2
 	};
 	var value;
 
