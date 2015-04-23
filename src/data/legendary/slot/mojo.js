@@ -65,6 +65,7 @@ var mojo = [
 		secondary:{
 			RANDOM:2
 		},
+		set:'Manajuma\'s Way',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_mojo_010_x1_demonhunter_male.png',
 		flavor:'Manajuma imbued this dead chicken with much magic—for reasons only he can know.'
 	},
@@ -164,6 +165,7 @@ var mojo = [
 		secondary:{
 			RANDOM:2
 		},
+		set:'Zunimassa\'s Haunt',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_mojo_011_x1_demonhunter_male.png',
 		flavor:'When threatened, she drew upon the spirits to unleash the fury buried within.'
 	}
