@@ -12,10 +12,16 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			Bleed:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_1h_001_x1_demonhunter_male.png',
+		flavor:'The edges seem to become more jagged with each strike.'
 	},
 	{
 		name: "Genzaniku",

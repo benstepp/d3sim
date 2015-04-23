@@ -628,5 +628,5 @@ function test() {
 		}
 	}
 }
-test();
+
 module.exports = d3sim;
