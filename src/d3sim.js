@@ -367,6 +367,10 @@ function rollStats(item, rarity, slot, dClass) {
 
 		//set text for primary
 		primariesFinal[primary].text = affixMap[primary].text_en;
+		//add type (for legs) if exists
+		if (affixMap[primary].hasOwnProperty('type')) {
+			primariesFinal[primary].type = affixMap[primary].type;
+		}
 	}
 	for (var secondary in secondariesFinal) {
 
@@ -382,6 +386,10 @@ function rollStats(item, rarity, slot, dClass) {
 
 		//set text for secondary
 		secondariesFinal[secondary].text = affixMap[secondary].text_en;
+		//add type (for legs) if exists
+		if (affixMap[secondary].hasOwnProperty('type')) {
+			secondariesFinal[secondary].type = affixMap[secondary].type;
+		}
 	}
 
 	//replace primary and secondary objects
@@ -539,12 +547,18 @@ function setKadala(dClass,seasonal,hardcore) {
 			}
 			else {
 				//push into correct loot pool
-				(items[j].smartLoot.indexOf(dClass) !== -1) ? smartLoot.push(items[j]) : notSmartLoot.push(items[j]);
+				if (items[j].smartLoot.indexOf(dClass) !== -1) {
+					smartLoot.push(items[j]);
+				}
+				else {
+					notSmartLoot.push(items[j]);
+				}
+
 			}
 		}
 
 		//set up loot pool
-		(smartLoot.length === 0) ? kadalaItems[slots[i]].items = notSmartLoot : kadalaItems[slots[i]].items = smartLoot;
+		kadalaItems[slots[i]].items = (smartLoot.length === 0) ? notSmartLoot : smartLoot;
 
 		//overwrite these and loop through again to get total weight
 		items = kadalaItems[slots[i]].items;
