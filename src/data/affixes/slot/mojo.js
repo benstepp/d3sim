@@ -25,7 +25,7 @@ var mojo = {
 		LifeRegen:{min:812,max:2046,minl:4642,maxl:5528},
 
 		CritChance:{min:12,max:20,minl:16,maxl:20/*,mina:16,maxa:20*/},
-		CdReduc:{min:4,max:7,minl:5,maxl:8},
+		CdReduc:{min:4,max:7,minl:5,maxl:8/*,mina:5,maxa:8*/},
 		CostReduc:{min:5,max:7,minl:5,maxl:8},
 		AreaDamage:{min:10,max:16,minl:10,maxl:20},
 		Socket:{min:1,max:1/*,minl:1,maxl:1,mina:1,maxa:1*/},

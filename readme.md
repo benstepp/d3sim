@@ -27,7 +27,6 @@ slot is a string and must be one of ['amulet','belt','boots','bracers','chest','
 ###Values
 
 ####Mojo
-Ancient Cooldown Reduction
 Ancient Area Damage
 Ancient Cost Reduction
 Ancient Life%
@@ -35,3 +34,22 @@ Ancient GoldFind
 Ancient onHit Effects
 Ancient Globes
 Ancient Level Reduction
+
+####Shield
+Rare All Resist
+Ancient Life%
+Ancient All Resist
+Ancient Life Regen
+Ancient Block
+Ancient Area Damag
+Ancient Elite Reduction
+Ancient Elite Damage
+Ancient Life per Wrath
+Ancient Wrath Regen
+Ancient Bleed
+Ancient GoldFind
+Ancient Bonus Xp
+Ancient Level Reduc
+Ancient Globes
+Ancient onHit
+Ancient Max Wrath

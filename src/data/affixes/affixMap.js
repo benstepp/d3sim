@@ -91,15 +91,18 @@ var affixMap = {
 	//Utility
 	'AreaDamage': {
 		text_en:'Chance to Deal {$%} Area Damage on Hit.',
-		prefix_en:'Inundating'
+		prefix_en:'Inundating',
+		exclude:['Shield']
 	},
 	'CostReduc': {
 		text_en:'Reduces All Resource Costs by {$%}',
-		prefix_en:'Masterful'
+		prefix_en:'Masterful',
+		exclude:['Shield']
 	},
 	'CdReduc': {
 		text_en:'Reduces cooldown of all skills by {$%}.',
-		prefix_en:'Insightful'
+		prefix_en:'Insightful',
+		exclude:['Shield']
 	},
 	'LifePerHit': {
 		text_en:'{+$} Life per Hit',
@@ -261,11 +264,19 @@ var affixMap = {
 	'LifePerWrath':{
 		prefix_en:'Dedicated',
 		text_en:'Gain {$} Life per Wrath Spent (Crusader Only)',
-		exclude:['Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
+		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
 	},
 	'LifePerSpirit':{
 		text_en:'Gain {$} Life per Spirit Spent (Monk Only)',
 		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
+	},
+	'WrathRegen':{
+		text_en:'Increases Wrath Regeneration by {$} per Second (Crusader Only)',
+		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
+	},
+	'MaxWrath':{
+		text_en:'{+$} Maximum Wrath (Crusader Only)',
+		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
 	},
 
 	'MaxDisc':{
