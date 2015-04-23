@@ -24,6 +24,27 @@ var shoulders = [
 		flavor:'Ancient Vizjerei mages would infuse their armor and weaponry with demon blood. Over time, these implements often twisted the sorcerers into instruments of torment.'
 	},
 	{
+		name:"Dashing Pauldrons of Despair",
+		type:"Shoulders",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			Armor:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Delsere\'s Magnum Opus',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_set_02_p2_demonhunter_male.png',
+		flavor:'"Delsere\'s madness was a tragic loss. He melted down so many pieces, calling them inelegant. Yet each was more beautiful than most artisans could ever hope to craft."- High Councilor Valthek'
+	},
+	{
 		name: "Death Watch Mantle",
 		type: "Shoulders",
 		weight: 100,
@@ -206,6 +227,27 @@ var shoulders = [
 		flavor:'"Let the crusaders armor their flanks in plate of incredible strength, for their path is dangerous, and death will come at them from all sides." -Akkhan'
 	},
 	{
+		name:"Pauldrons of the Wastes",
+		type:"Shoulders",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Barbarian"
+		],
+		primary:{
+			Strength:null,
+			AllResist:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Wrath of the Wastes',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_set_01_p2_demonhunter_male.png',
+		flavor:'Forckan of the Shadow Wolf Tribe was captured by cannibals in the wastes. He escaped before dinnertime and stole just enough equipment to survive, including these pauldrons.'
+	},
+	{
 		name: "Profane Pauldrons",
 		type: "Shoulders",
 		weight: 100,
@@ -341,6 +383,27 @@ var shoulders = [
 		set:'Monkey King\'s Garb',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_set_11_x1_demonhunter_male.png',
 		flavor:'The pauldrons of Sunwuko the Monkey King are renowned for their ability to improve agility. With these equipped, a trained monk can master the martial arts... or dance.'
+	},
+	{
+		name:"Unsanctified Shoulders",
+		type:"Shoulders",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			AllResist:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Unhallowed Essence',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_set_03_p2_demonhunter_male.png',
+		flavor:'"A demon hunter who fully tempers their hatred with discipline will see their vengeance clearly."-Kovan the Merciless'
 	},
 	{
 		name: "Vile Ward",

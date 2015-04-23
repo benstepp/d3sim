@@ -1,5 +1,33 @@
 var ring = [
 	{
+		name:"Arcstone",
+		type:"Ring",
+		weight:50,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			RANDOM:3
+		},
+		secondary:{
+			Arcstone:{
+				min:1000,
+				max:1500
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_ring_03_demonhunter_male.png',
+		flavor:'Robbers plundering an ancient tomb near Westmarch discovered forty two skeletons laid out in repose, each wearing one of these rings. Their origins and creators have been lost to the ages, but the Arcstone rings have returned.'
+	},
+	{
 		name: "Band of Hollow Whispers",
 		type: "Ring",
 		weight: 100,
@@ -101,6 +129,36 @@ var ring = [
 		flavor:'Forged in the city of Harrogath to commemorate a day sacred to the barbarians.'
 	},
 	{
+		name:"Convention of Elements",
+		type:"Ring",
+		weight:100,
+		hc:false,
+		season:true,
+		smartLoot: [
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			CritChance:null,
+			Socket:null,
+			RANDOM:1
+		},
+		secondary:{
+			Convention:{
+				min:150,
+				max:200
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_ring_04_demonhunter_male.png',
+		flavor:'Long ago, a great conclave of mage-smiths convened during a blizzard to channel their collective energy into a single artifact, forging a powerful ring that bestowed upon the wielder mastery over all of the elements.'
+	},
+	{
 		name: "Eternal Union",
 		type: "Ring",
 		weight: 50,
@@ -151,7 +209,7 @@ var ring = [
 		type: "Ring",
 		weight: 100,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Wizard"
 		],
@@ -311,7 +369,7 @@ var ring = [
 		type: "Ring",
 		weight: 100,
 		hc: false,
-		season: false,
+		season: true,
 		smartLoot: [
 			"Demon Hunter",
 			"Monk",
@@ -363,7 +421,7 @@ var ring = [
 		type: "Ring",
 		weight: 100,
 		hc: false,
-		season: false,
+		season: true,
 		smartLoot: [
 			"Demon Hunter",
 			"Monk",
@@ -543,12 +601,7 @@ var ring = [
 		hc: false,
 		season: false,
 		smartLoot: [
-			"Demon Hunter",
-			"Monk",
-			"Barbarian",
-			"Crusader",
-			"Wizard",
-			"Witch Doctor"
+			"Barbarian"
 		],
 		primary:{
 			MAIN:null,
@@ -649,6 +702,27 @@ var ring = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_ring_013_x1_demonhunter_male.png',
 		flavor:'The road goes ever on...'
+	},
+	{
+		name:"The Short Man's Finger",
+		type:"Ring",
+		weight:100,
+		hc:false,
+		season:true,
+		smartLoot:[
+			"Witch Doctor"
+		],
+		primary:{
+			Intelligence:null,
+			CritDamage:null,
+			RANDOM:2
+		},
+		secondary:{
+			ShortMan:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_ring_02_demonhunter_male.png',
+		flavor:'This finger belonged to an Umbaru priest who had lost his legs and would summon smaller gargantuans to carry him to rituals. Although he has long since gone to Mbwiru Eikura, his finger remains a conduit to his strange practices.'
 	},
 	{
 		name: "The Tall Man's Finger",

@@ -1260,6 +1260,22 @@ var affixMap = {
 	'Omryns':{
 		type:'legendary',
 		text_en:'Drop Caltrops when using Vault.'
+	},
+	'Arcstone':{
+		type:'legendary',
+		text_en:'Lightning pulses periodically between all wearers of this item, dealing {$%} weapon damage.'
+	},
+	'Convention':{
+		type:'legendary',
+		text_en:'Gain {$%} increased damage to a single element for 4 seconds. This effect rotates through the elements available to your class in the following order: Arcane, Cold, Fire, Holy, Lightning, Physical, Poison.'
+	},
+	'ShortMan':{
+		type:'legendary',
+		text_en:'Gargantuan instead summons three smaller gargantuans each more powerful than before.'
+	},
+	'Primus':{
+		type:'legendary',
+		text_en:'Slow Time gains the effect of every rune.'
 	}
 
 

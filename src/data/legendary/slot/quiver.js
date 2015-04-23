@@ -26,7 +26,7 @@ var quiver = [
 		type: "Quiver",
 		weight: 100,
 		hc: false,
-		season: false,
+		season: true,
 		smartLoot: [
 			"Demon Hunter"
 		],

@@ -1,5 +1,26 @@
 var helm = [
 	{
+		name:"Accursed Visage",
+		type:"Helm",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Unhallowed Essence',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_set_03_p2_demonhunter_male.png',
+		flavor:'"A demon hunter’s mind must be tuned precisely to the demonic will. Only then can you know the best vantage point for your attack. Waver and you are dead."-Kovan the Merciless'
+	},
+	{
 		name: "Andariel's Visage",
 		type: "Helm",
 		weight: 50,
@@ -59,8 +80,8 @@ var helm = [
 		primary:{
 			MAIN:null,
 			BlindHit:{
-				min:20,
-				max:40
+				min:200,
+				max:400
 			},
 			RANDOM:2
 		},
@@ -231,6 +252,27 @@ var helm = [
 		set:'Armor of Akkhan',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_set_10_x1_demonhunter_male.png',
 		flavor:'"Let the crusaders encase their skulls in a helm of surpassing strength, for a crusader\'s most potent weapon is the mind. And thus shall the crusader be a champion of Akarat\'s will." -Akkhan'
+	},
+	{
+		name:"Helm of the Wastes",
+		type:"Helm",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Barbarian"
+		],
+		primary:{
+			Strength:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Wrath of the Wastes',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_set_01_p2_demonhunter_male.png',
+		flavor:'Noglar of the Crane Tribe went into the wastes for his rite of adulthood. He returned with tales of horrendous cannibal barbarian tribes, many new scars, and this helm.'
 	},
 	{
 		name: "Immortal King's Triumph",
@@ -438,6 +480,27 @@ var helm = [
 		flavor:'"Time passes, but the memory of my master, and the knowledge of what he did for me, does not fade. In fact, it grows stronger. I swear his name shall never be forgotten." —Meditations on My Redemption'
 	},
 	{
+		name:"Shrouded Mask",
+		type:"Helm",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Delsere\'s Magnum Opus',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_set_02_p2_demonhunter_male.png',
+		flavor:'"Delsere proclaimed this Mask the jewel of his magnum opus, only to break down and weep that he must start over. Shortly after, his magnum opus disappeared, as did Delsere."- High Councilor Valthek'
+	},
+	{
 		name: "Skull of Resonance",
 		type: "Helm",
 		weight: 50,
@@ -510,11 +573,16 @@ var helm = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		set:'',
-		image:'',
-		flavor:''
+		primary:{
+			Dexterity:null,
+			SKILLDAMAGE:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_spiritstone_001_x1_demonhunter_male.png',
+		flavor:'This stone has passed through much to attain its magical properties.'
 	},
 	{
 		name: "Erlang Shen",
@@ -955,6 +1023,27 @@ var helm = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_wizardhat_101_x1_demonhunter_male.png',
 		flavor:'"Ha! That was but the first of many times I supposedly met death at the hands of my enemies." —Archmage Horazon'
+	},
+	{
+		name:"Crown of the Primus",
+		type:"Wizard Hat",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			Primus:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_wizardhat_104_x1_demonhunter_male.png',
+		flavor:'The Peace Warder Radaugh was a singular being who had the powers of time itself at his command. Unfortunately, this frequently left him in a befuddled state, allowing the upstart cultist Vess to kill him and take the prized Crown of the Primus for his own.'
 	},
 	{
 		name: "Dark Mage's Shade",

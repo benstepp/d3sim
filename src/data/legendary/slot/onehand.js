@@ -911,7 +911,7 @@ var onehand = [
 		type: "Mighty Weapon",
 		weight: 100,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Barbarian"
 		],
@@ -1283,7 +1283,7 @@ var onehand = [
 		type: "Wand",
 		weight: 50,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Wizard"
 		],

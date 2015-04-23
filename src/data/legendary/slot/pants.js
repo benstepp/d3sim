@@ -233,6 +233,30 @@ var pants = [
 		flavor:'Tukam\'s first child was born while he was fighting in the Harvest of Souls. He claimed a spirit whispered the news to him, and that the knowledge gave him the courage to overcome his many foes.'
 	},
 	{
+		name:"Leg Guards of Mystery",
+		type:"Pants",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			Socket:{
+				min:2,
+				max:2
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Delsere\'s Magnum Opus',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_02_p2_demonhunter_male.png',
+		flavor:'"Delsere repeatedly crafted these leg guards, with only a minimal increase to their magical properties. When I pointed this out, he called me a visionless cretin."- High Councilor Valthek'
+	},
+	{
 		name: "Marauder's Encasement",
 		type: "Pants",
 		weight: 100,
@@ -255,6 +279,30 @@ var pants = [
 		set:'Embodiment of the Marauder',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_07_x1_demonhunter_male.png',
 		flavor:'"I envelop myself in the trappings of my foes, and I learn their ways. I can bathe in the foul darkness of their kind and emerge clean, for I am purified by my vengeance."—Hunter Kee Morse'
+	},
+	{
+		name:"Natalya's Leggings",
+		type:"Pants",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:2,
+				max:2
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Natalya\'s Vengeance',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_pants_01_demonhunter_male.png',
+		flavor:'Anywhere her prey could run, Natalya could follow.'
 	},
 	{
 		name: "Pox Faulds",
@@ -384,6 +432,54 @@ var pants = [
 		flavor:'Specially crafted to withstand the rigors of the swamp lands.'
 	},
 	{
+		name:"Tal Rasha's Stride",
+		type:"Pants",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot: [
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			Socket:{
+				min:2,
+				max:2
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Tal Rasha\'s Elements',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_pants_03_demonhunter_male.png',
+		flavor:'All Horadrim were careful to clothe themselves in garments of subtlety and power. None more so than Tal Rasha.'
+	},
+	{
+		name:"Tasset of the Wastes",
+		type:"Pants",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Barbarian"
+		],
+		primary:{
+			Strength:null,
+			Socket:{
+				min:2,
+				max:2
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Wrath of the Wastes',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_01_p2_demonhunter_male.png',
+		flavor:'Jorkt of the Snake Tribe found a mad hermit smith in the wastes, who forged this tasset for him, but took Jorkt\'s fingers and toes in payment.'
+	},
+	{
 		name: "The Shadow's Coil",
 		type: "Pants",
 		weight: 100,
@@ -406,6 +502,30 @@ var pants = [
 		set:'The Shadow\'s Mantle',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_14_x1_demonhunter_male.png',
 		flavor:'"Step into the abyss. Welcome it. Know it. It\'s yours, now." —Demon Hunter Kunai'
+	},
+	{
+		name:"Unholy Plates",
+		type:"Pants",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:2,
+				max:2
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Unhallowed Essence',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_03_p2_demonhunter_male.png',
+		flavor:'"Josen often said that everything is a test, including life itself. How will you fare when your mettle is tested?"-Kovan the Merciless'
 	},
 	{
 		name: "Vyr's Fantastic Finery",
@@ -454,6 +574,30 @@ var pants = [
 		set:'Might of the Earth',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_15_x1_demonhunter_male.png',
 		flavor:'All living creatures trust in the stillness of the earth. They know nothing of the currents that flow beneath its surface. They do not comprehend its weight. They cannot understand its power.'
+	},
+	{
+		name:"Zunimassa's Cloth",
+		type:"Pants",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Witch Doctor"
+		],
+		primary:{
+			Intelligence:null,
+			Socket:{
+				min:2,
+				max:2
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Zunimassa\'s Haunt',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_pants_04_demonhunter_male.png',
+		flavor:'Zunimassa believed that power was born of movement, and movement born of legs.'
 	}
 ];
 

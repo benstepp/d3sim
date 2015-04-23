@@ -861,7 +861,7 @@ var twohand = [
 		type: "Staff",
 		weight: 100,
 		hc: false,
-		season: true,
+		season: false,
 		smartLoot: [
 			"Witch Doctor"
 		],
@@ -910,6 +910,24 @@ var twohand = [
 		season: false,
 		smartLoot: [
 			"Crusader"
+		],
+		primary:{},
+		secondary:{},
+		image:'',
+		flavor:''
+	},
+	{
+		name:"Corrupted Ashbringer",
+		type:"Two-Handed Sword",
+		weight:25,
+		hc:false,
+		season:false,
+		smartLoot: [
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
 		],
 		primary:{},
 		secondary:{},

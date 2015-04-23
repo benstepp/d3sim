@@ -136,6 +136,27 @@ var gloves = [
 		flavor:'"Let the crusaders cover their hands with gauntlets of unsurpassed strength, for they will someday find the redemption of the Zakarum faith, and on that day, they must reach out and grasp it." -Akkhan'
 	},
 	{
+		name:"Gauntlet of the Wastes",
+		type:"Gloves",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Barbarian"
+		],
+		primary:{
+			Strength:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Wrath of the Wastes',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_set_01_p2_demonhunter_male.png',
+		flavor:'Offo of the Henknoc Tribe discovered a barrow in the wastes. Inside, skeletons with filed teeth were arrayed around the body of a great king. Offo left as quickly as he could, taking only the king’s gauntlets.'
+	},
+	{
 		name: "Gladiator Gauntlets",
 		type: "Gloves",
 		weight: 100,
@@ -204,6 +225,27 @@ var gloves = [
 		flavor:'Worusk struck his enemies so hard his hands would have broken had they not been protected.'
 	},
 	{
+		name:"Inna's Hold",
+		type:"Gloves",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Monk"
+		],
+		primary:{
+			Dexterity:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Inna\'s Mantra',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_gloves_04_demonhunter_male.png',
+		flavor:'When Inna became displeased with a star, she would don these gloves, and hurl the offending star through the night sky.'
+	},
+	{
 		name: "Jade Harvester's Mercy",
 		type: "Gloves",
 		weight: 100,
@@ -267,6 +309,27 @@ var gloves = [
 		set:'Embodiment of the Marauder',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_set_07_x1_demonhunter_male.png',
 		flavor:'"One day, your quivers will run empty, your traps will fail, and the enemy will surge forward. You will be left with nothing but the grip you keep on your blade. Never forget this."—Hunter Cie Wyrtam'
+	},
+	{
+		name:"Natalya's Touch",
+		type:"Gloves",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dexterity:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Natalya\'s Vengeance',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_gloves_01_demonhunter_male.png',
+		flavor:'She used these gloves while learning the finer points of murderous archery.'
 	},
 	{
 		name: "Pride of the Invoker",
@@ -430,6 +493,27 @@ var gloves = [
 		flavor:'Sunwuko is said to have been the greatest staff fighter from Xiansai to Ivgorod, and his gloves possess a nimbleness to them second to none.'
 	},
 	{
+		name:"Tal Rasha's Grasp",
+		type:"Gloves",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Intelligence:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Tal Rasha\'s Elements',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_gloves_02_demonhunter_male.png',
+		flavor:'Tal Rasha inducted recruits into the Horadrim with these gloves.'
+	},
+	{
 		name: "Tasker and Theo",
 		type: "Gloves",
 		weight: 25,
@@ -499,6 +583,27 @@ var gloves = [
 		set:'Vyr\'s Amazing Arcana',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_set_13_x1_demonhunter_male.png',
 		flavor:'"It\'s posited that Vyr created these enchanted gloves to protect his hands while he manipulated power summoned from beyond this realm." —Abd al-Hazir'
+	},
+	{
+		name:"Zunimassa's Finger Wraps",
+		type:"Gloves",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Witch Doctor"
+		],
+		primary:{
+			Intelligence:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Zunimassa\'s Haunt',
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_gloves_03_demonhunter_male.png',
+		flavor:'All witch doctors know that the best way to hear the whispers of Zunimassa is to perform the rituals flawlessly, with fingers nimble and strong.'
 	}
 ];
 
