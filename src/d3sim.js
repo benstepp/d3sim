@@ -151,8 +151,12 @@ var rareItem = function(rarity, slot, dClass) {
 	this.primaries = {};
 	this.secondaries = {};
 
-	//if a class is given, ensure that there is a main stat primary;
-	if (Object.keys(classMap).indexOf(dClass) !== -1) {
+	//if a class is given and the item type can roll it
+	//ensure that there is a main stat primary;
+	if (Object.keys(classMap).indexOf(dClass) !== -1 && 
+		affixMap[classMap[dClass]].hasOwnProperty('excludes') && 
+		affixMap[classMap[dClass]].excludes.indexOf(this.type) !== -1) {
+
 		this.primaries.MAIN = null;
 		//then roll between 1-3 primaries
 		this.primaries.RANDOM = intRandom(1,3);
