@@ -2,17 +2,17 @@ var affixMap = {
 	//Main stats
 	'Dexterity': {
 		text_en:'{+$} Dexterity',
-		exclude:['Barbarian','Crusader','Wizard','Witch Doctor'],
+		exclude:['Barbarian','Crusader','Wizard','Witch Doctor','Mojo','Wizard Hat','Mighty Belt','Source','Voodoo Mask','Crusader Shield'],
 		suffix_en:'of Pain'
 	},
 	'Intelligence': {
 		text_en:'{+$} Intelligence',
-		exclude:['Demon Hunter','Monk','Barbarian','Crusader'],
+		exclude:['Demon Hunter','Monk','Barbarian','Crusader','Mighty Belt','Spirit Stone','Crusader Shield'],
 		suffix_en:'of Far Sight'
 	},
 	'Strength': {
 		text_en:'{+$} Strength',
-		exclude:['Demon Hunter','Monk','Wizard','Witch Doctor'],
+		exclude:['Demon Hunter','Monk','Wizard','Witch Doctor','Mojo','Wizard Hat','Spirit Stone','Source','Voodoo Mask'],
 		suffix_en:'of War'
 	},
 	'Vitality': {
