@@ -241,7 +241,7 @@ var belt = [
 			"Witch Doctor"
 		],
 		primary:{
-			Invelligence:null,
+			Intelligence:null,
 			Vitality:null,
 			RANDOM:2
 		},

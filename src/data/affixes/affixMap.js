@@ -1229,6 +1229,10 @@ var affixMap = {
 		type:'legendary',
 		text_en:'Increases the damage of Meteor by {100%}. When your Meteor hits 3 or less enemies, the damage is increased by {$%}'
 	},
+	'Drakon':{
+		type:'legendary',
+		text_en:'When your Shield Bash hits 3 or less enemies, its damage is increased by {$%} and {25%} of its Wrath Cost is refunded.'
+	},
 	'Ranslor':{
 		type:'legendary',
 		text_en:'Energy Twister periodically pulls in enemies within {30} yards.'
