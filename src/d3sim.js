@@ -686,9 +686,5 @@ function test() {
 		}
 	}
 }
-function testt() {
-	setKadala('Barbarian',true,true);
-	kadalaRoll('onehand');
-}
-testt();
+
 module.exports = d3sim;

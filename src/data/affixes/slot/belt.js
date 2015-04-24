@@ -10,14 +10,16 @@ var belt = {
 				'Crusader':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
 				'Witch Doctor':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
 				'Wizard':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png'
-			}
+			},
+			armor:440
 		},
 		'Mighty Belt':{
 			name_en:'Mighty Scourge',
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/barbbelt_206_demonhunter_male.png'
 			},
-			exclude:['Demon Hunter','Monk','Crusader','Witch Doctor','Wizard']
+			exclude:['Demon Hunter','Monk','Crusader','Witch Doctor','Wizard'],
+			armor:586
 		}
 	},
 	primary:{

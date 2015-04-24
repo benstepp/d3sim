@@ -5,7 +5,8 @@ var bracers = {
 			name_en:'Ascended Bracers',
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/bracers_208_demonhunter_male.png'
-			}
+			},
+			armor:366
 		}
 	},
 	primary:{

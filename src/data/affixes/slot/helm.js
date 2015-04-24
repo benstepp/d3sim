@@ -12,27 +12,31 @@ var helm = {
 				'Witch Doctor':'//media.blizzard.com/d3/icons/items/large/helm_208_witchdoctor_male.png',
 				'Wizard':'//media.blizzard.com/d3/icons/items/large/helm_208_wizard_male.png'
 			},
+			armor:660
 		},
 		'Spirit Stone':{
 			name_en:'Ascended Stone',
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/spiritstone_206_demonhunter_male.png'
 			},
-			exclude:['Demon Hunter','Barbarian','Crusader','Witch Doctor','Wizard']
+			exclude:['Demon Hunter','Barbarian','Crusader','Witch Doctor','Wizard'],
+			armor:660
 		},
 		'Voodoo Mask':{
 			name_en:'Ascended Mask',
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/voodoomask_206_demonhunter_male.png'
 			},
-			exclude:['Demon Hunter','Monk','Barbarian','Crusader','Wizard']
+			exclude:['Demon Hunter','Monk','Barbarian','Crusader','Wizard'],
+			armor:660
 		},
 		'Wizard Hat':{
 			name_en:'Ascended Headpiece',
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/wizardhat_206_demonhunter_male.png'
 			},
-			exclude:['Demon Hunter','Monk','Barbarian','Crusader','Witch Doctor']
+			exclude:['Demon Hunter','Monk','Barbarian','Crusader','Witch Doctor'],
+			armor:660
 		}
 	},
 
