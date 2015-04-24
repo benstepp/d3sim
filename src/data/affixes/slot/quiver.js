@@ -5,7 +5,8 @@ var quiver = {
 			name_en:'Ascended Quiver',
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/quiver_207_demonhunter_male.png'
-			}
+			},
+			baseAffix:'AttackSpeed'
 		}
 	},
 	primary:{

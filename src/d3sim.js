@@ -257,7 +257,9 @@ function rollStats(item, rarity, slot, dClass) {
 	}
 
 	//if the item has stats that must be rolled (avg damage on sources/mojo or attack speed on a quiver)
-	if (affixes[slot].type[item.type].hasOwnProperty('baseAffix')) {
+	//dont wory about legendaries or ancients because theirs are given
+	if (affixes[slot].type[item.type].hasOwnProperty('baseAffix')&&
+		(rarity !== 'legendary' || rarity !=='ancient')) {
 		//use the default stats based on rarity
 		primaries[affixes[slot].type[item.type].baseAffix] = null;
 	}
