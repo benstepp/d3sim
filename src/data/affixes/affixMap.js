@@ -333,31 +333,31 @@ var affixMap = {
 	//weapon damages
 	Dmg_Black:{
 		text_en:'{+$}-{$} Damage',
-		exclude:['Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+		exclude:['Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Cold:{
 		text_en:'{+$}-{$} Cold Damage',
-		exclude:['Dmg_Black','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+		exclude:['Dmg_Black','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Fire:{
 		text_en:'{+$}-{$} Fire Damage',
-		exclude:['Dmg_Black','Dmg_Cold','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Lightning:{
 		text_en:'{+$}-{$} Lightning Damage',
-		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Poison:{
 		text_en:'{+$}-{$} Poison Damage',
-		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow']
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Arcane:{
 		text_en:'{+$}-{$} Arcane Damage',
-		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Holy','Dagger','Hand Crossbow']
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Holy:{
 		text_en:'{+$}-{$} Holy Damage',
-		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dagger','Hand Crossbow']
+		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Black_hc:{
 		text_en:'{+$}-{$} Damage',
@@ -415,7 +415,34 @@ var affixMap = {
 		text_en:'{+$}-{$} Holy Damage',
 		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
-
+	Dmg_Black_ranged:{
+		text_en:'{+$}-{$} Damage',
+		exclude:['Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
+		},
+	Dmg_Cold_ranged:{
+		text_en:'{+$}-{$} Cold Damage',
+		exclude:['Dmg_Black_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
+	},
+	Dmg_Fire_ranged:{
+		text_en:'{+$}-{$} Fire Damage',
+		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
+	},
+	Dmg_Lightning_ranged:{
+		text_en:'{+$}-{$} Lightning Damage',
+		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
+	},
+	Dmg_Poison_ranged:{
+		text_en:'{+$}-{$} Poison Damage',
+		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
+	},
+	Dmg_Arcane_ranged:{
+		text_en:'{+$}-{$} Arcane Damage',
+		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
+	},
+	Dmg_Holy_ranged:{
+		text_en:'{+$}-{$} Holy Damage',
+		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
+	},
 	//SkillEffects
 	'RainOfVengeanceDmg':{
 		text_en:'Increases {Rain of Vengeance} Damage by {$%}',
@@ -1681,6 +1708,74 @@ var affixMap = {
 	'Trium':{
 		type:'legendary',
 		text_en:'Your Signature Spells increase the damage of Arcane Orb by {$%} for 6 seconds, stacking up to 3 times.'
+	},
+	'Butcher':{
+		type:'legendary',
+		text_en:'The Butcher still inhabits his carver.'
+	},
+	'Cluckeye':{
+		type:'legendary',
+		text_en:'{$%} chance to cluck when attacking.'
+	},
+	'Krider':{
+		type:'legendary',
+		text_en:'Elemental Arrow now generates {$} Hatred.'
+	},
+	'Leonine':{
+		type:'legendary',
+		text_en:'Bola Shot has a {$%} chance on explosion to pull in all enemies within 24 yards.'
+	},
+	'Odyssey':{
+		type:'legendary',
+		text_en:'Enemies snared by your Entangling Shot take {$%} increased damage from all sources.'
+	},
+	'Raven':{
+		type:'legendary',
+		text_en:'A raven flies to your side.'
+	},
+	'FlyingD':{
+		type:'legendary',
+		text_en:'Chance to double your attack speed when attacking.'
+	},
+	'IncenseTorch':{
+		type:'legendary',
+		text_en:'Reduces the Spirit cost of Wave of Light by {$%}.'
+	},
+	'FlowEternity':{
+		type:'legendary',
+		text_en:'Reduces the cooldown of Seven-Sided Strike by {$%}.'
+	},
+	'Paddle':{
+		type:'legendary',
+		text_en:'Slap!'
+	},
+	'Quang':{
+		type:'legendary',
+		text_en:'Tempest Rush gains the effect of the Tailwind rune.'
+	},
+	'Buriza':{
+		type:'legendary',
+		text_en:'Your projectiles pierce {$} additional times.'
+	},
+	'Chanon':{
+		type:'legendary',
+		text_en:'Your Spike Traps lure enemies to them. Enemies may be taunted once every {$} seconds.'
+	},
+	'DemonMachine':{
+		type:'legendary',
+		text_en:'{$%} chance to shoot explosive bolts when attacking.'
+	},
+	'Hellrack':{
+		type:'legendary',
+		text_en:'Chance to root enemies to the ground when you hit them.'
+	},
+	'PusSpitter':{
+		type:'legendary',
+		text_en:'{$%} chance to lob an acid blob when attacking.'
+	},
+	'Wojahnni':{
+		type:'legendary',
+		text_en:'Rapid Fire deals {$%} more damage for every second that you channel. Stacks up to 4 times.'
 	}
 
 

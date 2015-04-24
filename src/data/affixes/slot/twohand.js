@@ -1,16 +1,125 @@
 var twohand = {
 	slot_en:'2-Hand',
 	type:{
-		'Shoulders':{
-			name_en:'Ascended Pauldrons',
+		'Daibo':{
+			name_en:'Whirlwind Staff',
 			image:{
-				'Demon Hunter':'',
-				'Monk':'',
-				'Barbarian':'',
-				'Crusader':'',
-				'Witch Doctor':'',
-				'Wizard':''
-			}
+				default:'//media.blizzard.com/d3/icons/items/large/combatstaff_2h_302_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.15,
+				min:994,
+				max:1845
+			},
+			exclude:['Demon Hunter','Barbarian','Crusader','Witch Doctor','Wizard']
+		},
+		'Two-Handed Mace':{
+			name_en:'Persuader',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/mace_2h_302_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.00,
+				min:1737,
+				max:1912
+			},
+			exclude:['Demon Hunter']
+		},
+		'Two-Handed Axe':{
+			name_en:'Flesh Render',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/axe_2h_302_demonhunter_male.png',
+			},
+			weapon:{
+				speed:1.10,
+				min:1384,
+				max:1685
+			},
+			exclude:['Demon Hunter']
+		},
+		'Two-Handed Sword':{
+			name_en:'Kingslayer',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/sword_2h_302_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.15,
+				min:1137,
+				max:1702
+			},
+			exclude:['Demon Hunter']
+		},
+		'Bow':{
+			name_en:'Doubleshot',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/bow_302_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.40,
+				min:143,
+				max:815
+			},
+			exclude:['Monk','Barbarian','Crusader','Witch Doctor','Wizard']
+		},
+		'Crossbow':{
+			name_en:'Oxybeles',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/crossbow_302_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.10,
+				min:779,
+				max:945
+			},
+			exclude:['Monk','Barbarian','Crusader','Witch Doctor','Wizard']
+		},
+		'Polearm':{
+			name_en:'Trident',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/polearm_301_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.05,
+				min:1163,
+				max:1415
+			},
+			exclude:['Demon Hunter']
+		},
+		'Staff':{
+			name_en:'Kerykeion',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/staff_302_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.10,
+				min:1229,
+				max:1839
+			},
+			exclude:['Demon Hunter','Barbarian','Crusader']
+		},
+		'Two-Handed Mighty Weapon':{
+			name_en:'Steppes Smasher',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/mightyweapon2h_302_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.10,
+				min:1462,
+				max:1609
+			},
+			exclude:['Demon Hunter','Monk','Witch Doctor','Wizard','Crusader']
+		},
+		'Two-Handed Flail':{
+			name_en:'Angelic Grand Flail',
+			image:{
+				default:'//media.blizzard.com/d3/icons/items/large/flail_2h_205_demonhunter_male.png'
+			},
+			weapon:{
+				speed:1.15,
+				min:1351,
+				max:1486
+			},
+			exclude:['Demon Hunter','Monk','Barbarian','Witch Doctor','Wizard']
 		}
 	},
 	primary:{
