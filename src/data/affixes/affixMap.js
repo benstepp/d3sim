@@ -131,6 +131,9 @@ var affixMap = {
 	'HumanDamage':{
 		text_en:'{+$%} Damage to Humans'
 	},
+	'UndeadDamage':{
+		text_en:'{+$%} Damage to Undead'
+	},
 	'Bleed':{
 		text_en:'{$%} chance to inflict Bleed for {$%} weapon damage over {5} seconds'
 	},
@@ -1776,6 +1779,110 @@ var affixMap = {
 	'Wojahnni':{
 		type:'legendary',
 		text_en:'Rapid Fire deals {$%} more damage for every second that you channel. Stacks up to 4 times.'
+	},
+	'Baleful':{
+		type:'legendary',
+		text_en:'Enemies killed while Akarat\'s Champion is active turn into Phalanx Avatars for 10 seconds.'
+	},
+	'FateFell':{
+		type:'legendary',
+		text_en:'Gain two additional rays of Heaven’s Fury.'
+	},
+	'Flense':{
+		type:'legendary',
+		text_en:'Sweep Attack restores {$} Wrath for each enemy hit.'
+	},
+	'MortalDrama':{
+		type:'legendary',
+		text_en:'Double the number of Bombardment impacts.'
+	},
+	'Arthef':{
+		type:'legendary',
+		text_en:'Heal for {$%} of your missing Life when you kill an Undead enemy.'
+	},
+	'Schaefer':{
+		type:'legendary',
+		text_en:'Casting a Lightning skill charges you with Lightning, causing you to deal {$%} weapon damage as Lightning every second for 5 seconds to nearby enemies.'
+	},
+	'Skywarden':{
+		type:'legendary',
+		text_en:'Every 60 seconds, gain a random Law for 60 seconds.'
+	},
+	'Furnace':{
+		type:'legendary',
+		text_en:'Increases damage against elites by {$%}.'
+	},
+	'BastionRevered':{
+		type:'legendary',
+		text_en:'Frenzy now stacks up to {10} times.'
+	},
+	'Madawc':{
+		type:'legendary',
+		text_en:'Stun enemies for 2 seconds the first time you hit them.'
+	},
+	'GavelJudgment':{
+		type:'legendary',
+		text_en:'Hammer of the Ancients returns {$} Fury if it hits 3 or less enemies.'
+	},
+	'Bovine':{
+		type:'legendary',
+		text_en:'Chance on hit to summon a herd of murderous cows.'
+	},
+	'Vigilance':{
+		type:'legendary',
+		text_en:'Getting hit has a chance to automatically cast Inner Sanctuary.'
+	},
+	'Ahavarion':{
+		type:'legendary',
+		text_en:'Chance on killing a demon to gain a random Shrine effect.'
+	},
+	'Maloth':{
+		type:'legendary',
+		text_en:'Enemies occasionally flee at the sight of this staff.'
+	},
+	'Vizier':{
+		type:'legendary',
+		text_en:'Reduces the Arcane Power cost of Meteor by {$%}.'
+	},
+	'SmolderingCore':{
+		type:'legendary',
+		text_en:'Lesser enemies are now lured to your Meteor impact areas.'
+	},
+	'Tormenter':{
+		type:'legendary',
+		text_en:'Chance to charm enemies when you hit them.'
+	},
+	'Valthek':{
+		type:'legendary',
+		text_en:'Energy Twister now travels in a straight path.'
+	},
+	'Wormwood':{
+		type:'legendary',
+		text_en:'Locust Swarm continuously plagues enemies around you.'
+	},
+	'Prophecy':{
+		type:'legendary',
+		text_en:'Two Condemned enemies also trigger Condemn\'s explosion.'
+	},
+	'CamRebuttal':{
+		type:'legendary',
+		text_en:'Falling Sword can be used again within 4 seconds before the cooldown is triggered.'
+	},
+	'Ashbringer':{
+		type:'legendary',
+		text_en:'Chance on kill to raise a skeleton to fight for you. Upon accumulating 5 skeletons, they each explode for {1000%} weapon damage and the sword transforms into Ashbringer for a short time. Attacking with Ashbringer burns your enemy for {$%} weapon damage as Holy.'
+	},
+	'Maximus':{
+		type:'legendary',
+		text_en:'Chance on hit to summon a Demonic Slave.'
+	},
+	'Scourge':{
+		type:'legendary',
+		text_en:'{$%} chance when attacking to explode with demonic fury for {$%} weapon damage as Fire.'
+	},
+	'Stalgard':{
+		type:'legendary',
+		text_en:'Your melee attacks throw a piercing axe at a nearby enemy, dealing {$%} weapon damage as Physical.'
 	}
 
 

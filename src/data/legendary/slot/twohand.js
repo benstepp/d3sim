@@ -673,10 +673,17 @@ var twohand = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			Baleful:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_flail_2h_102_x1_demonhunter_male.png',
+		flavor:'"The head of this curious weapon consists of a highly unusual and volatile rock formation. Some speculate it came from a meteor—or an entirely different plane of existence, silly as that is. It has defied the understanding of scholars for centuries, but then again, I have never had a look at it!" —Abd al-Hazir'
 	},
 	{
 		name: "Fate of the Fell",
@@ -687,10 +694,17 @@ var twohand = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			Strength:null,
+			RANDOM:2
+		},
+		secondary:{
+			FateFell:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_flail_2h_103_x1_demonhunter_male.png',
+		flavor:'"When the unholy creature stalking Harstead was finally slain, the town\'s clergy commissioned the construction of this massive weapon. Adorned with a weight fashioned in the fiend\'s terrible visage, the flail was meant to serve as a warning to any fell invader." —Rennold\'s Catalogue of Arms'
 	},
 	{
 		name: "Golden Flense",
@@ -701,10 +715,20 @@ var twohand = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Strength:null,
+			RANDOM:2
+		},
+		secondary:{
+			Flense:{
+				min:4,
+				max:6
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_flail_2h_104_demonhunter_male.png',
+		flavor:'Covered in delicate Skatsimi runes, the blades of this ornate ancient weapon are sharp enough to draw blood with but a finger\'s caress.'
 	},
 	{
 		name: "The Mortal Drama",
@@ -715,10 +739,17 @@ var twohand = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Strength:null,
+			RANDOM:2
+		},
+		secondary:{
+			MortalDrama:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_flail_2h_101_x1_demonhunter_male.png',
+		flavor:'"A tragedy is merely a comedy where the audience understands the consequences." —Samuel Drest, playwright'
 	},
 	{
 		name: "Arthef's Spark of Life",
@@ -733,9 +764,19 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
+		primary:{
+			WEAPON_DAMAGE:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Arthef:{
+				min:3,
+				max:4
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_003_x1_demonhunter_male.png',
 		flavor:''
 	},
 	{
@@ -751,10 +792,16 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Cold:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_001_x1_demonhunter_male.png',
+		flavor:'Many are the warriors who have fled in terror from the awesome might that is Crushbane.'
 	},
 	{
 		name: "Schaefer's Hammer",
@@ -768,10 +815,23 @@ var twohand = [
 			"Crusader",
 			"Wizard"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Lightning:null,
+			LightningDamage:{
+				min:20,
+				max:25
+			},
+			RANDOM:2
+		},
+		secondary:{
+			Schaefer:{
+				min:650,
+				max:850
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_009_p2_demonhunter_male.png',
+		flavor:'Forged in the frigid wastes of the north to honor the famed Schaefer artisans.'
 	},
 	{
 		name: "Skywarden",
@@ -782,10 +842,17 @@ var twohand = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			Strength:null,
+			RANDOM:2
+		},
+		secondary:{
+			Skywarden:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_010_x1_demonhunter_male.png',
+		flavor:'Favored weapon of the angelic Host.'
 	},
 	{
 		name: "Sledge of Athskeleng",
@@ -800,10 +867,21 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			MAIN:null,
+			FlatDamage:null,
+			MoveSpeed:{
+				min:10,
+				max:12
+			},
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_002_x1_demonhunter_male.png',
+		flavor:'The berserkers of Athskeleng could not be stopped, their intricately carved white maces turning red with the blood of their enemies.'
 	},
 	{
 		name: "The Furnace",
@@ -818,10 +896,20 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Furnace:{
+				min:40,
+				max:50
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_103_x1_demonhunter_male.png',
+		flavor:'"This pestilence threatens to destroy our city, General Arenton. See that the plague dead are kept only in the Repository, and use this weapon to set their bodies aflame. Would that the memory of this tragedy could burn with them." –Justinian II, year 1200'
 	},
 	{
 		name: "Wrath of the Bone King",
@@ -835,10 +923,20 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Cold:null,
+			ColdDamage:{
+				min:25,
+				max:30
+			},
+			RANDOM:2
+		},
+		secondary:{
+			LifeAfterKill:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_012_p1_demonhunter_male.png',
+		flavor:'Used by the Skeleton King to punish those who would stand against him.'
 	},
 	{
 		name: "Bastion's Revered",
@@ -849,10 +947,18 @@ var twohand = [
 		smartLoot: [
 			"Barbarian"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Cold:null,
+			Strength:null,
+			Socket:null,
+			RANDOM:1
+		},
+		secondary:{
+			BastionRevered:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mighty_2h_004_p1_demonhunter_male.png',
+		flavor:'Used by the leaders of Bastion’s Keep in the war with the Northern Tribes. The Barbarians came to respect the weapon so much that they gave it a name, shortly after tearing it from the hands of a dying garrison commander.'
 	},
 	{
 		name: "Fury of the Vanished Peak",
@@ -863,10 +969,24 @@ var twohand = [
 		smartLoot: [
 			"Barbarian"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Strength:null,
+			SeismicSlamDmg:{
+				min:25,
+				max:30
+			},
+			RANDOM:2
+		},
+		secondary:{
+			VanishedPeak:{
+				min:40,
+				max:50
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mighty_2h_006_x1_demonhunter_male.png',
+		flavor:'Korr took all his anger and despair and poured them into the creation of a weapon that would speak to the majesty of Arreat for ages to come.'
 	},
 	{
 		name: "Immortal King's Boulder Breaker",
@@ -877,10 +997,22 @@ var twohand = [
 		smartLoot: [
 			"Barbarian"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Strength:null,
+			CallOfTheAncientsDmg:{
+				min:45,
+				max:60
+			},
+			RANDOM:2
+		},
+		secondary:{
+			IgnoreDura:null,
+			RANDOM:1
+		},
+		set:'Immortal King\'s Call',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mighty_2h_010_x1_demonhunter_male.png',
+		flavor:'The favorite weapon of Worusk, the king of the tribes.'
 	},
 	{
 		name: "Madawc's Sorrow",
@@ -891,10 +1023,17 @@ var twohand = [
 		smartLoot: [
 			"Barbarian"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Strength:null,
+			RANDOM:2
+		},
+		secondary:{
+			Madawc:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mighty_2h_101_x1_demonhunter_male.png',
+		flavor:'The storm of demonic destruction that thundered toward the gates of Harrogath was held back for what seemed like ages by a lone barbarian wielding this immense weapon. But even the mightiest of warriors will tire and eventually fall, and such was the case with this nameless hero. Madawc\'s Sorrow was thought lost in the destruction of the sacred mountain, but has recently resurfaced intact.'
 	},
 	{
 		name: "The Gavel of Judgment",
@@ -905,10 +1044,24 @@ var twohand = [
 		smartLoot: [
 			"Barbarian"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			Strength:null,
+			HammerOfTheAncientsDmg:{
+				min:30,
+				max:40
+			},
+			RANDOM:1
+		},
+		secondary:{
+			GavelJudgment:{
+				min:20,
+				max:25
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_mighty_2h_001_demonhunter_male.png',
+		flavor:'A mighty symbol of Tyrael, the archangel of Justice, though never actually used by him. Stolen from the Courts of Justice in the High Heavens by renegade angels.'
 	},
 	{
 		name: "Bovine Bardiche",
@@ -921,10 +1074,17 @@ var twohand = [
 			"Barbarian",
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Lightning:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Bovine:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_polearm_101_x1_demonhunter_male.png',
+		flavor:'This polearm was crafted by the finest ungulate smiths—its blade fired in the Hellforge, quenched in the rancid milk of the Cow King, and enchanted by that selfsame monarch. In addition to its significant martial benefits, the Bovine Bardiche may also summon forth a veritable army of cows to fight on its wielder\'s behalf.'
 	},
 	{
 		name: "Heart Slaughter",
@@ -938,10 +1098,21 @@ var twohand = [
 			"Crusader",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			PhysDamage:{
+				min:25,
+				max:30
+			},
+			MAIN:null,
+			RANDOM:1
+		},
+		secondary:{
+			LifeAfterKill:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_polearm_003_p1_demonhunter_male.png',
+		flavor:'Your enemies will find it difficult to fight without their hearts.'
 	},
 	{
 		name: "Pledge of Caldeum",
@@ -955,10 +1126,16 @@ var twohand = [
 			"Crusader",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_polearm_002_x1_demonhunter_male.png',
+		flavor:'Long a symbol of an open and free society, this weapon has come to represent the tyranny and corruption that have befallen the great city.'
 	},
 	{
 		name: "Standoff",
@@ -972,10 +1149,17 @@ var twohand = [
 			"Crusader",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Cold:null,
+			MAIN:null,
+			Socket:null,
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_polearm_004_x1_demonhunter_male.png',
+		flavor:'With this, one warrior can hold back an army.'
 	},
 	{
 		name: "Vigilance",
@@ -986,10 +1170,17 @@ var twohand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			Dexterity:null,
+			RANDOM:2
+		},
+		secondary:{
+			Vigilance:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_polearm_001_x1_demonhunter_male.png',
+		flavor:'"One who stands in defense of others will find her inner strength." —The Cadence of Battle'
 	},
 	{
 		name: "Ahavarion, Spear of Lycander",
@@ -1002,10 +1193,17 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			Ahavarion:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_101_x1_demonhunter_male.png',
+		flavor:'"For love of the nephalem Philios, I will leave this weapon behind, and exchange the powers of Heaven for the peace of Sanctuary." –The angel Lycander'
 	},
 	{
 		name: "Autumn's Call",
@@ -1018,10 +1216,17 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			BonusXp:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_008_x1_demonhunter_male.png',
+		flavor:'Contemplate the falling leaves, colored by the rays of the waning sun. Strike forth from a place of peace.'
 	},
 	{
 		name: "Maloth's Focus",
@@ -1034,10 +1239,17 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Maloth:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_006_x1_demonhunter_male.png',
+		flavor:'Used as a focal point for Maloth\'s fearsome power. It took an army to pry it from his hands.'
 	},
 	{
 		name: "The Broken Staff",
@@ -1050,10 +1262,18 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Lightning:null,
+			MAIN:null,
+			Socket:null,
+			RANDOM:1
+		},
+		secondary:{
+			IgnoreDura:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_001_x1_demonhunter_male.png',
+		flavor:'Master Kirill\'s prized staff until it was damaged in combat with the demon Ashukal.'
 	},
 	{
 		name: "The Grand Vizier",
@@ -1064,10 +1284,24 @@ var twohand = [
 		smartLoot: [
 			"Wizard"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			Intelligence:null,
+			MeteorDmg:{
+				min:25,
+				max:30
+			},
+			RANDOM:2
+		},
+		secondary:{
+			Vizier:{
+				min:40,
+				max:50
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_009_p1_demonhunter_male.png',
+		flavor:'Protector of the first counselor of Caldeum\'s Trade Consortium.'
 	},
 	{
 		name: "The Smoldering Core",
@@ -1078,10 +1312,18 @@ var twohand = [
 		smartLoot: [
 			"Wizard"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			Intelligence:null,
+			Socket:null,
+			RANDOM:1
+		},
+		secondary:{
+			SmolderingCore:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_103_x1_demonhunter_male.png',
+		flavor:'"After Azmodan\'s death, I sent a squad of men to block the path to the crater. Only one of them returned, bearing this strange weapon. He was badly burned—his armor had melted into his skin in places. He perished a few hours later. We threw the staff over the walls, hoping never to see it again." —Captain Haile of Bastion’s Keep'
 	},
 	{
 		name: "The Tormentor",
@@ -1094,10 +1336,17 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Arcane:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Tormenter:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_007_x1_demonhunter_male.png',
+		flavor:'This staff was made with only one goal in mind: to cause great pain.'
 	},
 	{
 		name: "Valthek's Rebuke",
@@ -1108,10 +1357,18 @@ var twohand = [
 		smartLoot: [
 			"Wizard"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Arcane:null,
+			Intelligence:null,
+			Socket:null,
+			RANDOM:1
+		},
+		secondary:{
+			Valthek:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_102_x1_demonhunter_male.png',
+		flavor:'This staff was the property of the high councilor of the Vizjerei and master of the mage clans of the Yshari Sanctum. It disappeared shortly after an incident with a rebellious student.'
 	},
 	{
 		name: "Wormwood",
@@ -1122,10 +1379,21 @@ var twohand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Poison:null,
+			Intelligence:null,
+			PosionDamage:{
+				min:20,
+				max:25
+			},
+			RANDOM:1
+		},
+		secondary:{
+			Wormwood:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_staff_003_demonhunter_male.png',
+		flavor:'The poisonous hatred of many a man was harnessed to create this staff.'
 	},
 	{
 		name: "Blackguard",
@@ -1140,10 +1408,21 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			MAIN:null,
+			FlatDamage:null,
+			RANDOM:1
+		},
+		secondary:{
+			CcReduc:{
+				min:4,
+				max:8
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_011_x1_demonhunter_male.png',
+		flavor:'The power of this sword drove the warrior Rothat to unspeakable acts.'
 	},
 	{
 		name: "Blade of Prophecy",
@@ -1154,10 +1433,17 @@ var twohand = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			CdReduc:null,
+			RANDOM:2
+		},
+		secondary:{
+			Prophecy:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_007_x1_demonhunter_male.png',
+		flavor:'The Blade of Prophecy was lost until a champion worthy to carry it into battle emerged.'
 	},
 	{
 		name: "Cam's Rebuttal",
@@ -1168,10 +1454,17 @@ var twohand = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Strength:null,
+			RANDOM:2
+		},
+		secondary:{
+			CamRebuttal:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_102_x1_demonhunter_male.png',
+		flavor:'This massive holy weapon was once owned by an overzealous paladin named Cam. The blade earned its name when Cam was confronted by a strange warrior from the east who claimed that a darkness coiled at the heart of the Zakarum faith, one that threatened to undo its good works. Cam listened politely to the claims, then with a scream of "Blasphemer!" lopped off the shocked stranger\'s head.'
 	},
 	{
 		name:"Corrupted Ashbringer",
@@ -1186,10 +1479,24 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Poison:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Ashbringer:{
+				min:5000,
+				max:6000
+			},
+			UndeadDamage:{
+				min:9,
+				max:15
+			},
+			LifeAfterKill:null
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_104_x1_demonhunter_male.png',
+		flavor:'Stories tell of a great paladin who wore a single gauntlet of silver and wielded a mighty sword with a flashing jewel. He dispatched thousands of Risen Dead and Wretched Mothers, but fell to a tragic end. This sword bears some resemblance to the legends, but its jewel is dark and threatening. Perhaps there is more to the story?'
 	},
 	{
 		name: "Faithful Memory",
@@ -1204,10 +1511,20 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Thorns:{
+				min:0,
+				max:0
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_012_x1_demonhunter_male.png',
+		flavor:'The Boosenian smiths forged swords with a technique centuries beyond their time. Few craftsmen have been able to replicate the quality of their work.'
 	},
 	{
 		name: "Maximus",
@@ -1222,10 +1539,21 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			FireDamage:{
+				min:15,
+				max:20
+			},
+			MAIN:null,
+			RANDOM:1
+		},
+		secondary:{
+			Maximus:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_010_x1_demonhunter_male.png',
+		flavor:'The famed warrior Maximus defeated ninety nine demons singlehandedly in the Battle of Lut Bahadur, and imbued his sword with their demonic power.'
 	},
 	{
 		name: "Scourge",
@@ -1240,10 +1568,20 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Poison:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			Scourge:{
+				min:[20,1800],
+				max:[45,2000]
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_004_x1_demonhunter_male.png',
+		flavor:'A weapon of such evil visage is rarely seen outside the confines of the Burning Hells.'
 	},
 	{
 		name: "Stalgard's Decimator",
@@ -1256,10 +1594,20 @@ var twohand = [
 			"Barbarian",
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Stalgard:{
+				min:550,
+				max:700
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_101_x1_demonhunter_male.png',
+		flavor:'Stalgard was a bloodthirsty warlord whose forces briefly controlled the trade routes of the southern plains. He was famed for engaging in duels with the best swordsman of any caravan who dared pass through his territory, offering to let it proceed unmolested if its champion triumphed. Of course, he was equally famed for cheating if he began to lose said duels.'
 	},
 	{
 		name: "The Grandfather",
@@ -1274,10 +1622,20 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			MAIN:null,
+			PercLife:{
+				min:9,
+				max:16
+			},
+			RANDOM:2
+		},
+		secondary:{
+			IgnoreDura:null
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_001_x1_demonhunter_male.png',
+		flavor:'The most ancient and revered of all greatswords.'
 	},
 	{
 		name: "The Sultan of Blinding Sand",
@@ -1292,10 +1650,20 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			BlindHit:{
+				min:200,
+				max:400
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_008_x1_demonhunter_male.png',
+		flavor:'Forged by the finest smiths in Caldeum to commemorate the first emperor Hakan\'s ascension to the throne.'
 	},
 	{
 		name: "The Zweihander",
@@ -1310,10 +1678,17 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			BonusXp:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_002_x1_demonhunter_male.png',
+		flavor:'Longsword favored by Heuerman and the loyalists during the Entsteig Rebellion.'
 	},
 	{
 		name: "Warmonger",
@@ -1328,10 +1703,17 @@ var twohand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			MAIN:null,
+			Socket:null,
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_003_x1_demonhunter_male.png',
+		flavor:'Brandished by the demon Draorm at the Fifth Battle of the Diamond Gates.'
 	}
 ];
 
