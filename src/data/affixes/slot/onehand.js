@@ -196,8 +196,8 @@ var onehand = {
 		LevelReduc:{min:2,max:30,minl:2,maxl:30,mina:30,maxa:40},
 		BonusXp:{min:100,max:139,minl:140,maxl:200,mina:220,maxa:260},
 
-		MaxAp:{minl:10,maxl:14,mina:13,maxa:14},
-		MaxDisc:{},
+		MaxAp:{min:0,max:0,minl:10,maxl:14,mina:13,maxa:14},
+		MaxDisc:{min:8,max:10,minl:9,maxl:12,mina:9,maxa:12},
 		MaxSpirit:{mina:13,maxa:15},
 		MaxFury:{},
 		MaxMana:{},

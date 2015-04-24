@@ -1297,7 +1297,7 @@ var affixMap = {
 	},
 	'PuzzleRing':{
 		type:'legendary',
-		text_en:'Summon a treasure goblin who picks up normal-quality items for you. After picking up {$%} items, he drops a rare item with a chance for a legendary.'
+		text_en:'Summon a treasure goblin who picks up normal-quality items for you. After picking up {$} items, he drops a rare item with a chance for a legendary.'
 	},
 	'Rogars':{
 		type:'legendary',
@@ -1529,7 +1529,116 @@ var affixMap = {
 	'VengefulWind':{
 		type:'legendary',
 		text_en:'Increases the maximum stack count of Sweeping Wind by 3.'
+	},
+	'Darklight':{
+		type:'legendary',
+		text_en:'Fist of the Heavens has a {$%} chance to also be cast at your location.'
+	},
+	'Gyrfalcon':{
+		type:'legendary',
+		text_en:'Removes the resource cost of Blessed Shield.'
+	},
+	'Inviolable':{
+		type:'legendary',
+		text_en:'Casting Consecration also casts Consecration beneath all of your allies.'
+	},
+	'Justinian':{
+		type:'legendary',
+		text_en:'Blessed Hammer gains the effect of the Dominion rune.'
+	},
+	'Kassar':{
+		type:'legendary',
+		text_en:'Casting Justice increases your movement speed by {$%} for 2 seconds.'
+	},
+	'Swiftmount':{
+		type:'legendary',
+		text_en:'Doubles the duration of Steed Charge.'
+	},
+	'Calamity':{
+		type:'legendary',
+		text_en:'Enemies you hit become Marked for Death.'
+	},
+	'DanettaR':{
+		type:'legendary',
+		text_en:'Vault gains the effect of the Rattling Roll rune.'
+	},
+	'DanettaS':{
+		type:'legendary',
+		text_en:'Leave a clone of yourself behind after using Vault.'
+	},
+	'Kmar':{
+		type:'legendary',
+		text_en:'Strafe gains the effect of the Drifting Shadow rune.'
+	},
+	'JaceHammer':{
+		type:'legendary',
+		text_en:'Increase the size of your Blessed Hammers.'
+	},
+	'OdynSon':{
+		type:'legendary',
+		text_en:'{$%} chance to Chain Lightning enemies when you hit them.'
+	},
+	'Solanium':{
+		type:'legendary',
+		text_en:'Critical Hits have a {$%} chance to spawn a health globe.'
+	},
+	'Fjord':{
+		type:'legendary',
+		text_en:'{$%} chance to be surrounded by a Chilling Aura when attacking.'
+	},
+	'Remorseless':{
+		type:'legendary',
+		text_en:'Hammer of the Ancients has a {$%} chance to summon an Ancient for 20 seconds.'
+	},
+	'Azurewrath':{
+		type:'legendary',
+		text_en:'Undead enemies within 25 yards take {$%} weapon damage as Holy every second and are sometimes knocked back.'
+	},
+	'Fulminator':{
+		type:'legendary',
+		text_en:'Lightning damage has a chance to turn enemies into lightning rods, causing them to pulse {$%} weapon damage as Lightning every second to nearby enemies for 6 seconds.'
+	},
+	'Rimeheart':{
+		type:'legendary',
+		text_en:'{10%} chance on hit to instantly deal {10000%} weapon damage as Cold to enemies that are Frozen.'
+	},
+	'Sever':{
+		type:'legendary',
+		text_en:'Slain enemies rest in pieces.'
+	},
+	'ShardHate':{
+		type:'legendary',
+		text_en:'Elemental skills have a chance to trigger a powerful attack that deals {$%} weapon damage.'
+	},
+	'Skycutter':{
+		type:'legendary',
+		text_en:'Chance to summon angelic assistance when attacking.'
+	},
+	'Thunderfury':{
+		type:'legendary',
+		text_en:'Chance on hit to blast your enemy with Lightning, dealing {$%} weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by {30%} for 3 seconds. Jumps up to 5 targets.'
+	},
+	'Aether':{
+		type:'legendary',
+		text_en:'Teleport no longer has a cooldown but costs 25 Arcane Power.'
+	},
+	'Gesture':{
+		type:'legendary',
+		text_en:'Reduces the cooldown of Slow Time by {$%}.'
+	},
+	'Serpent':{
+		type:'legendary',
+		text_en:'You may have one extra Hydra active at a time.'
+	},
+	'Slorak':{
+		type:'legendary',
+		text_en:'This wand finds your death humorous.'
+	},
+	'WandWoh':{
+		type:'legendary',
+		text_en:'3 additional Explosive Blasts are triggered after casting Explosive Blast.'
 	}
+
 
 /*
 
