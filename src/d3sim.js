@@ -245,22 +245,23 @@ function createItem(rarity, slot, dClass, legendaryName) {
 	//pull any baseData like armor or weapon speed
 	if(affixes[slot].type[newItem.type].hasOwnProperty('weapon')) {
 		var baseWeapon = affixes[slot].type[newItem.type].weapon;
+		var minimum; //attempt to keep browser from getting huge variables even though
+		var maximum; //a new function is called idk. 
+
 		for (var primary in newItem.primaries) {
 			if (primary.indexOf('Dmg_') === 0) {
-				baseWeapon.min = parseInt(baseWeapon.min) + parseInt(newItem.primaries[primary].value[0]);
-				baseWeapon.max = parseInt(baseWeapon.max) + parseInt(newItem.primaries[primary].value[1]);
+				minimum = parseInt(baseWeapon.min) + parseInt(newItem.primaries[primary].value[0]);
+				maximum = parseInt(baseWeapon.max) + parseInt(newItem.primaries[primary].value[1]);
 				break; //found bonus damage so break
 			}
 		}
+
 		//calculate the weapon dps and save tooltip data to item
 		var FlatDamageMult = (newItem.primaries.hasOwnProperty('FlatDamage'))?((newItem.primaries.FlatDamage.value)/100)+1 :1;
 		var AttackSpeedMult = (newItem.primaries.hasOwnProperty('AttackSpeed'))?((newItem.primaries.AttackSpeed.value)/100)+1 :1;
 		newItem.speed = baseWeapon.speed;
-		newItem.weaponDps = ((baseWeapon.min + baseWeapon.max)/2)*(baseWeapon.speed)*AttackSpeedMult*FlatDamageMult;
-		newItem.damageRange = [baseWeapon.min,baseWeapon.max];
-
-		//break the variable so it stops getting huge
-		baseWeapon = undefined;
+		newItem.weaponDps = ((minimum + maximum)/2)*(baseWeapon.speed)*AttackSpeedMult*FlatDamageMult;
+		newItem.damageRange = [minimum,maximum];
 	}
 
 	if (affixes[slot].type[newItem.type].hasOwnProperty('armor')) {
