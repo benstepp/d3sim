@@ -951,7 +951,8 @@ var onehand = [
 			RANDOM:2
 		},
 		secondary:{
-			DanettaR:null
+			DanettaR:null,
+			RANDOM:1
 		},
 		set:'Danetta\'s Hatred',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_handxbow_002_x1_demonhunter_male.png',
