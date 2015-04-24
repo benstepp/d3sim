@@ -901,8 +901,8 @@ var onehand = [
 			"Demon Hunter"
 		],
 		primary:{
-			Dmg_fire_hc:null,
-			Fire_Damage:{
+			Dmg_Fire_hc:null,
+			FireDamage:{
 				min:15,
 				max:20
 			},

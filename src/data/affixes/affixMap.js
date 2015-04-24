@@ -1618,6 +1618,10 @@ var affixMap = {
 		type:'legendary',
 		text_en:'Chance on hit to blast your enemy with Lightning, dealing {$%} weapon damage as Lightning and then jumping to additional nearby enemies. Each enemy hit has their attack speed and movement speed reduced by {30%} for 3 seconds. Jumps up to 5 targets.'
 	},
+	'Ingeom':{
+		type:'legendary',
+		text_en:'Your skill cooldowns are reduced by {$} seconds for 15 seconds after killing an elite pack.'
+	},
 	'Aether':{
 		type:'legendary',
 		text_en:'Teleport no longer has a cooldown but costs 25 Arcane Power.'

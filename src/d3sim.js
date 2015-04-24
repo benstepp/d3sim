@@ -303,6 +303,29 @@ function rollStats(item, rarity, slot, dClass) {
 		primaryKeys.splice(elementalIndex,1);
 	}
 
+	//if a weapon damage affix is specified
+	var weaponIndex = primaryKeys.indexOf('WEAPON_DAMAGE');
+	if (weaponIndex !== -1) {
+
+		//getting a list of weapon damage affixes
+		var allPrims = affixes[slot.toLowerCase()].primary;
+		var allWeaponDamage = [];
+		for (var prima in allPrims) {
+			if (prima.indexOf('Dmg_') === 0 && 
+				affixMap[prima].hasOwnProperty('exclude') &&
+				affixMap[prima].exclude.indexOf(dClass) === -1 &&
+				affixMap[prima].exclude.indexOf(item.type) === -1) {
+				allWeaponDamage.push(prima);
+			}
+		}
+
+		//pick a random weapon damage
+		var pickedDamage = intRandom(0,allWeaponDamage.length - 1);
+		primariesFinal[allWeaponDamage[pickedDamage]] = {};
+
+		primaryKeys.splice(weaponIndex,1);
+	}
+
 	//if a skill damage stat is specified
 	var skillIndex = primaryKeys.indexOf('SKILLDAMAGE');
 	if(skillIndex !== -1) {
