@@ -246,9 +246,9 @@ function createItem(rarity, slot, dClass, legendaryName) {
 	if(affixes[slot].type[newItem.type].hasOwnProperty('weapon')) {
 		var baseWeapon = affixes[slot].type[newItem.type].weapon;
 		for (var primary in newItem.primaries) {
-			if (primary.indexOf('Dmg_') !== -1) {
-				baseWeapon.min += newItem.primaries[primary].value[0];
-				baseWeapon.max += newItem.primaries[primary].value[1];
+			if (primary.indexOf('Dmg_') === 0) {
+				baseWeapon.min = parseInt(baseWeapon.min) + parseInt(newItem.primaries[primary].value[0]);
+				baseWeapon.max = parseInt(baseWeapon.max) + parseInt(newItem.primaries[primary].value[1]);
 				break; //found bonus damage so break
 			}
 		}
