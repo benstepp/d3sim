@@ -259,7 +259,7 @@ function createItem(rarity, slot, dClass, legendaryName) {
 	}
 
 	if (affixes[slot].type[newItem.type].hasOwnProperty('armor')) {
-		var bonusArmor = newItem.primaries.armor||0;
+		var bonusArmor = newItem.primaries.Armor.value||0;
 		newItem.armor = affixes[slot].type[newItem.type].armor + bonusArmor;
 	}
 
