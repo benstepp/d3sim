@@ -244,10 +244,23 @@ function createItem(rarity, slot, dClass, legendaryName) {
 
 	//pull any baseData like armor or weapon speed
 	if(affixes[slot].type[newItem.type].hasOwnProperty('weapon')) {
-		newItem.baseWeapon = affixes[slot].type[newItem.type].weapon;
+		var baseWeapon = affixes[slot].type[newItem.type].weapon;
+		for (var primary in newItem.primaries) {
+			if (primary.indexOf('Dmg_')) {
+				baseWeapon.min += newItem.primaries[primary].value[0];
+				baseWeapon.max += newItem.primaries[primary].value[1];
+				break; //found bonus damage so break
+			}
+		}
+		var FlatDamageMult = ((newItem.primaries.FlatDamage/100 || 0)+1);
+		var AttackSpeedMult = ((newItem.primaries.AttackSpeed/100 || 0)+1);
+		newItem.weaponDps = ((baseWeapon.min + baseWeapon.max)/2)*(FlatDamageMult)*(baseWeapon.speed*AttackSpeedMult);
+		newItem.damageRange = [baseWeapon.min,baseWeapon.max];
 	}
+
 	if (affixes[slot].type[newItem.type].hasOwnProperty('armor')) {
-		newItem.baseArmor = affixes[slot].type[newItem.type].armor;
+		var bonusArmor = newItem.primaries.armor||0;
+		newItem.armor = affixes[slot].type[newItem.type].armor + bonusArmor;
 	}
 
 	return newItem;
