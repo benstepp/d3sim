@@ -690,7 +690,7 @@ function test() {
 }
 function testt() {
 	setKadala('Demon Hunter',true,true);
-	kadalaRoll('onehand');
+	console.log(kadalaRoll('onehand'));
 }
 
 module.exports = d3sim;
