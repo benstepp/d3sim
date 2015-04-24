@@ -1285,7 +1285,7 @@ var affixMap = {
 		type:'legendary',
 		text_en:'Elemental Arrow - Ball Lightning now travels at {$%} speed.'
 	},
-	'SeetingHatred':{
+	'SeethingHatred':{
 		type:'legendary',
 		text_en:'Chakram now generates {$} Hatred.'
 	},
