@@ -339,7 +339,7 @@ function rollStats(item, rarity, slot, dClass) {
 		var pCount = primaries.RANDOM;
 
 		while(pCount--) {
-			var affixP = getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'primary');
+			var affixP = getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'primary',item.type);
 			primariesFinal[affixP] = {};
 		}
 	}
@@ -347,7 +347,7 @@ function rollStats(item, rarity, slot, dClass) {
 		var sCount = secondaries.RANDOM;
 
 		while(sCount--) {
-			var affixS = getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'secondary');
+			var affixS = getRandomAffix(Object.keys(primariesFinal).concat(Object.keys(secondariesFinal)),slot,dClass,'secondary',item.type);
 			secondariesFinal[affixS] = {};
 		}
 	}
@@ -399,7 +399,7 @@ function rollStats(item, rarity, slot, dClass) {
 	return item;
 }
 
-function getRandomAffix(current,slot,dClass,ps) {
+function getRandomAffix(current,slot,dClass,ps,type) {
 	var currentLength = current.length;
 
 	//all primary or secondary affixes for the slot
@@ -424,6 +424,11 @@ function getRandomAffix(current,slot,dClass,ps) {
 
 			//if the class is in this exlude array continue
 			if (excludes.indexOf(dClass) !== -1) {
+				continue outer;
+			}
+
+			//if the item type is in the exclude array
+			if (excludes.indexOf(type) !== -1) {
 				continue outer;
 			}
 
