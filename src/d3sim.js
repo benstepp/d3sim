@@ -252,10 +252,9 @@ function createItem(rarity, slot, dClass, legendaryName) {
 				break; //found bonus damage so break
 			}
 		}
-
 		//calculate the weapon dps and save tooltip data to item
-		var FlatDamageMult = ((newItem.primaries.FlatDamage || 0)/100)+1;
-		var AttackSpeedMult = ((newItem.primaries.AttackSpeed || 0)/100)+1;
+		var FlatDamageMult = (newItem.primaries.hasOwnProperty('FlatDamage'))?((newItem.primaries.FlatDamage.value)/100)+1 :1;
+		var AttackSpeedMult = (newItem.primaries.hasOwnProperty('AttackSpeed'))?((newItem.primaries.AttackSpeed.value)/100)+1 :1;
 		newItem.speed = baseWeapon.speed;
 		newItem.weaponDps = ((baseWeapon.min + baseWeapon.max)/2)*(baseWeapon.speed)*AttackSpeedMult*FlatDamageMult;
 		newItem.damageRange = [baseWeapon.min,baseWeapon.max];
@@ -688,6 +687,10 @@ function test() {
 			}
 		}
 	}
+}
+function testt() {
+	setKadala('Demon Hunter',true,true);
+	kadalaRoll('onehand');
 }
 
 module.exports = d3sim;
