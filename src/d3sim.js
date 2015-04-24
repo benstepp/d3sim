@@ -252,9 +252,12 @@ function createItem(rarity, slot, dClass, legendaryName) {
 				break; //found bonus damage so break
 			}
 		}
-		var FlatDamageMult = ((newItem.primaries.FlatDamage/100 || 0)+1);
-		var AttackSpeedMult = ((newItem.primaries.AttackSpeed/100 || 0)+1);
-		newItem.weaponDps = ((baseWeapon.min + baseWeapon.max)/2)*(FlatDamageMult)*(baseWeapon.speed*AttackSpeedMult);
+
+		//calculate the weapon dps and save tooltip data to item
+		var FlatDamageMult = ((newItem.primaries.FlatDamage || 0)/100)+1;
+		var AttackSpeedMult = ((newItem.primaries.AttackSpeed || 0)/100)+1;
+		newItem.speed = baseWeapon.speed;
+		newItem.weaponDps = ((baseWeapon.min + baseWeapon.max)/2)*(baseWeapon.speed)*AttackSpeedMult*FlatDamageMult;
 		newItem.damageRange = [baseWeapon.min,baseWeapon.max];
 	}
 
