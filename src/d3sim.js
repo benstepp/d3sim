@@ -256,6 +256,12 @@ function rollStats(item, rarity, slot, dClass) {
 		secondaries = item.secondaries;
 	}
 
+	//if the item has stats that must be rolled (avg damage on sources/mojo or attack speed on a quiver)
+	if (affixes[slot].type[item.type].hasOwnProperty('baseAffix')) {
+		//use the default stats based on rarity
+		primaries[affixes[slot].type[item.type].baseAffix] = null;
+	}
+
 	//get a list of keys for primaries/secondaries
 	//use the length of this array to determine if we need to roll for it
 	var primaryKeys = Object.keys(primaries);
