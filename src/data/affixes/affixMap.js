@@ -225,33 +225,41 @@ var affixMap = {
 	//onhit
 	'FreezeHit':{
 		text_en:'{$%} Chance to Freeze on Hit',
+		exclude:['BlindHit','FearHit','ChillHit','SlowHit','KnockHit','StunHit','ImmobHit']
 	},
 	'BlindHit': {
 		text_en:'{$%} Chance to Blind on Hit',
-		prefix_en:'Perplexing'
+		prefix_en:'Perplexing',
+		exclude:['FreezeHit','FearHit','ChillHit','SlowHit','KnockHit','StunHit','ImmobHit']
 	},
 	'FearHit':{
 		text_en:'{$%} Chance to Fear on Hit',
-		suffix_en:'of Horror'
+		suffix_en:'of Horror',
+		exclude:['FreezeHit','BlindHit','ChillHit','SlowHit','KnockHit','StunHit','ImmobHit']
 	},
 	'ChillHit':{
 		text_en:'{$%} Chance to Chill on Hit',
-		prefix_en:'Glacial'
+		prefix_en:'Glacial',
+		exclude:['FreezeHit','BlindHit','FearHit','SlowHit','KnockHit','StunHit','ImmobHit']
 	},
 	'SlowHit':{
 		text_en:'{$%} Chance to Slow on Hit',
-		prefix_en:'Persecuting'
+		prefix_en:'Persecuting',
+		exclude:['FreezeHit','BlindHit','FearHit','ChillHit','KnockHit','StunHit','ImmobHit']
 	},
 	'KnockHit':{
 		text_en:'{$%} Chance to Knockback on Hit',
-		prefix_en:'Smashing'
+		prefix_en:'Smashing',
+		exclude:['FreezeHit','BlindHit','FearHit','ChillHit','SlowHit','StunHit','ImmobHit']
 	},
 	'StunHit':{
 		text_en:'{$%} Chance to Stun on Hit',
-		suffix_en:'of Ruin'
+		suffix_en:'of Ruin',
+		exclude:['FreezeHit','BlindHit','FearHit','ChillHit','SlowHit','KnockHit','ImmobHit']
 	},
 	'ImmobHit':{
-		text_en:'{$%} Chance to Immobolize on Hit'
+		text_en:'{$%} Chance to Immobolize on Hit',
+		exclude:['FreezeHit','BlindHit','FearHit','ChillHit','SlowHit','KnockHit','StunHit']
 	},
 
 	//Class based
@@ -413,31 +421,31 @@ var affixMap = {
 		text_en:'Increases {Rain of Vengeance} Damage by {$%}',
 		suffix_en:'of Dark Skies',
 		exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-		'FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
+		'FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ElementalArrowDmg','ChakramDmg','ClusterArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg']
 	},
 	'FanOfKnivesDmg':{
 		text_en:'Increases {Fan of Knives} Damage by {$%}',
 		suffix_en:'of Concealed Blades',
 		exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-		'RainOfVengeanceDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
+		'RainOfVengeanceDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ElementalArrowDmg','ChakramDmg','ClusterArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg']
 	},
 	'CompanionDmg':{
 		text_en:'Increases {Companion} Damage by {$%}',
 		suffix_en:'Companion',
 		exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-		'RainOfVengeanceDmg','FanOfKnivesDmg','SpikeTrapDmg','SentryDmg']
+		'RainOfVengeanceDmg','FanOfKnivesDmg','SpikeTrapDmg','SentryDmg','ElementalArrowDmg','ChakramDmg','ClusterArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg']
 	},
 	'SpikeTrapDmg':{
 		text_en:'Increases {Spike Trap} Damage by {$%}',
 		suffix_en:'of Spines',
 		exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-		'RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SentryDmg']
+		'RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SentryDmg','ElementalArrowDmg','ChakramDmg','ClusterArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg']
 	},
 	'SentryDmg':{
 		text_en:'Increases {Sentry} Damage by {$%}',
 		suffix_en:'of Sentry',
 		exclude:['Monk','Crusader','Barbarian','Witch Doctor','Wizard',
-		'RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg']
+		'RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','ElementalArrowDmg','ChakramDmg','ClusterArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg']
 	},
 	'AvalancheDmg':{
 		text_en:'Increases {Avalanche} Damage by {$%}',
@@ -522,69 +530,69 @@ var affixMap = {
 	'WallOfZombiesDmg':{
 		text_en:'Increases {Wall of Zombies} Damage by {$%}',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
+		'GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'GraspOfTheDeadDmg':{
 		text_en:'Increases {Grasp of the Dead} Damage by {$%}',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'WallOfZombiesDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
+		'WallOfZombiesDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'GargantuanDmg':{
 		text_en:'Increases {Gargantuan} Damage by {$%}',
 		suffix_en:'of the Great Hulk',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'WallOfZombiesDmg','GraspOfTheDeadDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
+		'WallOfZombiesDmg','GraspOfTheDeadDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'HauntDmg':{
 		text_en:'Increases {Haunt} Damage by {$%}',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
+		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'PiranhasDmg':{
 		text_en:'Increases {Piranhas} Damage by {$%}',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
+		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'LocustSwarmDmg':{
 		text_en:'Increases {Locust Swarm} Damage by {$%}',
 		suffix_en:'of Pestilence',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','FetishArmyDmg','SummonZombieDogsDmg']
+		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','FetishArmyDmg','SummonZombieDogsDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'FetishArmyDmg':{
 		text_en:'Increases {Fetish Army} Damage by {$%}',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','SummonZombieDogsDmg']
+		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','SummonZombieDogsDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'SummonZombieDogsDmg':{
 		text_en:'Increases {Summon Zombie Dogs} Damage by {$%}',
 		exclude:['Monk','Barbarian','Demon Hunter','Wizard','Crusader',
-		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg']
+		'WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'BlackHoleDmg':{
 		text_en:'Increases {Black Hole} Damage by {$%}',
 		exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-		'BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg']
+		'BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'BlizzardDmg':{
 		text_en:'Increases {Blizzard} Damage by {$%}',
 		exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-		'BlackHoleDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg']
+		'BlackHoleDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'ExplosiveBlastDmg':{
 		text_en:'Increases {Explosive Blast} Damage by {$%}',
 		exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-		'BlackHoleDmg','BlizzardDmg','FamiliarDmg','HydraDmg']
+		'BlackHoleDmg','BlizzardDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'FamiliarDmg':{
 		text_en:'Increases {Familiar} Damage by {$%}',
 		exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-		'BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','HydraDmg']
+		'BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'HydraDmg':{
 		text_en:'Increases {Hydra} Damage by {$%}',
 		exclude:['Monk','Demon Hunter','Barbarian','Crusader','Witch Doctor',
-		'BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg']
+		'BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 
 	'AncientSpearDmg':{
@@ -641,41 +649,41 @@ var affixMap = {
 		text_en:'Increases {Chakram} Damage by {$%}',
 		suffix_en:'of the Boomerang',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
+		'ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 	},
 	'ClusterArrowDmg':{
 		text_en:'Increases {Cluster Arrow} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'ChakramDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
+		'ChakramDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 	},
 	'ElementalArrowDmg':{
 		text_en:'Increases {Elemental Arrow} Damage by {$%}',
 		suffix_en:'of Blasting',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'ChakramDmg','ClusterArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
+		'ChakramDmg','ClusterArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 	},
 	'ImpaleDmg':{
 		text_en:'Increases {Impale} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
+		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','MultishotDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 	},
 	'MultishotDmg':{
 		text_en:'Increases {Multishot} Damage by {$%}',
 		suffix_en:'of Volleys',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','RapidFireDmg','StrafeDmg']
+		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','RapidFireDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 	},
 	'RapidFireDmg':{
 		text_en:'Increases {Rapid Fire} Damage by {$%}',
 		suffix_en:'of Salvos',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','StrafeDmg']
+		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','StrafeDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 	},
 	'StrafeDmg':{
 		text_en:'Increases {Strafe} Damage by {$%}',
 		suffix_en:'of Prowess',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg']
+		'ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg']
 	},
 	'ExplodingPalmDmg':{
 		text_en:'Increases {Exploding Palm} Damage by {$%}',
@@ -701,64 +709,64 @@ var affixMap = {
 	'AcidCloudDmg':{
 		text_en:'Increases {Acid Cloud} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
+		'FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 	},
 	'FirebatsDmg':{
 		text_en:'Increases {Firebats} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'AcidCloudDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
+		'AcidCloudDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 	},
 	'SacrificeDmg':{
 		text_en:'Increases {Sacrifice} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'AcidCloudDmg','FirebatsDmg','SpiritBarrageDmg','ZombieChargerDmg']
+		'AcidCloudDmg','FirebatsDmg','SpiritBarrageDmg','ZombieChargerDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 	},
 	'SpiritBarrageDmg':{
 		text_en:'Increases {Spirit Barrage} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'AcidCloudDmg','FirebatsDmg','SacrificeDmg','ZombieChargerDmg']
+		'AcidCloudDmg','FirebatsDmg','SacrificeDmg','ZombieChargerDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 	},
 	'ZombieChargerDmg':{
 		text_en:'Increases {Zombie Charger} Damage by {$%}',
 		suffix_en:'of Blind Rage',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg']
+		'AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg']
 	},
 	'ArcaneOrbDmg':{
 		text_en:'Increases {Arcane Orb} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
 	'ArcaneTorrentDmg':{
 		text_en:'Increases {Arcane Torrent} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ArcaneOrbDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'ArcaneOrbDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
 	'DisintegrateDmg':{
 		text_en:'Increases {Disintegrate} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ArcaneOrbDmg','ArcaneTorrentDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'ArcaneOrbDmg','ArcaneTorrentDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
 	'EnergyTwisterDmg':{
 		text_en:'Increases {Energy Twister} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
 	'MeteorDmg':{
 		text_en:'Increases {Meteor} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','RayOfFrostDmg','WaveOfForceDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
 	'RayOfFrostDmg':{
 		text_en:'Increases {Ray of Frost} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','WaveOfForceDmg']
+		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','WaveOfForceDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
 	'WaveOfForceDmg':{
 		text_en:'Increases {Wave of Force} Damage by {$%}',
 		suffix_en:'of Repulsion',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg']
+		'ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
 
 	'BashDmg':{
@@ -804,30 +812,30 @@ var affixMap = {
 	'BolasDmg':{
 		text_en:'Increases {Bolas} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg']
+		'EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
 	},
 	'EntanglingShotDmg':{
 		text_en:'Increases {Entangling Shot} Damage by {$%}',
 		suffix_en:'of Binding',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'BolasDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg']
+		'BolasDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
 	},
 	'EvasiveFireDmg':{
 		text_en:'Increases {Evasive Fire} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'BolasDmg','EntanglingShotDmg','GrenadeDmg','HungeringArrowDmg']
+		'BolasDmg','EntanglingShotDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
 	},
 	'GrenadeDmg':{
 		text_en:'Increases {Grenade} Damage by {$%}',
 		suffix_en:'of the Grenadier',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'BolasDmg','EntanglingShotDmg','EvasiveFireDmg','HungeringArrowDmg']
+		'BolasDmg','EntanglingShotDmg','EvasiveFireDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
 	},
 	'HungeringArrowDmg':{
 		text_en:'Increases {Hungering Arrow} Damage by {$%}',
 		suffix_en:'of the Predator',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
-		'BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg']
+		'BolasDmg','EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
 	},
 	'CripplingWaveDmg':{
 		text_en:'Increases {Crippling Wave} Damage by {$%}',
@@ -853,43 +861,43 @@ var affixMap = {
 		text_en:'Increases {Corpse Spiders} Damage by {$%}',
 		suffix_en:'of the Black Widow',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg']
+		'FirebombDmg','PlagueOfToadsDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'FirebombDmg':{
 		text_en:'Increases {Firebomb} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'CorpseSpidersDmg','PlagueOfToadsDmg','PoisonDartDmg']
+		'CorpseSpidersDmg','PlagueOfToadsDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'PlagueOfToadsDmg':{
 		text_en:'Increases {Plague of Toads} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'CorpseSpidersDmg','FirebombDmg','PoisonDartDmg']
+		'CorpseSpidersDmg','FirebombDmg','PoisonDartDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'PoisonDartDmg':{
 		text_en:'Increases {Poison Dart} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard',
-		'CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg']
+		'CorpseSpidersDmg','FirebombDmg','PlagueOfToadsDmg','WallOfZombiesDmg','GraspOfTheDeadDmg','GargantuanDmg','HauntDmg','PiranhasDmg','LocustSwarmDmg','FetishArmyDmg','SummonZombieDogsDmg','AcidCloudDmg','FirebatsDmg','SacrificeDmg','SpiritBarrageDmg','ZombieChargerDmg']
 	},
 	'ElectrocuteDmg':{
 		text_en:'Increases {Electrocute} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
+		'MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'MagicMissileDmg':{
 		text_en:'Increases {Magic Missile} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ElectrocuteDmg','ShockPulseDmg','SpectralBladeDmg']
+		'ElectrocuteDmg','ShockPulseDmg','SpectralBladeDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'ShockPulseDmg':{
 		text_en:'Increases {Shock Pulse} Damage by {$%}',
 		suffix_en:'of Ruin',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ElectrocuteDmg','MagicMissleDmg','SpectralBladeDmg']
+		'ElectrocuteDmg','MagicMissleDmg','SpectralBladeDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'SpectralBladeDmg':{
 		text_en:'Increases {Spectral Blade} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg']
+		'ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 
 
