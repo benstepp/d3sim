@@ -258,6 +258,9 @@ function createItem(rarity, slot, dClass, legendaryName) {
 		newItem.speed = baseWeapon.speed;
 		newItem.weaponDps = ((baseWeapon.min + baseWeapon.max)/2)*(baseWeapon.speed)*AttackSpeedMult*FlatDamageMult;
 		newItem.damageRange = [baseWeapon.min,baseWeapon.max];
+
+		//break the variable so it stops getting huge
+		baseWeapon = undefined;
 	}
 
 	if (affixes[slot].type[newItem.type].hasOwnProperty('armor')) {
