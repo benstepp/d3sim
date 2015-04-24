@@ -125,6 +125,12 @@ var affixMap = {
 	'EliteDamage':{
 		text_en:'Increases damage against elites by {$%}'
 	},
+	'BeastDamage':{
+		text_en:'{+$%} Damage to Beasts'
+	},
+	'HumanDamage':{
+		text_en:'{+$%} Damage to Humans'
+	},
 	'Bleed':{
 		text_en:'{$%} chance to inflict Bleed for {$%} weapon damage over {5} seconds'
 	},
@@ -252,7 +258,7 @@ var affixMap = {
 	'SpiritRegen':{
 		text_en:'Increases Spirit Regeneration by {$} per Second (Monk Only)',
 		prefix_en:'Avaricious',
-		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'MaxSpirit':{
 		text_en:'{+$} Maximum Spirit (Monk Only)',
@@ -275,7 +281,7 @@ var affixMap = {
 	},
 	'LifePerSpirit':{
 		text_en:'Gain {$} Life per Spirit Spent (Monk Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'WrathRegen':{
 		text_en:'Increases Wrath Regeneration by {$} per Second (Crusader Only)',
@@ -309,7 +315,7 @@ var affixMap = {
 	},
 	'ManaRegen':{
 		text_en:'Increases Mana Regeneration by {$} per Second(Witch Doctor Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard']
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard','Axe','Dagger','Mace','Spear','Sword','Fist Weapon','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 
 	//weapon damages
@@ -1448,8 +1454,92 @@ var affixMap = {
 	'Votoyias':{
 		type:'legendary',
 		text_en:'Enemies affected by Provoke take double damage from Thorns.'
+	},
+	'Genzaniku':{
+		type:'legendary',
+		text_en:'Chance to summon a ghostly Fallen Champion when attacking.'
+	},
+	'HackAxe':{
+		type:'legendary',
+		text_en:'{$%} of your Thorns damage is applied on every attack.'
+	},
+	'Sankis':{
+		type:'legendary',
+		text_en:'Chance to fight through the pain when enemies hit you.'
+	},
+	'Sickle':{
+		type:'legendary',
+		text_en:'{$%} chance to drag enemies to you when attacking.'
+	},
+	'Anessazi':{
+		type:'legendary',
+		text_en:'Zombie Dogs stuns enemies around them for 1.5 seconds when summoned.'
+	},
+	'DeadlyRebirth':{
+		type:'legendary',
+		text_en:'Grasp of the Dead gains the effect of the Rain of Corpses rune.'
+	},
+	'LastBreath':{
+		text_en:'Reduces cooldown of {Mass Confusion} by {$} seconds. (Witch Doctor Only)'
+	},
+	'Rhenho':{
+		type:'legendary',
+		text_en:'Plague of Toads now seek out enemies and can explode twice.'
+	},
+	'SacredHarv':{
+		type:'legendary',
+		text_en:'Soul Harvest now stacks up to 10 times.'
+	},
+	'Starmetal':{
+		type:'legendary',
+		text_en:'Reduce the cooldown of Fetish Army and Big Bad Voodoo by 1 second each time your fetishes deal damage.'
+	},
+	'DartsDagger':{
+		type:'legendary',
+		text_en:'Your Poison Darts and your Fetishes\' Poison Darts now pierce.'
+	},
+	'Gidbinn':{
+		type:'legendary',
+		text_en:'Chance to summon a Fetish when attacking.'
+	},
+	'SpiderQueen':{
+		type:'legendary',
+		text_en:'Corpse Spiders releases a web on impact that Slows enemies by {$%}.'
+	},
+	'Eunjang':{
+		type:'legendary',
+		text_en:'Attacking enemies below {$%} Life freezes them for 3 seconds.'
+	},
+	'PigSticker':{
+		type:'legendary',
+		text_en:'Squeal!'
+	},
+	'Wizardspike':{
+		type:'legendary',
+		text_en:'Performing an attack has a {$%} chance to hurl a Frozen Orb.'
+	},
+	'Jawbreaker':{
+		type:'legendary',
+		text_en:'When Dashing Strike hits an enemy more than {$} yards away, its Charge cost is refunded.'
+	},
+	'AzTurrasq':{
+		type:'legendary',
+		text_en:'Exploding Palm\'s on-death explosion damage is increased by {$%}.'
+	},
+	'VengefulWind':{
+		type:'legendary',
+		text_en:'Increases the maximum stack count of Sweeping Wind by 3.'
 	}
 
+/*
+
+,
+	'':{
+		type:'legendary',
+		text_en:''
+	}
+
+*/
 
 };
 

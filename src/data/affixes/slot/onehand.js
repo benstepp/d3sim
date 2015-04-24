@@ -175,7 +175,11 @@ var onehand = {
 		CostReduc:{min:7,max:9,minl:8,maxl:10/*,mina:8,maxa:10*/},
 		Bleed:{min:[32,300],max:[37,400],minl:[34,300],maxl:[39,400]/*,mina:[34,300],maxa:[39,400]*/},
 		Socket:{min:1,max:1/*,minl:1,maxl:1,mina:1,maxa:1*/},
-		LifePerHit:{min:6823,max:15473,minl:15474,maxl:18429,mina:20271,maxa:23950}
+		LifePerHit:{min:6823,max:15473,minl:15474,maxl:18429,mina:20271,maxa:23950},
+
+		ManaRegen:{min:12,max:14/*,minl:12,maxl:14,mina:12,maxa:14*/},
+		SpiritRegen:{min:0,max:0,minl:0,maxl:0,mina:217,maxa:300},
+		LifePerSpirit:{min:0,max:0,minl:0,maxl:0,mina:456,maxa:540}
 
 	},
 	secondary:{

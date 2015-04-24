@@ -36,10 +36,16 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			RANDOM:3
+		},
+		secondary:{
+			Genzaniku:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_1h_003_x1_demonhunter_male.png',
+		flavor:'"In the language of the fallen, \'genzaniku\' means slayer of humans." —Deckard Cain'
 	},
 	{
 		name: "Hack",
@@ -54,10 +60,20 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Socket:null,
+			RANDOM:2
+		},
+		secondary:{
+			HackAxe:{
+				min:75,
+				max:100
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_1h_103_x1_demonhunter_male.png',
+		flavor:'This crude, makeshift axe was made from skeletal remains picked out of the Desolate Sands. Despite its primitive origins, the weapon is extremely effective, perhaps as a result of residual magics that seeped into its components since the time of area\'s devastation during the Mage Clan Wars.'
 	},
 	{
 		name: "The Burning Axe of Sankis",
@@ -72,10 +88,20 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Fire:null,
+			FireDamage:{
+				min:15,
+				max:20
+			},
+			RANDOM:2
+		},
+		secondary:{
+			Sankis:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_1h_007_x1_demonhunter_male.png',
+		flavor:'An obsidian axe wielded by the mad Sankis as he turned on his own men inside their fortress. Even as he burned to death himself, he would not stop his attacks on those he had once ruled.'
 	},
 	{
 		name: "The Butcher's Sickle",
@@ -90,10 +116,19 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			RANDOM:3
+		},
+		secondary:{
+			Sickle:{
+				min:20,
+				max:25
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_1h_006_x1_demonhunter_male.png',
+		flavor:'Used by the Butcher demon to snare and drag victims closer that he may feed on their flesh.'
 	},
 	{
 		name: "Anessazi Edge",
@@ -104,10 +139,17 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			RANDOM:2
+		},
+		secondary:{
+			Anessazi:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_001_x1_demonhunter_male.png',
+		flavor:'The secrets of this blade are known only to the artisans of the Silzer Plains.'
 	},
 	{
 		name: "Deadly Rebirth",
@@ -118,10 +160,18 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Arcane:null,
+			Intelligence:null,
+			ManaRegen:null,
+			RANDOM:1
+		},
+		secondary:{
+			BonusXp:null,
+			DeadlyRebirth:null
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_003_x1_demonhunter_male.png',
+		flavor:'The restless dead are drawn up from the earth by the presence of this blade.'
 	},
 	{
 		name: "Last Breath",
@@ -132,10 +182,20 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			LastBreath:{
+				min:15,
+				max:20
+			},
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_008_x1_demonhunter_male.png',
+		flavor:'Even an immortal could be felled by the power of this blade.'
 	},
 	{
 		name: "Manajuma's Carving Knife",
@@ -146,10 +206,17 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Poison:null,
+			Intelligence:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Manajuma\'s Way',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_009_x1_demonhunter_male.png',
+		flavor:'Clan chief Manajuma\'s sacrificial knife.'
 	},
 	{
 		name: "Rhen'ho Flayer",
@@ -160,10 +227,17 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			RANDOM:2
+		},
+		secondary:{
+			Rhenho:null,
+			RANDOM:1
+		},
+		image:'http://media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_102_x1_demonhunter_male.png',
+		flavor:'"Many said training exploding toads was impossible, but Rhen\'ho only laughed. He then proceeded to teach the toads how to explode twice, for he truly believed that one needs only to see the impossible clearly in one\'s mind to make it real." —Minacal of the Tribe of the Hidden Valley'
 	},
 	{
 		name: "Sacred Harvester",
@@ -174,10 +248,17 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			RANDOM:2
+		},
+		secondary:{
+			SacredHarv:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p1_ceremonialdagger_norm_unique_01_demonhunter_male.png',
+		flavor:'“To expand one’s mind with the breath of others is not a thing to be taken lightly. Without the proper training or discipline it soon leads to madness.” -Elder Bayati, Tribe of the Five Hills'
 	},
 	{
 		name: "Starmetal Kukri",
@@ -188,10 +269,21 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			CritDamage:{
+				min:31,
+				max:35
+			},
+			RANDOM:1
+		},
+		secondary:{
+			Starmetal:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_101_x1_demonhunter_male.png',
+		flavor:'"Szab the necromancer was the first outsider to meet the people of the Teganze. He attempted to explain the philosophy of the necromancers to them, but the language barrier proved to be too great—instead of relaying his philosophical beliefs, he told them he was Trag\'Oul, and that he lived among the stars." —Abd-al Hazir'
 	},
 	{
 		name: "The Dagger of Darts",
@@ -202,10 +294,17 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			RANDOM:2
+		},
+		secondary:{
+			DartsDagger:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p1_ceremonialdagger_norm_unique_02_demonhunter_male.png',
+		flavor:'Nothing infuriates a fetish more than ineffectual darts.'
 	},
 	{
 		name: "The Gidbinn",
@@ -216,10 +315,18 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			ManaRegen:null,
+			RANDOM:1
+		},
+		secondary:{
+			Gidbinn:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_002_x1_demonhunter_male.png',
+		flavor:'A powerful, holy artifact of the Skatsim religion. It was last seen in Kurast.'
 	},
 	{
 		name: "The Spider Queen's Grasp",
@@ -230,10 +337,21 @@ var onehand = [
 		smartLoot: [
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Intelligence:null,
+			ManaRegen:null,
+			RANDOM:1
+		},
+		secondary:{
+			SpiderQueen:{
+				min:60,
+				max:80
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_004_x1_demonhunter_male.png',
+		flavor:'The blessing of Araneae drips from this blade.'
 	},
 	{
 		name:"Eun-jang-do",
@@ -248,10 +366,20 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Cold_dagger:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			Eunjang:{
+				min:17,
+				max:20
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_dagger_104_x1_demonhunter_male.png',
+		flavor:'These Xiansai daggers of silver and steel were often carried by Sisters of the Sightless Eye, engraved with oaths of fidelity to their cause. Enemies who closed quickly believed themselves safe from the Sister’s bow. And they were, but not from the Eun-jang-do.'
 	},
 	{
 		name: "Kill",
@@ -266,10 +394,16 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Poison_dagger:null,
+			AttackSpeed:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_dagger_002_x1_demonhunter_male.png',
+		flavor:'"In their last moments, people show you who they really are..." —Unknown'
 	},
 	{
 		name: "Pig Sticker",
@@ -284,10 +418,24 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			MAIN:null,
+			RANDOM:2
+		},
+		secondary:{
+			BeastDamage:{
+				min:15,
+				max:30
+			},
+			HumanDamage:{
+				min:15,
+				max:30
+			},
+			PigSticker:null
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_dagger_007_x1_demonhunter_male.png',
+		flavor:'Slaughters man and beast alike.'
 	},
 	{
 		name: "The Barber",
@@ -302,10 +450,20 @@ var onehand = [
 			"Wizard",
 			"Witch Doctor"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			MAIN:null,
+			FlatDamage:null,
+			CritDamage:{
+				min:20,
+				max:25
+			}
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_dagger_003_x1_demonhunter_male.png',
+		flavor:'A precision instrument for a master of the blade.'
 	},
 	{
 		name: "Wizardspike",
@@ -316,10 +474,19 @@ var onehand = [
 		smartLoot: [
 			"Wizard"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			RANDOM:3
+		},
+		secondary:{
+			Wizardspike:{
+				min:20,
+				max:25
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_dagger_010_x1_210_demonhunter_male.png',
+		flavor:'The energies of forbidden magics course through this blade.'
 	},
 	{
 		name: "Crystal Fist",
@@ -330,10 +497,18 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			FlatDamage:null,
+			Dexterity:null,
+			RANDOM:1
+		},
+		secondary:{
+			IgnoreDura:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_008_x1_demonhunter_male.png',
+		flavor:'Indestructible, pure and clear. So the body follows the mind.'
 	},
 	{
 		name: "Fleshrake",
@@ -344,10 +519,17 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Black:null,
+			Dexterity:null,
+			LifePerSpirit:null,
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_007_x1_demonhunter_male.png',
+		flavor:'The very sight of this weapon is enough to settle disputes that would otherwise lead to war.'
 	},
 	{
 		name: "Jawbreaker",
@@ -358,10 +540,20 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Dexterity:null,
+			RANDOM:2
+		},
+		secondary:{
+			Jawbreaker:{
+				min:30,
+				max:35
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_101_x1_demonhunter_male.png',
+		flavor:'Those who speak wicked words must be silenced.'
 	},
 	{
 		name: "Logan's Claw",
@@ -372,10 +564,17 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Poison:null,
+			Dexterity:null,
+			LifePerHit:null,
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_005_x1_demonhunter_male.png',
+		flavor:'Bearing this weapon can release the feral beast within.'
 	},
 	{
 		name: "Rabid Strike",
@@ -386,10 +585,24 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Poison:null,
+			Dexterity:null,
+			CritDamage:{
+				min:20,
+				max:25
+			},
+			RANDOM:1
+		},
+		secondary:{
+			SlowHit:{
+				min:150,
+				max:250
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_003_x1_demonhunter_male.png',
+		flavor:'Those who survive the winter fever retain the strength of the madness it brings.'
 	},
 	{
 		name: "Scarbringer",
@@ -400,10 +613,16 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Holy:null,
+			Bleed:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_013_x1_demonhunter_male.png',
+		flavor:'Each scar left in its wake is a sin forgiven.'
 	},
 	{
 		name: "Shenlong's Fist of Legend",
@@ -414,10 +633,17 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Lightning:null,
+			Dexterity:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Shenlong\'s Spirit',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_011_x1_demonhunter_male.png',
+		flavor:'Many claim Shenlong is but a myth. Those who have felt the unrelenting fury of his wrath would argue otherwise.'
 	},
 	{
 		name: "Shenlong's Relentless Assault",
@@ -428,10 +654,17 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Lightning:null,
+			Dexterity:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Shenlong\'s Spirit',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_010_x1_demonhunter_male.png',
+		flavor:'"Your blows must flow from one to the next in an endless succession to overwhelm a superior foe." —Master Shenlong'
 	},
 	{
 		name: "Sledge Fist",
@@ -442,10 +675,20 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Dexterity:null,
+			RANDOM:2
+		},
+		secondary:{
+			StunHit:{
+				min:300,
+				max:500
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_012_x1_demonhunter_male.png',
+		flavor:'"The Mighty Bear brought low the great house of the guild with a single blow. Their greed was laid bare in the ruination." —Chronicles of the North'
 	},
 	{
 		name: "The Fist of Az'Turrasq",
@@ -456,10 +699,20 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			SpiritRegen:null,
+			RANDOM:2
+		},
+		secondary:{
+			AzTurrasq:{
+				min:75,
+				max:100
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_009_x1_demonhunter_male.png',
+		flavor:'The corrupt magistrate of Az\'Turrasq punished petty crime at a whim in the name of order. Innocent and guilty alike were crippled or killed by the hundreds during his terrible reign.'
 	},
 	{
 		name: "Vengeful Wind",
@@ -470,10 +723,17 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			WEAPON_DAMAGE:null,
+			Dexterity:null,
+			RANDOM:2
+		},
+		secondary:{
+			VengefulWind:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/p1_fistweapon_norm_unique_02_demonhunter_male.png',
+		flavor:'"Some learned people say that evil cannot be overcome through violence. I say there is no other way." -Akyev the Unyielding'
 	},
 	{
 		name: "Won Khim Lau",
@@ -484,10 +744,20 @@ var onehand = [
 		smartLoot: [
 			"Monk"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Dmg_Lightning:null,
+			LightningDamage:{
+				min:15,
+				max:25
+			},
+			Dexterity:null,
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_006_x1_demonhunter_male.png',
+		flavor:'Directs the wayward\'s gaze to the heavens that he may benefit from the glory of the gods.'
 	},
 	{
 		name: "Darklight",
