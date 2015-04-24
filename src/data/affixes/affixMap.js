@@ -1641,7 +1641,32 @@ var affixMap = {
 	'WandWoh':{
 		type:'legendary',
 		text_en:'3 additional Explosive Blasts are triggered after casting Explosive Blast.'
+	},
+	'LightGrace':{
+		type:'legendary',
+		text_en:'Ray of Frost now pierces.'
+	},
+	'Mirrorball':{
+		type:'legendary',
+		text_en:'Magic Missile fires {$} extra missiles.'
+	},
+	'Myken':{
+		type:'legendary',
+		text_en:'Electrocute can chain to enemies that have already been hit.'
+	},
+	'Oculus':{
+		type:'legendary',
+		text_en:'Reduces cooldown of Teleport by {$} seconds. (Wizard Only)'
+	},
+	'OculusT':{
+		type:'legendary',
+		text_en:'Taking damage has up to a {$%} chance to reset the cooldown on Teleport.'
+	},
+	'WinterFlurry':{
+		type:'legendary',
+		text_en:'Enemies killed by Cold damage have a {$%} chance to release a Frost Nova.'
 	}
+
 
 
 /*
