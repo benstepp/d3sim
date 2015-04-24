@@ -238,8 +238,17 @@ function createItem(rarity, slot, dClass, legendaryName) {
 
 	//execute item creation using a new object from constructor
 	var newItem = new constructor(rarity,slot,dClass,legendaryName);
+
 	//roll for affixes
 	rollStats(newItem, rarity, slot, dClass);
+
+	//pull any baseData like armor or weapon speed
+	if(affixes[slot].type[newItem.type].hasOwnProperty('weapon')) {
+		newItem.baseWeapon = affixes[slot].type[newItem.type].weapon;
+	}
+	if (affixes[slot].type[newItem.type].hasOwnProperty('armor')) {
+		newItem.baseArmor = affixes[slot].type[newItem.type].armor;
+	}
 
 	return newItem;
 }
