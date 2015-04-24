@@ -246,7 +246,7 @@ function createItem(rarity, slot, dClass, legendaryName) {
 	if(affixes[slot].type[newItem.type].hasOwnProperty('weapon')) {
 		var baseWeapon = affixes[slot].type[newItem.type].weapon;
 		for (var primary in newItem.primaries) {
-			if (primary.indexOf('Dmg_')) {
+			if (primary.indexOf('Dmg_') !== -1) {
 				baseWeapon.min += newItem.primaries[primary].value[0];
 				baseWeapon.max += newItem.primaries[primary].value[1];
 				break; //found bonus damage so break
@@ -686,5 +686,9 @@ function test() {
 		}
 	}
 }
-
+function testt() {
+	setKadala('Barbarian',true,true);
+	kadalaRoll('onehand');
+}
+testt();
 module.exports = d3sim;
