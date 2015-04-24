@@ -270,7 +270,7 @@ var belt = {
 			//mina:10,
 			//maxa:15,
 		},
-		MagicMissleDmg:{
+		MagicMissileDmg:{
 			min:8,
 			max:15,
 			minl:10,

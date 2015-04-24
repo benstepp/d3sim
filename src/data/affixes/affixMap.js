@@ -875,7 +875,7 @@ var affixMap = {
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
 		'MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg']
 	},
-	'MagicMissleDmg':{
+	'MagicMissileDmg':{
 		text_en:'Increases {Magic Missile} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
 		'ElectrocuteDmg','ShockPulseDmg','SpectralBladeDmg']
@@ -1669,6 +1669,10 @@ var affixMap = {
 	'WinterFlurry':{
 		type:'legendary',
 		text_en:'Enemies killed by Cold damage have a {$%} chance to release a Frost Nova.'
+	},
+	'Trium':{
+		type:'legendary',
+		text_en:'Your Signature Spells increase the damage of Arcane Orb by {$%} for 6 seconds, stacking up to 3 times.'
 	}
 
 
