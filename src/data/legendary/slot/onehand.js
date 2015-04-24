@@ -1996,6 +1996,7 @@ var onehand = [
 		secondary:{
 			RANDOM:2
 		},
+		set:'Istvan\'s Paired Blades',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_1h_set_02_x1_demonhunter_male.png',
 		flavor:'"Istvan was a daring swordsman known for taunting his enemies with this wicked, gleaming longsword." —Deckard Cain.'
 	},

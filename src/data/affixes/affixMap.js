@@ -262,22 +262,22 @@ var affixMap = {
 	},
 	'MaxSpirit':{
 		text_en:'{+$} Maximum Spirit (Monk Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard']
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 
 	'MaxFury':{
 		text_en:'{+$} Maximum Fury (Barbarian Only)',
-		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard']
+		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Fist Weapon','Hand Crossbow','Wand']
 	},
 	'LifePerFury':{
 		text_en:'Gain {$} Life per Fury Spent (Barbarian Only)',
-		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard']
+		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Fist Weapon','Hand Crossbow','Wand']
 	},
 
 	'LifePerWrath':{
 		prefix_en:'Dedicated',
 		text_en:'Gain {$} Life per Wrath Spent (Crusader Only)',
-		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
+		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'LifePerSpirit':{
 		text_en:'Gain {$} Life per Spirit Spent (Monk Only)',
@@ -285,33 +285,33 @@ var affixMap = {
 	},
 	'WrathRegen':{
 		text_en:'Increases Wrath Regeneration by {$} per Second (Crusader Only)',
-		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
+		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'MaxWrath':{
 		text_en:'{+$} Maximum Wrath (Crusader Only)',
-		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard']
+		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Mighty Weapon','Hand Crossbow','Wand']
 	},
 
 	'MaxDisc':{
 		prefix_en:'Confident',
 		text_en:'{+$} Maximum Discipline (Demon Hunter Only)',
-		exclude:['Monk','Barbarian','Witch Doctor','Wizard','Crusader'],
+		exclude:['Monk','Barbarian','Witch Doctor','Wizard','Crusader','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Fist Weapon','Wand'],
 	},
 	'HatredRegen':{
 		prefix_en:'Vengeful',
 		text_en:'Increases Hatred Regeneration by {$} per Second (Demon Hunter Only)',
-		exclude:['Chest Armor','Monk','Barbarian','Witch Doctor','Wizard','Crusader']
+		exclude:['Chest Armor','Monk','Barbarian','Witch Doctor','Wizard','Crusader','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Fist Weapon','Wand']
 	},
 
 	'MaxAp':{
 		prefix_en:'Mental',
 		text_en:'{+$} Maximum Arcane Power (Wizard Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor']
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Fist Weapon']
 	},
 
 	'MaxMana':{
 		text_en:'{+$} Maximum Mana (Witch Doctor Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard']
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard','Axe','Dagger','Mace','Spear','Sword','Fist Weapon','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'ManaRegen':{
 		text_en:'Increases Mana Regeneration by {$} per Second(Witch Doctor Only)',

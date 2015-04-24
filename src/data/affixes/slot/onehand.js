@@ -198,10 +198,10 @@ var onehand = {
 
 		MaxAp:{min:0,max:0,minl:10,maxl:14,mina:13,maxa:14},
 		MaxDisc:{min:8,max:10,minl:9,maxl:12,mina:9,maxa:12},
-		MaxSpirit:{mina:13,maxa:15},
-		MaxFury:{},
-		MaxMana:{},
-		MaxWrath:{}
+		MaxSpirit:{min:0,max:0,minl:0,maxl:0,mina:13,maxa:15},
+		MaxFury:{min:0,max:0,minl:0,maxl:0,mina:0,maxa:0},
+		MaxMana:{min:0,max:0,minl:0,maxl:0,mina:0,maxa:0},
+		MaxWrath:{min:0,max:0,minl:0,maxl:0,mina:0,maxa:0}
 	}
 };
 
