@@ -628,22 +628,22 @@ var affixMap = {
 	'AncientSpearDmg':{
 		text_en:'Increases {Ancient Spear} Damage by {$%}',
 		exclude:['Crusader','Monk','Demon Hunter','Witch Doctor','Wizard',
-		'AncientSpearDmg','AncientsHammerDmg','SeismicSlamDmg','WhirlwindDmg']
+		'AncientSpearDmg','HammerOfTheAncientsDmg','SeismicSlamDmg','WhirlwindDmg']
 	},
-	'AncientsHammerDmg':{
-		text_en:'Increases {Ancient\'s Hammer} Damage by {$%}',
+	'HammerOfTheAncientsDmg':{
+		text_en:'Increases {Hammer of the Ancients} Damage by {$%}',
 		exclude:['Crusader','Monk','Demon Hunter','Witch Doctor','Wizard',
 		'AncientSpearDmg','SeismicSlamDmg','WhirlwindDmg']
 	},
 	'SeismicSlamDmg':{
 		text_en:'Increases {Seismic Slam} Damage by {$%}',
 		exclude:['Crusader','Monk','Demon Hunter','Witch Doctor','Wizard',
-		'AncientSpearDmg','AncientsHammerDmg','WhirlwindDmg']
+		'AncientSpearDmg','HammerOfTheAncientsDmg','WhirlwindDmg']
 	},
 	'WhirlwindDmg':{
 		text_en:'Increases {Weapon Throw} Damage by {$%}',
 		exclude:['Crusader','Monk','Demon Hunter','Witch Doctor','Wizard',
-		'AncientSpearDmg','AncientsHammerDmg','SeismicSlamDmg']
+		'AncientSpearDmg','HammerOfTheAncientsDmg','SeismicSlamDmg']
 	},
 	'BlessedHammerDmg':{
 		text_en:'Increases {Blessed Hammer} Damage by {$%}',
@@ -1883,6 +1883,10 @@ var affixMap = {
 	'Stalgard':{
 		type:'legendary',
 		text_en:'Your melee attacks throw a piercing axe at a nearby enemy, dealing {$%} weapon damage as Physical.'
+	},
+	'VanishedPeak':{
+		type:'legendary',
+		text_en:'Reduces the Fury cost of Seismic Slam by {$%}.'
 	}
 
 

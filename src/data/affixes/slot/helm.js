@@ -149,7 +149,7 @@ var helm = {
 			//mina:10,
 			//maxa:15,
 		},
-		AncientsHammerDmg:{
+		HammerOfTheAncientsDmg:{
 			min:8,
 			max:15,
 			minl:10,

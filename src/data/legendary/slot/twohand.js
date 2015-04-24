@@ -1382,7 +1382,7 @@ var twohand = [
 		primary:{
 			Dmg_Poison:null,
 			Intelligence:null,
-			PosionDamage:{
+			PoisonDamage:{
 				min:20,
 				max:25
 			},
