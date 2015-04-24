@@ -255,6 +255,11 @@ function createItem(rarity, slot, dClass, legendaryName) {
 				break; //found bonus damage so break
 			}
 		}
+		//no bonus damage after checking primaries so set to base
+		if (typeof minimum === 'undefined' && typeof maximum === 'undefined') {
+			minimum = baseWeapon.min;
+			maximum = baseWeapon.max;
+		}
 
 		//calculate the weapon dps and save tooltip data to item
 		var FlatDamageMult = (newItem.primaries.hasOwnProperty('FlatDamage'))?((newItem.primaries.FlatDamage.value)/100)+1 :1;
@@ -691,10 +696,6 @@ function test() {
 			}
 		}
 	}
-}
-function testt() {
-	setKadala('Demon Hunter',true,true);
-	console.log(kadalaRoll('onehand'));
 }
 
 module.exports = d3sim;
