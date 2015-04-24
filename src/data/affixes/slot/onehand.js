@@ -178,8 +178,8 @@ var onehand = {
 		LifePerHit:{min:6823,max:15473,minl:15474,maxl:18429,mina:20271,maxa:23950},
 
 		ManaRegen:{min:12,max:14/*,minl:12,maxl:14,mina:12,maxa:14*/},
-		SpiritRegen:{min:0,max:0,minl:0,maxl:0,mina:217,maxa:300},
-		LifePerSpirit:{min:0,max:0,minl:0,maxl:0,mina:456,maxa:540}
+		SpiritRegen:{min:183,max:250,minl:217,maxl:300,mina:217,maxa:300},
+		LifePerSpirit:{min:157,max:350,minl:353,maxl:415,mina:456,maxa:540}
 
 	},
 	secondary:{
@@ -196,12 +196,12 @@ var onehand = {
 		LevelReduc:{min:2,max:30,minl:2,maxl:30,mina:30,maxa:40},
 		BonusXp:{min:100,max:139,minl:140,maxl:200,mina:220,maxa:260},
 
-		MaxAp:{min:0,max:0,minl:10,maxl:14,mina:13,maxa:14},
-		MaxDisc:{min:8,max:10,minl:9,maxl:12,mina:9,maxa:12},
-		MaxSpirit:{min:0,max:0,minl:0,maxl:0,mina:13,maxa:15},
-		MaxFury:{min:0,max:0,minl:0,maxl:0,mina:0,maxa:0},
-		MaxMana:{min:0,max:0,minl:0,maxl:0,mina:0,maxa:0},
-		MaxWrath:{min:0,max:0,minl:0,maxl:0,mina:0,maxa:0}
+		MaxAp:{min:7,max:14,minl:10,maxl:14,mina:13,maxa:14},
+		MaxDisc:{min:8,max:10,minl:9,maxl:12/*,mina:9,maxa:12*/},
+		MaxSpirit:{min:13,max:14,minl:13,maxl:15/*,mina:13,maxa:15*/},
+		MaxFury:{min:10,max:12/*,minl:10,maxl:12,mina:10,maxa:12*/},
+		MaxMana:{min:120,max:150/*,minl:120,maxl:150,mina:120,maxa:150*/},
+		MaxWrath:{min:4,max:8,minl:6,maxl:7,mina:7,maxa:8}
 	}
 };
 

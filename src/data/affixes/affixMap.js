@@ -308,6 +308,10 @@ var affixMap = {
 		text_en:'{+$} Maximum Arcane Power (Wizard Only)',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Fist Weapon']
 	},
+	'APOC':{
+		text_en:'Critical Hits grant {$} Arcane Power (Wizard Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor']
+	},
 
 	'MaxMana':{
 		text_en:'{+$} Maximum Mana (Witch Doctor Only)',
