@@ -691,8 +691,17 @@ var chest = [
 		smartLoot:[
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
+		primary:{
+			Dexterity:null,
+			Socket:{
+				min:3,
+				max:3
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
 		set:'Unhallowed Essence',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_03_p2_demonhunter_male.png',
 		flavor:'"When a demon peers into your heart of hearts, demon hunter, what will he find? Death. Whether it is his or yours depends solely on you. "-Kovan the Merciless'
