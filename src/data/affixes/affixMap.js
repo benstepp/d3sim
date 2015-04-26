@@ -42,7 +42,7 @@ var affixMap = {
 	//Elemental
 	'PhysDamage': {
 		text_en: 'Physical Skills deal {$%} more damage',
-		exclude:['ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage']
+		exclude:['ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage','Wizard']
 	},
 	'ArcaneDamage': {
 		text_en: 'Arcane Skills deal {$%} more damage',
@@ -911,7 +911,7 @@ var affixMap = {
 	'ElectrocuteDmg':{
 		text_en:'Increases {Electrocute} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'MagicMissleDmg','ShockPulseDmg','SpectralBladeDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'MagicMissileDmg','ShockPulseDmg','SpectralBladeDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'MagicMissileDmg':{
 		text_en:'Increases {Magic Missile} Damage by {$%}',
@@ -922,12 +922,12 @@ var affixMap = {
 		text_en:'Increases {Shock Pulse} Damage by {$%}',
 		suffix_en:'of Ruin',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ElectrocuteDmg','MagicMissleDmg','SpectralBladeDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'ElectrocuteDmg','MagicMissileDmg','SpectralBladeDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 	'SpectralBladeDmg':{
 		text_en:'Increases {Spectral Blade} Damage by {$%}',
 		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor',
-		'ElectrocuteDmg','MagicMissleDmg','ShockPulseDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
+		'ElectrocuteDmg','MagicMissileDmg','ShockPulseDmg','BlackHoleDmg','BlizzardDmg','ExplosiveBlastDmg','FamiliarDmg','HydraDmg','ArcaneOrbDmg','ArcaneTorrentDmg','DisintegrateDmg','EnergyTwisterDmg','MeteorDmg','RayOfFrostDmg','WaveOfForceDmg']
 	},
 
 
