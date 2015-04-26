@@ -524,13 +524,21 @@ var helm = {
 			//maxa:40
 		},
 		MaxMana:{
+			min:120,
+			max:150,
 			minl:120,
 			maxl:150,
+			mina:120,
+			maxa:150,
 			exclude:['Helm','Spirit Stone','Wizard Hat']
 		},
 		MaxSpirit:{
+			min:0,
+			max:0,
 			minl:13,
 			maxl:15,
+			mina:0,
+			maxa:0,
 			exclude:['Helm','Wizard Hat','Voodoo Mask']
 		}
 	}

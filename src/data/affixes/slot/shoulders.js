@@ -419,6 +419,8 @@ var shoulders = {
 			max:31,
 			minl:32,
 			maxl:35,
+			mina:32,
+			maxa:35
 		},
 		PickupRadius:{
 			min:1,
@@ -455,6 +457,8 @@ var shoulders = {
 			max:30,
 			minl:2,
 			maxl:30,
+			mina:30,
+			maxa:40
 		},
 		Thorns:{
 			min:2349,
@@ -465,10 +469,10 @@ var shoulders = {
 			maxa:4550
 		},
 		ChillHit:{
-			min:1,
-			max:4.5,
-			minl:1,
-			maxl:5.1,
+			min:10,
+			max:45,
+			minl:10,
+			maxl:51,
 		}
 	}
 };

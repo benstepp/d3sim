@@ -123,7 +123,8 @@ var affixMap = {
 		prefix_en:'Fleet'
 	},
 	'EliteDamage':{
-		text_en:'Increases damage against elites by {$%}'
+		text_en:'Increases damage against elites by {$%}',
+		prefix_en:'Executing'
 	},
 	'BeastDamage':{
 		text_en:'{+$%} Damage to Beasts'
@@ -336,114 +337,142 @@ var affixMap = {
 	//weapon damages
 	Dmg_Black:{
 		text_en:'{+$}-{$} Damage',
+		suffix_en:'of Death',
 		exclude:['Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Cold:{
 		text_en:'{+$}-{$} Cold Damage',
+		suffix_en:'of the Avalanche',
 		exclude:['Dmg_Black','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Fire:{
 		text_en:'{+$}-{$} Fire Damage',
+		suffix_en:'of Incineration',
 		exclude:['Dmg_Black','Dmg_Cold','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Lightning:{
 		text_en:'{+$}-{$} Lightning Damage',
+		suffix_en:'of Conflagration',
 		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Poison','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Poison:{
 		text_en:'{+$}-{$} Poison Damage',
+		suffix_en:'of Blight',
 		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Arcane','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Arcane:{
 		text_en:'{+$}-{$} Arcane Damage',
+		suffix_en:'from Beyond',
 		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Holy','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Holy:{
 		text_en:'{+$}-{$} Holy Damage',
+		suffix_en:'of the Heavens',
 		exclude:['Dmg_Black','Dmg_Cold','Dmg_Fire','Dmg_Lightning','Dmg_Poison','Dmg_Arcane','Dagger','Hand Crossbow','Bow','Crossbow']
 	},
 	Dmg_Black_hc:{
 		text_en:'{+$}-{$} Damage',
+		suffix_en:'of Death',
 		exclude:['Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Cold_hc:{
 		text_en:'{+$}-{$} Cold Damage',
+		suffix_en:'of the Avalanche',
 		exclude:['Dmg_Black_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Fire_hc:{
 		text_en:'{+$}-{$} Fire Damage',
+		suffix_en:'of Incineration',
 		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Lightning_hc:{
 		text_en:'{+$}-{$} Lightning Damage',
+		suffix_en:'of Conflagration',
 		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Poison_hc:{
 		text_en:'{+$}-{$} Poison Damage',
+		suffix_en:'of Blight',
 		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Arcane_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Arcane_hc:{
 		text_en:'{+$}-{$} Arcane Damage',
+		suffix_en:'from Beyond',
 		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Holy_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Holy_hc:{
 		text_en:'{+$}-{$} Holy Damage',
+		suffix_en:'of the Heavens',
 		exclude:['Dmg_Black_hc','Dmg_Cold_hc','Dmg_Fire_hc','Dmg_Lightning_hc','Dmg_Poison_hc','Dmg_Arcane_hc','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Black_dagger:{
 		text_en:'{+$}-{$} Damage',
+		suffix_en:'of Death',
 		exclude:['Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 		},
 	Dmg_Cold_dagger:{
 		text_en:'{+$}-{$} Cold Damage',
+		suffix_en:'of the Avalanche',
 		exclude:['Dmg_Black_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Fire_dagger:{
 		text_en:'{+$}-{$} Fire Damage',
+		suffix_en:'of Incineration',
 		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Lightning_dagger:{
 		text_en:'{+$}-{$} Lightning Damage',
+		suffix_en:'of Conflagration',
 		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Poison_dagger:{
 		text_en:'{+$}-{$} Poison Damage',
+		suffix_en:'of Blight',
 		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Arcane_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Arcane_dagger:{
 		text_en:'{+$}-{$} Arcane Damage',
+		suffix_en:'from Beyond',
 		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Holy_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Holy_dagger:{
 		text_en:'{+$}-{$} Holy Damage',
+		suffix_en:'of the Heavens',
 		exclude:['Dmg_Black_dagger','Dmg_Cold_dagger','Dmg_Fire_dagger','Dmg_Lightning_dagger','Dmg_Poison_dagger','Dmg_Arcane_dagger','Axe','Hand Crossbow','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Flail','Mighty Weapon','Wand']
 	},
 	Dmg_Black_ranged:{
 		text_en:'{+$}-{$} Damage',
+		suffix_en:'of Death',
 		exclude:['Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
 		},
 	Dmg_Cold_ranged:{
 		text_en:'{+$}-{$} Cold Damage',
+		suffix_en:'of the Avalanche',
 		exclude:['Dmg_Black_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
 	},
 	Dmg_Fire_ranged:{
 		text_en:'{+$}-{$} Fire Damage',
+		suffix_en:'of Incineration',
 		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
 	},
 	Dmg_Lightning_ranged:{
 		text_en:'{+$}-{$} Lightning Damage',
+		suffix_en:'of Conflagration',
 		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
 	},
 	Dmg_Poison_ranged:{
 		text_en:'{+$}-{$} Poison Damage',
+		suffix_en:'of Blight',
 		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Arcane_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
 	},
 	Dmg_Arcane_ranged:{
 		text_en:'{+$}-{$} Arcane Damage',
+		suffix_en:'from Beyond',
 		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Holy_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
 	},
 	Dmg_Holy_ranged:{
 		text_en:'{+$}-{$} Holy Damage',
+		suffix_en:'of the Heavens',
 		exclude:['Dmg_Black_ranged','Dmg_Cold_ranged','Dmg_Fire_ranged','Dmg_Lightning_ranged','Dmg_Poison_ranged','Dmg_Arcane_ranged','Daibo','Two-Handed Mace','Two-Handed Axe','Two-Handed Sword','Polearm','Staff','Two-Handed Mighty Weapon','Two-Handed Flail']
 	},
 	//SkillEffects

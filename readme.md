@@ -23,17 +23,46 @@ slot is a string and must be one of ['amulet','belt','boots','bracers','chest','
 ##Data still needed:
 
 ###Suffixes/Prefixes
+Having more suffixes and prefixes will allow a larger variety of blue items to roll
+```
+Physical Skills deal {$%} more damage
+Arcane Skills deal {$%} more damage
+Cold Skills deal {$%} more damage
+Fire Skills deal {$%} more damage
+Poison Skills deal {$%} more damage
+{$} - {$} Damage (Jewelry)
+{+$%} Damage (Weapon)
+{$%} chance to inflict Bleed for {$%} weapon damage over {5} seconds
 
+Reduces damage from elites by {$%}
+Reduces duration of control impairing effects by {$%}
+Ignores Durability Loss
+{+$%} Chance to Block
+{$%} Chance to Freeze on Hit
+{$%} Chance to Immobolize on Hit
+
+{+$} Maximum Spirit (Monk Only)
+{+$} Maximum Fury (Barbarian Only)
+Gain {$} Life per Fury Spent (Barbarian Only)
+Gain {$} Life per Spirit Spent (Monk Only)
+Increases Wrath Regeneration by {$} per Second (Crusader Only)
+{+$} Maximum Wrath (Crusader Only)
+{+$} Maximum Mana (Witch Doctor Only
+Increases Mana Regeneration by {$} per Second(Witch Doctor Only)
+```
 ###Values
 
-####Mojo
-Ancient Area Damage
-Ancient Cost Reduction
-Ancient Life%
-Ancient GoldFind
-Ancient onHit Effects
-Ancient Globes
-Ancient Level Reduction
+####Helmet
+Max Spirit Rare
+Max Spirit Ancient
+
+####Pants
+Thorns Ancient
+
+####Shoulders
+Secondary Resists Ancient
+Bonus Experience Ancient
+Chill on Hit Ancient
 
 ####Shield
 Rare All Resist
@@ -47,9 +76,6 @@ Ancient Elite Damage
 Ancient Life per Wrath
 Ancient Wrath Regen
 Ancient Bleed
-Ancient GoldFind
-Ancient Bonus Xp
-Ancient Level Reduc
 Ancient Globes
 Ancient onHit
 Ancient Max Wrath

@@ -372,8 +372,10 @@ var pants = {
 		LevelReduc:{
 			min:2,
 			max:30,
-			//minl:2,
-			//maxl:30,
+			minl:2,
+			maxl:30,
+			mina:30,
+			maxa:40
 		},
 		Thorns:{
 			min:1343,
