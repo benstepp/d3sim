@@ -1887,6 +1887,10 @@ var affixMap = {
 	'VanishedPeak':{
 		type:'legendary',
 		text_en:'Reduces the Fury cost of Seismic Slam by {$%}.'
+	},
+	'BloodBrother':{
+		type:'legendary',
+		text_en:'Grants a {$%} chance to block attacks. Blocked attacks inflict {30%} less damage. After blocking an attack, your next attack inflicts {30%} additional damage.'
 	}
 
 

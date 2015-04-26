@@ -1446,6 +1446,29 @@ var twohand = [
 		flavor:'The Blade of Prophecy was lost until a champion worthy to carry it into battle emerged.'
 	},
 	{
+		name:"Blood Brother",
+		type:"Two-Handed Sword",
+		weight:50,
+		hc:false,
+		season:false,
+		smartLoot:["Crusader"],
+		primary:{
+			WEAPON_DAMAGE:null,
+			Strength:null,
+			FlatDamage:null,
+			RANDOM:1
+		},
+		secondary:{
+			BloodBrother:{
+				min:15,
+				max:20
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_2h_103_x1_demonhunter_male.png',
+		flavor:'"Long ago, the demon Vi\'inaz and his brother Eboeth were terrible foes of the High Heavens, though they bickered constantly. In later times, Vi\'inaz alone was seen wielding a sword wrapped in demon flesh, with a still-beating heart pumping black blood along its sharp-spined length. Talus\'ar does not record the fate of Eboeth, but I do not place our foes above perverse fratricide." —Archangel Ithereal'
+	},
+	{
 		name: "Cam's Rebuttal",
 		type: "Two-Handed Sword",
 		weight: 50,
