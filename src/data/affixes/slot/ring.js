@@ -75,12 +75,12 @@ var ring = {
 		},
 
 		AvgDamage:{
-			min:[40,80],
-			max:[60,120],
-			minl:[60,120],
-			maxl:[80,160],
-			mina:[88,160],
-			maxa:[105,210]
+			min:[40,40],
+			max:[60,60],
+			minl:[60,60],
+			maxl:[80,80],
+			mina:[88,80],
+			maxa:[105,105]
 		},
 		CritChance:{
 			min:9,

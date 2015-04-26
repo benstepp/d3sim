@@ -521,7 +521,6 @@ function getRandomAffix(current,slot,dClass,ps,type) {
 }
 
 function rollAffix(affix,rarity,slot,ps,min,max) {
-
 	var affixDiv = {
 		CritChance:2,
 		BlindHit:10,
@@ -541,46 +540,65 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 	var minName = 'min'+rarity.toLowerCase().slice(0,1);
 	var maxName = 'max'+rarity.toLowerCase().slice(0,1);
 
-	//if there are no values we dont need to roll them, just return
-	if (!affixes[slot.toLowerCase()][ps].hasOwnProperty(affix) && typeof min === 'undefined' && typeof min === 'undefined') {
-		return null;
-	}
-
-	if (typeof min === 'undefined' && typeof max === 'undefined') {
-		//fallback to lower values if not found
-		min = affixes[slot.toLowerCase()][ps][affix][minName] || 
-		affixes[slot.toLowerCase()][ps][affix].minl || 
-		affixes[slot.toLowerCase()][ps][affix].min;
-
-		max = affixes[slot.toLowerCase()][ps][affix][maxName] || 
-		affixes[slot.toLowerCase()][ps][affix].maxl || 
-		affixes[slot.toLowerCase()][ps][affix].max;
-	}
-
-	//if given an array we need to roll all values
-	if (Array.isArray(min) && Array.isArray(max)) {
+	//damage ranges are rolled differently from others
+	if ((affix.indexOf('Dmg_') > -1 || affix === 'AvgDamage') && (slot !== 'source' || slot !== 'mojo')) {
 		value = [];
+		min = affixes[slot.toLowerCase()][ps][affix][minName] || 
+			affixes[slot.toLowerCase()][ps][affix].minl || 
+			affixes[slot.toLowerCase()][ps][affix].min;
+		max = affixes[slot.toLowerCase()][ps][affix][maxName] || 
+			affixes[slot.toLowerCase()][ps][affix].maxl || 
+			affixes[slot.toLowerCase()][ps][affix].max;
 
-		//length of given parameters (likely 2)
-		var length = min.length;
-		for (var i = 0; i < length; i ++) {
-			value.push(intRandom(min[i],max[i]));
-		}
+		//this rolls the minimum value
+		value.push(intRandom(min[0],max[0]));
+
+		//this rolls a delta value and adds to the minimum
+		var maxRolled = value[0] + intRandom(min[1],max[1]);
 	}
 	else {
-		value = intRandom(min,max);
-	}
 
-	//if we need to divide value do so here
-	if (affixDiv.hasOwnProperty(affix)) {
-		value = parseFloat(value/affixDiv[affix]);
+		//if there are no values we dont need to roll them, just return
+		if (!affixes[slot.toLowerCase()][ps].hasOwnProperty(affix) && typeof min === 'undefined' && typeof min === 'undefined') {
+			return null;
+		}
 
-		//setting the decimal length based on number divided
-		if (affixDiv[affix].length === 3) {
-			value.toFixed(3);
+		if (typeof min === 'undefined' && typeof max === 'undefined') {
+			//fallback to lower values if not found
+			min = affixes[slot.toLowerCase()][ps][affix][minName] || 
+			affixes[slot.toLowerCase()][ps][affix].minl || 
+			affixes[slot.toLowerCase()][ps][affix].min;
+
+			max = affixes[slot.toLowerCase()][ps][affix][maxName] || 
+			affixes[slot.toLowerCase()][ps][affix].maxl || 
+			affixes[slot.toLowerCase()][ps][affix].max;
+		}
+
+		//if given an array we need to roll all values
+		if (Array.isArray(min) && Array.isArray(max)) {
+			value = [];
+
+			//length of given parameters (likely 2)
+			var length = min.length;
+			for (var i = 0; i < length; i ++) {
+				value.push(intRandom(min[i],max[i]));
+			}
 		}
 		else {
-			value.toFixed(2);
+			value = intRandom(min,max);
+		}
+
+		//if we need to divide value do so here
+		if (affixDiv.hasOwnProperty(affix)) {
+			value = parseFloat(value/affixDiv[affix]);
+
+			//setting the decimal length based on number divided
+			if (affixDiv[affix].length === 3) {
+				value.toFixed(3);
+			}
+			else {
+				value.toFixed(2);
+			}
 		}
 	}
 

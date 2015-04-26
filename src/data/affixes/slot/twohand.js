@@ -123,22 +123,22 @@ var twohand = {
 		}
 	},
 	primary:{
-		Dmg_Black:{min:[1024,1227],max:[1252,1556],minl:[1177,1410],maxl:[1439,1788],mina:[1582,1932],maxa:[1870,2325]},
-		Dmg_Cold:{min:[1024,1227],max:[1252,1556],minl:[1177,1410],maxl:[1439,1788],mina:[1582,1932],maxa:[1870,2325]},
-		Dmg_Fire:{min:[1024,1227],max:[1252,1556],minl:[1177,1410],maxl:[1439,1788],mina:[1582,1932],maxa:[1870,2325]},
-		Dmg_Lightning:{min:[1024,1227],max:[1252,1556],minl:[1177,1410],maxl:[1439,1788],mina:[1582,1932],maxa:[1870,2325]},
-		Dmg_Poison:{min:[1024,1227],max:[1252,1556],minl:[1177,1410],maxl:[1439,1788],mina:[1582,1932],maxa:[1870,2325]},
-		Dmg_Arcane:{min:[1024,1227],max:[1252,1556],minl:[1177,1410],maxl:[1439,1788],mina:[1582,1932],maxa:[1870,2325]},
-		Dmg_Holy:{min:[1024,1227],max:[1252,1556],minl:[1177,1410],maxl:[1439,1788],mina:[1582,1932],maxa:[1870,2325]},
+		Dmg_Black:{min:[1024,203],max:[1252,304],minl:[1177,233],maxl:[1439,349],mina:[1582,350],maxa:[1870,455]},
+		Dmg_Cold:{min:[1024,203],max:[1252,304],minl:[1177,233],maxl:[1439,349],mina:[1582,350],maxa:[1870,455]},
+		Dmg_Fire:{min:[1024,203],max:[1252,304],minl:[1177,233],maxl:[1439,349],mina:[1582,350],maxa:[1870,455]},
+		Dmg_Lightning:{min:[1024,203],max:[1252,304],minl:[1177,233],maxl:[1439,349],mina:[1582,350],maxa:[1870,455]},
+		Dmg_Poison:{min:[1024,203],max:[1252,304],minl:[1177,233],maxl:[1439,349],mina:[1582,350],maxa:[1870,455]},
+		Dmg_Arcane:{min:[1024,203],max:[1252,304],minl:[1177,233],maxl:[1439,349],mina:[1582,350],maxa:[1870,455]},
+		Dmg_Holy:{min:[1024,203],max:[1252,304],minl:[1177,233],maxl:[1439,349],mina:[1582,350],maxa:[1870,455]},
 
-		//for the hand crossbow
-		Dmg_Black_ranged:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
-		Dmg_Cold_ranged:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
-		Dmg_Fire_ranged:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
-		Dmg_Lightning_ranged:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
-		Dmg_Poison_ranged:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
-		Dmg_Arcane_ranged:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
-		Dmg_Holy_ranged:{min:[853,1022],max:[1043,1296],minl:[981,1175],maxl:[1199,1490],mina:[1318,1609],maxa:[1560,1940]},
+		//for ranged weapons
+		Dmg_Black_ranged:{min:[853,203],max:[1043,304],minl:[981,233],maxl:[1199,349],mina:[1318,350],maxa:[1560,455]},
+		Dmg_Cold_ranged:{min:[853,203],max:[1043,304],minl:[981,233],maxl:[1199,349],mina:[1318,350],maxa:[1560,455]},
+		Dmg_Fire_ranged:{min:[853,203],max:[1043,304],minl:[981,233],maxl:[1199,349],mina:[1318,350],maxa:[1560,455]},
+		Dmg_Lightning_ranged:{min:[853,203],max:[1043,304],minl:[981,233],maxl:[1199,349],mina:[1318,350],maxa:[1560,455]},
+		Dmg_Poison_ranged:{min:[853,203],max:[1043,304],minl:[981,233],maxl:[1199,349],mina:[1318,350],maxa:[1560,455]},
+		Dmg_Arcane_ranged:{min:[853,203],max:[1043,304],minl:[981,233],maxl:[1199,349],mina:[1318,350],maxa:[1560,455]},
+		Dmg_Holy_ranged:{min:[853,203],max:[1043,304],minl:[981,233],maxl:[1199,349],mina:[1318,350],maxa:[1560,455]},
 
 		Dexterity:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
 		Intelligence:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},

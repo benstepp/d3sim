@@ -163,12 +163,12 @@ var amulet = {
 			//maxa:7
 		},
 		AvgDamage: {
-			min:[40, 80],
-			max:[60, 120],
-			minl:[60, 120],
-			maxl:[80, 160],
-			mina:[88, 168],
-			maxa:[105, 210]
+			min:[40, 40],
+			max:[60, 60],
+			minl:[60, 60],
+			maxl:[80, 0],
+			mina:[88, 80],
+			maxa:[105, 105]
 		},
 
 		//Utility
