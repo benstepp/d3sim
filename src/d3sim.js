@@ -553,8 +553,8 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 		//this rolls the minimum value
 		value.push(intRandom(min[0],max[0]));
 
-		//this rolls a delta value and adds to the minimum
-		var maxRolled = value[0] + intRandom(min[1],max[1]);
+		//this rolls a delta value and adds to the existing minimum
+		value.push(value[0] + intRandom(min[1],max[1]));
 	}
 	else {
 
