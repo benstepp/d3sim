@@ -14,12 +14,12 @@ var mojo = {
 		Vitality:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
 
 		AvgDamage:{
-			min:[262,328],
-			max:[329,394],
-			minl:[340,396],
-			maxl:[395,450],
-			mina:[407,503],
-			maxa:[504,600]
+			min:[262,1],
+			max:[328,66],
+			minl:[340,40],
+			maxl:[370,80],
+			mina:[407,88],
+			maxa:[485,115]
 		},
 
 		PercLife:{min:8,max:14,minl:10,maxl:15/*,mina:10,maxa:15*/},
