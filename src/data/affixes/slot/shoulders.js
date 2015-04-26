@@ -11,7 +11,7 @@ var shoulders = {
 				'Witch Doctor':'//media.blizzard.com/d3/icons/items/large/shoulders_208_witchdoctor_male.png',
 				'Wizard':'//media.blizzard.com/d3/icons/items/large/shoulders_208_wizard_male.png'
 			},
-			armor:586
+			armor:{min:586,max:674}
 		}
 	},
 	primary:{

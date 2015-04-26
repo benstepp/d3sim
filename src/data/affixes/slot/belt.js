@@ -11,7 +11,7 @@ var belt = {
 				'Witch Doctor':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
 				'Wizard':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png'
 			},
-			armor:440
+			armor:{min:440,max:506}
 		},
 		'Mighty Belt':{
 			name_en:'Mighty Scourge',
@@ -19,7 +19,7 @@ var belt = {
 				default:'//media.blizzard.com/d3/icons/items/large/barbbelt_206_demonhunter_male.png'
 			},
 			exclude:['Demon Hunter','Monk','Crusader','Witch Doctor','Wizard'],
-			armor:586
+			armor:{min:586,max:674}
 		}
 	},
 	primary:{

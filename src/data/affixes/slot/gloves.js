@@ -11,7 +11,7 @@ var gloves = {
 				'Witch Doctor':'//media.blizzard.com/d3/icons/items/large/gloves_208_witchdoctor_male.png',
 				'Wizard':'//media.blizzard.com/d3/icons/items/large/gloves_208_wizard_male.png'
 			},
-			armor:513
+			armor:{min:513,max:590}
 		}
 	},
 	primary:{

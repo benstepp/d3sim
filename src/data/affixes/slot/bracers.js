@@ -6,7 +6,7 @@ var bracers = {
 			image:{
 				default:'//media.blizzard.com/d3/icons/items/large/bracers_208_demonhunter_male.png'
 			},
-			armor:366
+			armor:{min:366,max:421}
 		}
 	},
 	primary:{

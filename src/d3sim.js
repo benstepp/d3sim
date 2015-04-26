@@ -270,8 +270,9 @@ function createItem(rarity, slot, dClass, legendaryName) {
 	}
 
 	if (affixes[slot].type[newItem.type].hasOwnProperty('armor')) {
+		var baseArmor = intRandom(affixes[slot].type[newItem.type].armor.min,affixes[slot].type[newItem.type].armor.max);
 		var bonusArmor = (newItem.primaries.hasOwnProperty('Armor')) ? newItem.primaries.Armor.value : 0;
-		newItem.armor = affixes[slot].type[newItem.type].armor + bonusArmor;
+		newItem.armor = baseArmor + bonusArmor;
 	}
 
 	return newItem;
@@ -678,24 +679,6 @@ var rollLegendary = function(slot) {
 
 function intRandom(min,max) {
 	return Math.round((Math.random()*(max-min)) + min);
-}
-
-function test() {
-	var dClasses = ['Barbarian','Crusader','Monk','Demon Hunter','Wizard','Witch Doctor'];
-	var dClassLength = dClasses.length;
-	var slots = ['amulet','belt','boots','bracers','chest','gloves','helm','pants','ring','shoulders','mojo','shield','onehand','quiver','source','twohand'];
-	var slotLength = slots.length;
-
-	for (var y = 0; y < dClassLength; y++) {
-		console.log(dClasses[y]);
-		setKadala(dClasses[y], true, true);
-		for (var t = 0; t < slotLength; t++) {
-			console.log(slots[t]);
-			for (var i =0; i < 10000; i++) {
-				var it = kadalaRoll(slots[t]);
-			}
-		}
-	}
 }
 
 module.exports = d3sim;

@@ -11,7 +11,7 @@ var pants = {
 				'Witch Doctor':'//media.blizzard.com/d3/icons/items/large/pants_208_witchdoctor_male.png',
 				'Wizard':'//media.blizzard.com/d3/icons/items/large/pants_208_wizard_male.png'
 			},
-			armor:660
+			armor:{min:660,max:759}
 		}
 	},
 	primary:{
