@@ -700,6 +700,7 @@ var ring = [
 		secondary:{
 			RANDOM:2
 		},
+		set:'Endless Walk',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_ring_013_x1_demonhunter_male.png',
 		flavor:'The road goes ever on...'
 	},

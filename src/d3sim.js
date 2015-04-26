@@ -9,6 +9,7 @@ var classMap = {
 	'Witch Doctor':'Intelligence',
 	Wizard:'Intelligence'
 };
+var elements = ['PhysDamage','ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage'];
 
 //create the object to export
 var d3sim = {
@@ -327,7 +328,6 @@ function rollStats(item, rarity, slot, dClass) {
 	//if an elemental primary stat is specified
 	var elementalIndex = primaryKeys.indexOf('ELEMENTAL');
 	if(elementalIndex !== -1) {
-		var elements = ['PhysDamage','ArcaneDamage','ColdDamage','FireDamage','PoisonDamage','HolyDamage','LightningDamage'];
 		var elementsLength = elements.length;
 
 		//getting a list of class possible elements based on damage type
@@ -423,6 +423,9 @@ function rollStats(item, rarity, slot, dClass) {
 		//if min/max was given use those
 		if(primaries.hasOwnProperty(primary) && primaries[primary] !== null) {
 			primariesFinal[primary].value = rollAffix(primary,rarity,slot,'primary',primaries[primary].min,primaries[primary].max);
+		}
+		if(elements.indexOf(primary) > -1 && primaries.hasOwnProperty('ELEMENTAL') && primaries.ELEMENTAL !== null) {
+			primariesFinal[primary].value = rollAffix(primary,rarity,slot,'primary',primaries.ELEMENTAL.min,primaries.ELEMENTAL.max);
 		}
 
 		//otherwise just roll using slot defaults

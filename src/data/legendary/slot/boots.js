@@ -414,6 +414,25 @@ var boots = [
 		flavor:'"I walk forever in my master’s boots so that I never forget how my insolence caused his death. To honor his memory, I live my life in a manner that embodies everything it means to be a crusader." —Meditations on My Redemption'
 	},
 	{
+		name:"Sabaton of the Wastes",
+		type:"Boots",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:["Barbarian"],
+		primary:{
+			Strength:null,
+			Vitality:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Wrath of the Wastes',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_set_01_p2_demonhunter_male.png',
+		flavor:'The Tribe of Thunder was moving through the wastes when a madman with one arm rushed from the snowy twilight, babbling of horrendous acts, both suffered and witnessed. He was clad only in rags and these sabatons.'
+	},
+	{
 		name: "Sabatons of Akkhan",
 		type: "Boots",
 		weight: 100,
