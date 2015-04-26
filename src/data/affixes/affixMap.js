@@ -1891,6 +1891,10 @@ var affixMap = {
 	'BloodBrother':{
 		type:'legendary',
 		text_en:'Grants a {$%} chance to block attacks. Blocked attacks inflict {30%} less damage. After blocking an attack, your next attack inflicts {30%} additional damage.'
+	},
+	'Sublime':{
+		type:'legendary',
+		text_en:'When you block, you have up to a {$%} chance to Stun the attacker for 1.5 seconds based on your current Wrath.'
 	}
 
 

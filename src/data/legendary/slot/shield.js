@@ -118,10 +118,20 @@ var shield = [
 		smartLoot: [
 			"Crusader"
 		],
-		primary:{},
-		secondary:{},
-		image:'',
-		flavor:''
+		primary:{
+			Strength:null,
+			Block:null,
+			RANDOM:2
+		},
+		secondary:{
+			Sublime:{
+				min:15,
+				max:20
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_crushield_106_x1_demonhunter_male.png',
+		flavor:'The forces of shadow act in foolish haste. Maintain your focus, and you will defeat them with your righteous resolve.'
 	},
 	{
 		name: "The Final Witness",
