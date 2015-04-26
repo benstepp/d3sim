@@ -74,14 +74,14 @@ var twohand = {
 			exclude:['Monk','Barbarian','Crusader','Witch Doctor','Wizard']
 		},
 		'Polearm':{
-			name_en:'Trident',
+			name_en:'Trishula',
 			image:{
-				default:'//media.blizzard.com/d3/icons/items/large/polearm_301_demonhunter_male.png'
+				default:'//media.blizzard.com/d3/icons/items/large/polearm_302_demonhunter_male.png'
 			},
 			weapon:{
 				speed:1.05,
-				min:1163,
-				max:1415
+				min:1797,
+				max:1823
 			},
 			exclude:['Demon Hunter']
 		},

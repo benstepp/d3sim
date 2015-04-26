@@ -50,14 +50,14 @@ var onehand = {
 			exclude:['Demon Hunter']
 		},
 		'Sword':{
-			name_en:'Champion Sword',
+			name_en:'Tsunami Blade',
 			image:{
-				default:'//media.blizzard.com/d3/icons/items/large/sword_1h_301_demonhunter_male.png'
+				default:'//media.blizzard.com/d3/icons/items/large/sword_1h_302_demonhunter_male.png'
 			},
 			weapon:{
 				speed:1.4,
-				min:138,
-				max:322
+				min:168,
+				max:392
 			},
 			exclude:['Demon Hunter']
 		},

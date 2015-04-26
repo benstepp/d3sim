@@ -265,7 +265,7 @@ function createItem(rarity, slot, dClass, legendaryName) {
 		//calculate the weapon dps and save tooltip data to item
 		var FlatDamageMult = (newItem.primaries.hasOwnProperty('FlatDamage'))?((newItem.primaries.FlatDamage.value)/100)+1 :1;
 		var AttackSpeedMult = (newItem.primaries.hasOwnProperty('AttackSpeed'))?((newItem.primaries.AttackSpeed.value)/100)+1 :1;
-		newItem.speed = baseWeapon.speed;
+		newItem.speed = baseWeapon.speed * AttackSpeedMult;
 		newItem.weaponDps = ((minimum + maximum)/2)*(baseWeapon.speed)*AttackSpeedMult*FlatDamageMult;
 		newItem.damageRange = [minimum,maximum];
 	}

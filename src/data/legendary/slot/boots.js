@@ -496,6 +496,25 @@ var boots = [
 		flavor:'"I walk amongst the shadows and call them my own. With every silent stride, I claim my domain." —Demon Hunter Kunai'
 	},
 	{
+		name:"Striders of Destiny",
+		type:"Boots",
+		weight:100,
+		hc:false,
+		season:false,
+		smartLoot:["Wizard"],
+		primary:{
+			Intelligence:null,
+			Vitality:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Delsere\'s Magnum Opus',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_set_02_p2_demonhunter_male.png',
+		flavor:'"Like many of his fellow students, Delsere was fascinated by Li-Ming. His master work was an homage to her, and he swore one day she would wear it."- High Councilor Valthek'
+	},
+	{
 		name: "Vyr's Swaggering Stance",
 		type: "Boots",
 		weight: 100,
