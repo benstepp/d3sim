@@ -541,7 +541,7 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 	var maxName = 'max'+rarity.toLowerCase().slice(0,1);
 
 	//damage ranges are rolled differently from others
-	if ((affix.indexOf('Dmg_') > -1 || affix === 'AvgDamage') && (slot !== 'source' || slot !== 'mojo')) {
+	if ((affix.indexOf('Dmg_') > -1 || affix === 'AvgDamage') && !(slot === 'source' || slot === 'mojo')) {
 		value = [];
 		min = affixes[slot.toLowerCase()][ps][affix][minName] || 
 			affixes[slot.toLowerCase()][ps][affix].minl || 
