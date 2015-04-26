@@ -424,7 +424,7 @@ function rollStats(item, rarity, slot, dClass) {
 		if(primaries.hasOwnProperty(primary) && primaries[primary] !== null) {
 			primariesFinal[primary].value = rollAffix(primary,rarity,slot,'primary',primaries[primary].min,primaries[primary].max);
 		}
-		if(elements.indexOf(primary) > -1 && primaries.hasOwnProperty('ELEMENTAL') && primaries.ELEMENTAL !== null) {
+		else if(elements.indexOf(primary) > -1 && primaries.hasOwnProperty('ELEMENTAL') && primaries.ELEMENTAL !== null) {
 			primariesFinal[primary].value = rollAffix(primary,rarity,slot,'primary',primaries.ELEMENTAL.min,primaries.ELEMENTAL.max);
 		}
 
