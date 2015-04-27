@@ -527,6 +527,7 @@ function rollAffix(affix,rarity,slot,ps,min,max) {
 		FearHit:10,
 		FreezeHit:10,
 		ChillHit:10,
+		ImmobHit:10,
 		SlowHit:10,
 		KnockHit:10,
 		StunHit:10,
