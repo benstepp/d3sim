@@ -1,25 +1,67 @@
 #d3sim
-A collection of data used to simulate Kadala rolling and random item generation based on the data collected by:
-[데이터를거두는자](https://docs.google.com/spreadsheets/d/1Ne3aqWO_UyE3yQhtbBPm1BcoRK3OsNMwwmDTbYLefzY/edit#gid=1902649360), [bumbalump](http://www.reddit.com/user/bumbalump), and [p0d3x](http://www.reddit.com/user/p0d3x)
+A collection of data used to simulate Kadala gambling and random item generation of the game Diablo III by Blizzard Entertainment. Based on the data collected by:
+[데이터를거두는자](https://docs.google.com/spreadsheets/d/1Ne3aqWO_UyE3yQhtbBPm1BcoRK3OsNMwwmDTbYLefzY/edit#gid=1902649360), [bumbalump](http://www.reddit.com/user/bumbalump), [d07RiV](http://www.reddit.com/user/d07RiV), and [p0d3x](http://www.reddit.com/user/p0d3x)
 
 
 ##Usage
 require/run in browser
 
-```javascript
-d3sim.setKadala(class,seasonal,hardcore);
-```
-sets the basis for the rolls. 
-class can be one of ['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor','Monk']
-seasonal and hardcore are booleans.
+
+##Methods
+* [d3sim.setKadala()](#d3simsetkadalaclassseasonalhardcore)
+* [d3sim.kadalaRoll()](#d3simkadalarollslot)
+* [d3sim.createItem()](#d3simcreateitemrarityclassname)
+
+---
+
+####d3sim.setKadala(class,seasonal,hardcore)
+
+This sets the basis of gambling for items off of Kadala.
+
+*Arguments*
+
+1. `class` (string): The Diablo III class to use. Must be one of: 'Barbarian', 'Crusader, 'Demon Hunter', 'Monk', 'Witch Doctor', or 'Wizard'
+2. `seasonal` (bool): Whether the not the character is seasonal
+3. `hardcore` (bool): Whether the not the character is hardcore
+
+*Example*
 
 ```javascript
-d3sim.kadalaRoll(slot);
+d3sim.setKadala('Demon Hunter',true,false);
 ```
-rolls a single item from kadala. 
-slot is a string and must be one of ['amulet','belt','boots','bracers','chest','gloves','helm','mojo','onehand','pants','quiver','ring','shield','shoulders','source','twohand']
 
+---
+####d3sim.kadalaRoll(slot)
 
+Rolls for a random item from Kadala based on slot.
+
+*Arguments*
+
+1. `slot` (string): The Diablo III slot to roll. Must be one of: 'amulet', 'belt', 'boots', 'bracers', 'chest', 'gloves', 'helm', 'mojo', 'onehand', 'pants', 'quiver', 'ring', 'shield', 'shoulders', 'source', or 'twohand'
+
+*Example*
+
+```javascript
+d3sim.kadalaRoll('twohand');
+```
+
+---
+####d3sim.createItem(rarity,class,name)
+
+Creates a new randomly generated item with given parameters.
+
+*Arguments*
+1. `rarity` (string): The rarity of the item to be created. Must be one of: 'magic', 'rare','legendary', or 'ancient'
+2. `class` (string): The Diablo III class to use. Must be one of: 'Barbarian', 'Crusader, 'Demon Hunter', 'Monk', 'Witch Doctor', or 'Wizard'
+3. `name` (string,optional): The name of a specific legendary item to be rolled
+
+*Example*
+
+```javascript
+d3sim.createItem('ancient','Monk','Flying Dragon');
+```
+
+---
 ##Data still needed:
 
 ###Suffixes/Prefixes
@@ -48,34 +90,5 @@ Gain {$} Life per Spirit Spent (Monk Only)
 Increases Wrath Regeneration by {$} per Second (Crusader Only)
 {+$} Maximum Wrath (Crusader Only)
 {+$} Maximum Mana (Witch Doctor Only
-Increases Mana Regeneration by {$} per Second(Witch Doctor Only)
+Increases Mana Regeneration by {$} per Second (Witch Doctor Only)
 ```
-###Values
-
-####Helmet
-Max Spirit Rare
-Max Spirit Ancient
-
-####Pants
-Thorns Ancient
-
-####Shoulders
-Secondary Resists Ancient
-Bonus Experience Ancient
-Chill on Hit Ancient
-
-####Shield
-Rare All Resist
-Ancient Life%
-Ancient All Resist
-Ancient Life Regen
-Ancient Block
-Ancient Area Damag
-Ancient Elite Reduction
-Ancient Elite Damage
-Ancient Life per Wrath
-Ancient Wrath Regen
-Ancient Bleed
-Ancient Globes
-Ancient onHit
-Ancient Max Wrath

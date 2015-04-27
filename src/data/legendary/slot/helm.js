@@ -1126,7 +1126,10 @@ var helm = [
 		],
 		primary:{
 			Intelligence:null,
-			CritChance:null,
+			APOC:{
+				min:3,
+				max:4
+			},
 			RANDOM:2
 		},
 		secondary:{

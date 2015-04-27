@@ -1,6 +1,5 @@
 var amulet = {
 	slot_en:'Neck',
-
 	type:{
 		'Amulet':{
 			name_en:'Amulet',
@@ -9,7 +8,6 @@ var amulet = {
 			}
 		}
 	},
-
 	primary:{
 		Dexterity: {min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
 		Intelligence: {min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
@@ -33,13 +31,11 @@ var amulet = {
 		CritChance: {min:14,max:20,minl:16,maxl:20,/*mina:16,maxa:20*/},
 		AttackSpeed: {min:5,max:6,minl:5,maxl:7,/*mina:5,maxa:7*/},
 		AvgDamage: {min:[40, 40],max:[60, 60],minl:[60, 60],maxl:[80, 0],mina:[88, 80],maxa:[105, 105]},
-
 		AreaDamage: {min:10,max:16,minl:10,maxl:20,/*mina:10,maxa:20*/},
 		CostReduc: {min:5,max:7,minl:5,maxl:8,/*mina:5,maxa:8*/},
 		CdReduc: {min:4,max:7,minl:5,maxl:8,/*mina:5,maxa:8*/},
 		LifePerHit: {min:6823,max:15473,minl:15474,maxl:18429,mina:20271,maxa:23950},
 		Socket: {min:1,max:1,/*minl:1,maxl:1,mina:1,maxa:1*/}
-
 	},
 	secondary:{
 		PhysRes: {min:121,max:140,minl:141,maxl:160,mina:176,maxa:210},

@@ -386,7 +386,7 @@ var twohand = [
 		},
 		set:'Inna\'s Mantra',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_combatstaff_2h_001_x1_demonhunter_male.png',
-		flavor:''
+		flavor:'Inlaid with prayers to Inna\'s righteous judgment.'
 	},
 	{
 		name: "Staff of Kyro",

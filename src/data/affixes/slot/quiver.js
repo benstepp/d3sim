@@ -14,6 +14,7 @@ var quiver = {
 
 		Dexterity:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
 		Vitality:{min:525,max:625,minl:626,maxl:750,mina:825,maxa:1000},
+
 		PercLife:{min:8,max:14,minl:10,maxl:15/*,mina:10,maxa:15*/},
 		LifeRegen:{min:2753,max:4642,minl:4642,maxl:5528,mina:6080,maxa:7185},
 
@@ -22,9 +23,10 @@ var quiver = {
 		CdReduc:{min:4,max:7,minl:5,maxl:8/*,mina:5,maxa:8*/},
 		CostReduc:{min:5,max:7,minl:5,maxl:8/*,mina:5,maxa:8*/},
 		AreaDamage:{min:10,max:16,minl:10,maxl:20/*,mina:10,maxa:20*/},
-		HatredRegen:{min:118,max:133,minl:135,maxl:150,mina:135,maxa:150},
 		Bleed:{min:[32,300],max:[37,400],minl:[34,300],maxl:[39,400]/*,mina:[34,300],maxa:[39,400]*/},
 		Socket:{min:1,max:1/*,minl:1,maxl:1,mina:1,maxa:1*/},
+
+		HatredRegen:{min:118,max:133,minl:135,maxl:150,mina:135,maxa:150},
 
 		RapidFireDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
 		CompanionDmg:{min:8,max:15,minl:10,maxl:15/*,mina:10,maxa:15*/},
@@ -49,6 +51,9 @@ var quiver = {
 		MaxDisc:{min:8,max:10,minl:9,maxl:12/*,mina:9,maxa:12*/},
 		Thorns:{min:1343,max:1817,minl:1525,maxl:2000,mina:2200,maxa:2600},
 		BonusXp:{min:80,max:139,minl:140,maxl:200,mina:220,maxa:260},
+		IgnoreDura:{min:1,max:1/*,minl:1,maxl:1,mina:1,max1:1*/},
+		Globes:{min:14231,max:20000,minl:20001,maxl:29713,mina:32684,maxa:38625},
+		LevelReduc:{min:2,max:23,minl:2,maxl:30,mina:30,maxa:40},
 
 		FearHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
 		StunHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
@@ -57,11 +62,7 @@ var quiver = {
 		ChillHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
 		SlowHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
 		ImmobHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
-		KnockHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/},
-
-		IgnoreDura:{min:1,max:1/*,minl:1,maxl:1,mina:1,max1:1*/},
-		Globes:{min:14231,max:20000,minl:20001,maxl:29713,mina:32684,maxa:38625},
-		LevelReduc:{min:2,max:23,minl:2,maxl:30,mina:30,maxa:40}
+		KnockHit:{min:10,max:23,minl:10,maxl:26/*,mina:10,maxa:26*/}
 	}
 };
 

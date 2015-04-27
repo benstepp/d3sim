@@ -215,7 +215,7 @@ var affixMap = {
 	'LifeAfterKill':{
 		suffix_en:'of Extermination',
 		text_en:'{+$} Life After Each Kill',
-		exclude:['LifePerHit']
+		exclude:['LifePerHit','Mighty Belt']
 	},
 	'LevelReduc':{
 		suffix_en:'of Courage',
@@ -270,16 +270,20 @@ var affixMap = {
 	'SpiritRegen':{
 		text_en:'Increases Spirit Regeneration by {$} per Second (Monk Only)',
 		prefix_en:'Avaricious',
-		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Helm','Wizard Hat','Voodoo Mask','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'MaxSpirit':{
 		text_en:'{+$} Maximum Spirit (Monk Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Helm','Wizard Hat','Voodoo Mask','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
+	},
+	'LifePerSpirit':{
+		text_en:'Gain {$} Life per Spirit Spent (Monk Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Helm','Wizard Hat','Voodoo Mask','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 
 	'MaxFury':{
 		text_en:'{+$} Maximum Fury (Barbarian Only)',
-		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Fist Weapon','Hand Crossbow','Wand']
+		exclude:['Crusader','Demon Hunter','Monk','Witch Doctor','Wizard','Belt','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Fist Weapon','Hand Crossbow','Wand']
 	},
 	'LifePerFury':{
 		text_en:'Gain {$} Life per Fury Spent (Barbarian Only)',
@@ -290,10 +294,6 @@ var affixMap = {
 		prefix_en:'Dedicated',
 		text_en:'Gain {$} Life per Wrath Spent (Crusader Only)',
 		exclude:['Shield','Barbarian','Demon Hunter','Monk','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Fist Weapon','Mighty Weapon','Hand Crossbow','Wand']
-	},
-	'LifePerSpirit':{
-		text_en:'Gain {$} Life per Spirit Spent (Monk Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Witch Doctor','Wizard','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'WrathRegen':{
 		text_en:'Increases Wrath Regeneration by {$} per Second (Crusader Only)',
@@ -318,7 +318,7 @@ var affixMap = {
 	'MaxAp':{
 		prefix_en:'Mental',
 		text_en:'{+$} Maximum Arcane Power (Wizard Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Fist Weapon']
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Witch Doctor','Helm','Spirit Stone','Voodoo Mask','Axe','Dagger','Mace','Spear','Sword','Ceremonial Knife','Flail','Mighty Weapon','Hand Crossbow','Fist Weapon']
 	},
 	'APOC':{
 		text_en:'Critical Hits grant {$} Arcane Power (Wizard Only)',
@@ -327,11 +327,11 @@ var affixMap = {
 
 	'MaxMana':{
 		text_en:'{+$} Maximum Mana (Witch Doctor Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard','Axe','Dagger','Mace','Spear','Sword','Fist Weapon','Flail','Mighty Weapon','Hand Crossbow','Wand']
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard','Helm','Spirit Stone','Wizard Hat','Axe','Dagger','Mace','Spear','Sword','Fist Weapon','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 	'ManaRegen':{
-		text_en:'Increases Mana Regeneration by {$} per Second(Witch Doctor Only)',
-		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard','Axe','Dagger','Mace','Spear','Sword','Fist Weapon','Flail','Mighty Weapon','Hand Crossbow','Wand']
+		text_en:'Increases Mana Regeneration by {$} per Second (Witch Doctor Only)',
+		exclude:['Barbarian','Crusader','Demon Hunter','Monk','Wizard','Helm','Wizard Hat','Spirit Stone','Axe','Dagger','Mace','Spear','Sword','Fist Weapon','Flail','Mighty Weapon','Hand Crossbow','Wand']
 	},
 
 	//weapon damages

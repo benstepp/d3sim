@@ -159,10 +159,13 @@ var twohand = {
 		ManaRegen:{min:12,max:14/*,minl:12,maxl:14,mina:12,maxa:14*/},
 		SpiritRegen:{min:0,max:0,minl:0,maxl:0,mina:217,maxa:300},
 		LifePerSpirit:{min:0,max:0,minl:0,maxl:0,mina:456,maxa:540}
-
 	},
 	secondary:{
 		LifeAfterKill:{min:4686,max:9141,minl:9142,maxl:13371,mina:14708,maxa:17385},
+		IgnoreDura:{min:1,max:1/*,minl:1,maxl:1,mina:1,maxa:1*/},
+		LevelReduc:{min:2,max:30,minl:2,maxl:30,mina:30,maxa:40},
+		BonusXp:{min:100,max:139,minl:140,maxl:200,mina:220,maxa:260},
+
 		FearHit:{min:10,max:45,minl:10,maxl:51/*,mina:10,maxa:51*/},
 		StunHit:{min:10,max:45,minl:10,maxl:51/*,mina:10,maxa:51*/},
 		BlindHit:{min:10,max:45,minl:10,maxl:51/*,mina:10,maxa:51*/},
@@ -171,9 +174,6 @@ var twohand = {
 		SlowHit:{min:10,max:45,minl:10,maxl:51/*,mina:10,maxa:51*/},
 		ImmobHit:{min:10,max:45,minl:10,maxl:51/*,mina:10,maxa:51*/},
 		KnockHit:{min:10,max:45,minl:10,maxl:51/*,mina:10,maxa:51*/},
-		IgnoreDura:{min:1,max:1/*,minl:1,maxl:1,mina:1,maxa:1*/},
-		LevelReduc:{min:2,max:30,minl:2,maxl:30,mina:30,maxa:40},
-		BonusXp:{min:100,max:139,minl:140,maxl:200,mina:220,maxa:260},
 
 		MaxDisc:{min:8,max:10,minl:9,maxl:12/*,mina:9,maxa:12*/},
 		MaxSpirit:{min:26,max:28,minl:26,maxl:30,mina:26,maxa:30},
