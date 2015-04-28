@@ -1,4 +1,4 @@
-var d3sim = require('../src/d3sim.js');
+var d3sim = require('../src');
 
 function test() {
 	var dClasses = ['Barbarian','Crusader','Monk','Demon Hunter','Wizard','Witch Doctor'];

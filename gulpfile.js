@@ -12,14 +12,14 @@ gulp.task('clean', function() {
 });
 
 gulp.task('default',['clean'], function() {
-	gulp.src('src/d3sim.js')
+	gulp.src('src/index.js')
 		.pipe(browserify({
-			entries: ['./d3sim.js'],
+			entries: ['./index.js'],
 			debug: true,
 			standalone:'d3sim',
 			cache:{},
 			packageCache: {},
-			fullpaths:true
+			fullpaths:false
 		}))
 		.pipe(uglify())
 		.pipe(gulp.dest('./build/'));

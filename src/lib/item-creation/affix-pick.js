@@ -83,8 +83,8 @@ var affixPick = function(item, rarity, slot, dClass) {
 		for (var prima in allPrims) {
 			if (prima.indexOf('Dmg_') === 0 && 
 				affixMap[prima].hasOwnProperty('exclude') &&
-				affixMap[prima].exclude.indexOf(dClass) > -1 &&
-				affixMap[prima].exclude.indexOf(item.type) > -1) {
+				affixMap[prima].exclude.indexOf(dClass) === -1 &&
+				affixMap[prima].exclude.indexOf(item.type) === -1) {
 				allWeaponDamage.push(prima);
 			}
 		}
