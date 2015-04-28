@@ -92,3 +92,12 @@ Increases Wrath Regeneration by {$} per Second (Crusader Only)
 {+$} Maximum Mana (Witch Doctor Only
 Increases Mana Regeneration by {$} per Second (Witch Doctor Only)
 ```
+
+###other
+```
+slave bonds life after kill value unknown
+manald heal ring needs special
+lidless wall needs special
+wrath of the bone king 2h mace needs special
+faithful memory 2h sword needs thorns value
+```

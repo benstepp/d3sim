@@ -1,5 +1,6 @@
-var d3sim = require('../src/d3sim.js');
+var d3sim = require('../src');
 
+//This test simply generates 10000 items for every combination of classes/slots
 function test() {
 	var dClasses = ['Barbarian','Crusader','Monk','Demon Hunter','Wizard','Witch Doctor'];
 	var dClassLength = dClasses.length;
