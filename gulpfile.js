@@ -1,13 +1,12 @@
-var gulp = require('gulp'),
-	source = require('vinyl-source-stream'),
-	concat = require('gulp-concat'),
-	uglify = require('gulp-uglify'),
-	rimraf = require('gulp-rimraf'),
-
-	browserify = require('gulp-browserify');
+var gulp = require('gulp');
+var source = require('vinyl-source-stream');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var rimraf = require('gulp-rimraf');
+var browserify = require('gulp-browserify');
 
 gulp.task('clean', function() {
-	gulp.src('build/riftloot/*', {read: false})
+	gulp.src('build/*', {read: false})
 		.pipe(rimraf());
 });
 
