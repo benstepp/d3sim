@@ -2,8 +2,9 @@ var util = require('../util');
 
 var affixes = require('../../data/affixes');
 var affixMap = require('../../data/affixes/affix-map');
-var baseItem = require('./item-base');
 var classMap = require('../../data/class-map');
+
+var baseItem = require('./item-base');
 
 //for rare (yellow) items with random primary and suffix rolling
 var itemRare = function(rarity, slot, dClass) {

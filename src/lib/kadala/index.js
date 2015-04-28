@@ -1,5 +1,6 @@
 var legendaryData = require('../../data/legendary');
 var createItem = require('../item-creation');
+
 //these two variables act as privates to hold persistent data between rolls
 //this way we dont have to calculate it every roll
 var kadalaItems = {};

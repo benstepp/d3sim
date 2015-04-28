@@ -20,7 +20,7 @@ var affixPick = function(item, rarity, slot, dClass) {
 	}
 
 	//if the item has stats that must be rolled (avg damage on sources/mojo or attack speed on a quiver)
-	//dont wory about legendaries or ancients because theirs are given
+	//dont wory about legendaries or ancients because theirs are explicitely given in legendaryData
 	if (affixes[slot].type[item.type].hasOwnProperty('baseAffix')&&
 		(rarity !== 'legendary' || rarity !=='ancient')) {
 		//use the default stats based on rarity
@@ -45,11 +45,11 @@ var affixPick = function(item, rarity, slot, dClass) {
 
 	//if a random primary stat is specified splice from list
 	var randomPrimariesIndex = primaryKeys.indexOf('RANDOM');
-	if (randomPrimariesIndex !== -1) {
+	if (randomPrimariesIndex > -1) {
 		primaryKeys.splice(randomPrimariesIndex,1);
 	}
 	var randomSecondariesIndex = secondaryKeys.indexOf('RANDOM');
-	if (randomSecondariesIndex !== -1) {
+	if (randomSecondariesIndex > -1) {
 		secondaryKeys.splice(randomSecondariesIndex,1);
 	}
 
@@ -62,7 +62,7 @@ var affixPick = function(item, rarity, slot, dClass) {
 		var classPossibleElements = [];
 		for (var k = 0; k < elementsLength; k++) {
 			if (affixMap[elements[k]].hasOwnProperty('exclude') && 
-				affixMap[elements[k]].exclude.indexOf(dClass) === -1){
+				affixMap[elements[k]].exclude.indexOf(dClass) > -1){
 					classPossibleElements.push(elements[k]);
 			}
 		}
@@ -83,8 +83,8 @@ var affixPick = function(item, rarity, slot, dClass) {
 		for (var prima in allPrims) {
 			if (prima.indexOf('Dmg_') === 0 && 
 				affixMap[prima].hasOwnProperty('exclude') &&
-				affixMap[prima].exclude.indexOf(dClass) === -1 &&
-				affixMap[prima].exclude.indexOf(item.type) === -1) {
+				affixMap[prima].exclude.indexOf(dClass) > -1 &&
+				affixMap[prima].exclude.indexOf(item.type) > -1) {
 				allWeaponDamage.push(prima);
 			}
 		}
@@ -104,7 +104,7 @@ var affixPick = function(item, rarity, slot, dClass) {
 		var allPrimaries = affixes[slot.toLowerCase()].primary;
 		var skillAffixes = [];
 		for(var prim in allPrimaries) {
-			if (prim.indexOf('Dmg', prim.length - 3) !== -1 &&
+			if (prim.indexOf('Dmg', prim.length - 3) > -1 &&
 				affixMap[prim].exclude.indexOf(dClass) === -1) {
 				skillAffixes.push(prim);
 			}
@@ -219,19 +219,19 @@ function getRandomAffix(current,slot,dClass,ps,type) {
 			var excludes = affixMap[affix].exclude;
 
 			//if the class is in this exlude array continue
-			if (excludes.indexOf(dClass) !== -1) {
+			if (excludes.indexOf(dClass) > -1) {
 				continue outer;
 			}
 
 			//if the item type is in the exclude array
-			if (excludes.indexOf(type) !== -1) {
+			if (excludes.indexOf(type) > -1) {
 				continue outer;
 			}
 
 			//if any of the current affixes are in the excludes array, continue
 			inner:
 			for(var j = 0; j < currentLength;j++) {
-				if (excludes.indexOf(current[j])!== -1) {
+				if (excludes.indexOf(current[j])> -1) {
 					//break this inner loop as soon as it is found
 					continue outer;
 				}

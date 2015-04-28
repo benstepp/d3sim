@@ -1,4 +1,5 @@
 var legendaryData = require('../../data/legendary');
+
 var itemBase = require('./item-base');
 
 //for legendary and ancient (orange) items with specific properties to be rolled

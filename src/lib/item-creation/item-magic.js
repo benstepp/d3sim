@@ -2,6 +2,7 @@ var util = require('../util');
 
 var affixes = require('../../data/affixes');
 var affixMap = require('../../data/affixes/affix-map.js');
+
 var itemBase = require('./item-base');
 
 //for magic (blue) items with prefix and suffix rolling

@@ -1,4 +1,5 @@
 var util = require('../util');
+
 var affixes = require('../../data/affixes');
 
 var affixRoll = function(affix,rarity,slot,ps,min,max) {

@@ -1,18 +1,15 @@
 var util = require('../util');
 
-var itemBase = require('./item-base');
-var itemMagic = require('./item-magic');
-var itemRare = require('./item-rare');
-var itemLegendary = require('./item-legendary');
-
-var affixPick = require('./affix-pick');
-var affixRoll = require('./affix-roll');
-
 var legendaryData = require('../../data/legendary');
 var affixes = require('../../data/affixes');
 var affixMap = require('../../data/affixes/affix-map.js');
 
-
+var affixPick = require('./affix-pick');
+var affixRoll = require('./affix-roll');
+var itemBase = require('./item-base');
+var itemMagic = require('./item-magic');
+var itemRare = require('./item-rare');
+var itemLegendary = require('./item-legendary');
 
 var createItem = function(rarity, slot, dClass, legendaryName) {
 
