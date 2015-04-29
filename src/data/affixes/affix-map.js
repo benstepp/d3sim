@@ -870,6 +870,7 @@ var affixMap = {
 	},
 	'BolasDmg':{
 		text_en:'Increases {Bolas} Damage by {$%}',
+		suffix_en:'of the Bounty Hunter',
 		exclude:['Barbarian','Crusader','Monk','Witch Doctor','Wizard',
 		'EntanglingShotDmg','EvasiveFireDmg','GrenadeDmg','HungeringArrowDmg','RainOfVengeanceDmg','FanOfKnivesDmg','CompanionDmg','SpikeTrapDmg','SentryDmg','ChakramDmg','ClusterArrowDmg','ElementalArrowDmg','ImpaleDmg','MultishotDmg','RapidFireDmg','StrafeDmg']
 	},

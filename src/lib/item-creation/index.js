@@ -4,6 +4,7 @@ var legendaryData = require('../../data/legendary');
 var affixes = require('../../data/affixes');
 var affixMap = require('../../data/affixes/affix-map.js');
 
+var affixOrder = require('./affix-order');
 var affixPick = require('./affix-pick');
 var affixRoll = require('./affix-roll');
 var itemBase = require('./item-base');
@@ -71,6 +72,8 @@ var createItem = function(rarity, slot, dClass, legendaryName) {
 		var bonusArmor = (newItem.primaries.hasOwnProperty('Armor')) ? newItem.primaries.Armor.value : 0;
 		newItem.armor = baseArmor + bonusArmor;
 	}
+
+	affixOrder(newItem);
 
 	return newItem;
 };
