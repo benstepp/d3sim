@@ -42,7 +42,7 @@ var affixOrder = function(item) {
 		}
 		//if it hasnt been explicitely given an order (mojo/source)
 		else if (!item.primaries[primariesList[i]].hasOwnProperty('i')) {
-			item.primaries[primariesList[i]] =4;
+			item.primaries[primariesList[i]].i =4;
 		}
 	}
 
