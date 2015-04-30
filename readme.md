@@ -46,19 +46,21 @@ d3sim.kadalaRoll('twohand');
 ```
 
 ---
-####d3sim.createItem(rarity,class,name)
+####d3sim.createItem(rarity,slot,class,name)
 
 Creates a new randomly generated item with given parameters.
 
 *Arguments*
+
 1. `rarity` (string): The rarity of the item to be created. Must be one of: 'magic', 'rare','legendary', or 'ancient'
-2. `class` (string): The Diablo III class to use. Must be one of: 'Barbarian', 'Crusader, 'Demon Hunter', 'Monk', 'Witch Doctor', or 'Wizard'
-3. `name` (string,optional): The name of a specific legendary item to be rolled
+2. `slot` (string): The slot of the item to be created. Must be one of: 'amulet', 'belt', 'boots', 'bracers', 'chest', 'gloves', 'helm', 'mojo', 'onehand', 'pants', 'quiver', 'ring', 'shield', 'shoulders', 'source', or 'twohand'
+3. `class` (string): The Diablo III class to use. Must be one of: 'Barbarian', 'Crusader, 'Demon Hunter', 'Monk', 'Witch Doctor', or 'Wizard'
+4. `name` (string,optional): The name of a specific legendary item to be rolled
 
 *Example*
 
 ```javascript
-d3sim.createItem('ancient','Monk','Flying Dragon');
+d3sim.createItem('ancient','amulet','Monk','Hellfire Amulet');
 ```
 
 ---
