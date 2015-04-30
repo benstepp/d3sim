@@ -17,10 +17,8 @@ function hellfire(dClass) {
 		secondary:{
 			SPECIAL: {
 				type:'legendary',
-				text:'Gains the '+passive.text_en+' passive.',
-				data:passive,
-				min:1,
-				max:1
+				text:'Gains the '+passive.name_en+' passive.',
+				data:passive
 			}
 		}
 	};

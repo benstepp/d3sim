@@ -43,9 +43,11 @@ var affixPick = function(item, rarity, slot, dClass) {
 	var tempSpecial;
 	if (specialIndexPrimary > -1) {
 		tempSpecial = affixSpecial(primaries.SPECIAL, dClass);
+		primaryKeys.splice(specialIndexPrimary,1);
 	}
 	if (specialIndexSecondary > -1) {
 		tempSpecial = affixSpecial(secondaries.SPECIAL,dClass);
+		secondaryKeys.splice(specialIndexSecondary,1);
 	}
 	if (typeof tempSpecial !== 'undefined') {
 		if (tempSpecial.hasOwnProperty('primary')) {
@@ -183,6 +185,11 @@ var affixPick = function(item, rarity, slot, dClass) {
 	//check if primaries/secondaries were given forced values 
 	for (var primary in primariesFinal) {
 
+		//if it is special continue
+		if (primary === 'SPECIAL') {
+			continue;
+		}
+
 		//if min/max was given use those
 		if(primaries.hasOwnProperty(primary) && primaries[primary] !== null) {
 			primariesFinal[primary].value = affixRoll(primary,rarity,slot,'primary',primaries[primary].min,primaries[primary].max);
@@ -207,6 +214,11 @@ var affixPick = function(item, rarity, slot, dClass) {
 		}
 	}
 	for (var secondary in secondariesFinal) {
+
+		//if special continue
+		if (secondary === 'SPECIAL') {
+			continue;
+		}
 
 		//if min/max was given use those
 		if(secondaries.hasOwnProperty(secondary) && secondaries[secondary] !== null) {
