@@ -32,10 +32,25 @@ var itemMagic = function(rarity, slot, dClass) {
 	for (var i = 0; i < affixDumpLength; i++) {
 		var affix = affixMap[affixDump[i]];
 		if (affix.hasOwnProperty('prefix_en')){
-			prefixes.push(affixDump[i]);
+			//now check for excludes
+			if (affix.hasOwnProperty('excludes') &&
+				affix.excludes.indexOf(dClass) > -1 && 
+				affix.exludes.indexOf(this.type)) {
+				prefixes.push(affixDump[i]);
+			}
+			else {
+				prefixes.push(affixDump[i]);
+			}
 		}
 		else if (affix.hasOwnProperty('suffix_en')) {
-			suffixes.push(affixDump[i]);
+			if (affix.hasOwnProperty('excludes') &&
+				affix.excludes.indexOf(dClass) > -1 && 
+				affix.exludes.indexOf(this.type)) {
+				suffixes.push(affixDump[i]);
+			}
+			else {
+				suffixes.push(affixDump[i]);
+			}
 		}
 	}
 
