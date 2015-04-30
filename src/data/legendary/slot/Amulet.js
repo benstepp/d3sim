@@ -170,12 +170,12 @@ var amulet = [
 		hc: false,
 		season: false,
 		smartLoot: [
-		"Demon Hunter",
-		"Monk",
-		"Barbarian",
-		"Crusader",
-		"Wizard",
-		"Witch Doctor"
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
 		],
 		primary:{
 			MAIN:null,
@@ -188,6 +188,31 @@ var amulet = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_amulet_101_x1_demonhunter_male.png',
 		flavor:'"The great sorcerer Vaxo of Kehjan did not actually die in the Mage Clan Wars. In reality, he was imprisoned where all mages with shattered minds are, the Bitter Depths beneath Caldeum\'s Yshari Sanctum. Vaxo\'s famous amulet is said to have been smuggled out of there, but that is patently impossible. Once inside, no one ever leaves the Bitter Depths." —Abd al-Hazir'
+	},
+	{
+		name:"Hellfire Amulet",
+		type:"Amulet",
+		weight: 0,
+		hc: false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MAIN:null,
+			RANDOM:3
+		},
+		secondary:{
+			SPECIAL:'HELLFIRE',
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/x1_amulet_norm_unique_25_demonhunter_male.png',
+		flavor:'The Hellfire Amulet is truly a badge of dedication to those who, at great cost to themselves, have sworn their lives to eradicating the demon scourge from the lands of Sanctuary.'
 	},
 	{
 		name: "Holy Beacon",

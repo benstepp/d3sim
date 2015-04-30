@@ -86,9 +86,15 @@ var rollLegendary = function(slot) {
 
 	var itemsLength = kadalaItems[slot].items.length;
 	for (var i =0; i < itemsLength; i++) {
-		val -= kadalaItems[slot].items[i].weight;
-		if (val < 0 ) {
-			return kadalaItems[slot].items[i].name;
+		//it the weight of the item is zero continue because kadala cannot roll it
+		if (kadalaItems[slot].items[i].weight === 0) {
+			continue;
+		}
+		else {
+			val -= kadalaItems[slot].items[i].weight;
+			if (val < 0 ) {
+				return kadalaItems[slot].items[i].name;
+			}
 		}
 	}
 };
