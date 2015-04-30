@@ -202,7 +202,7 @@ var affixPick = function(item, rarity, slot, dClass) {
 		}
 
 		//add type (for legs) if exists
-		if (affixMap[primary].hasOwnProperty('type')) {
+		if (affixMap.hasOwnProperty(primary) && affixMap[primary].hasOwnProperty('type')) {
 			primariesFinal[primary].type = affixMap[primary].type;
 		}
 	}
@@ -224,7 +224,7 @@ var affixPick = function(item, rarity, slot, dClass) {
 		}
 
 		//add type (for legs) if exists
-		if (affixMap[secondary].hasOwnProperty('type')) {
+		if (affixMap.hasOwnProperty(secondary) && affixMap[secondary].hasOwnProperty('type')) {
 			secondariesFinal[secondary].type = affixMap[secondary].type;
 		}
 	}
