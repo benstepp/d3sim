@@ -6,6 +6,7 @@ var classMap = require('../../data/class-map');
 var elements = require('../../data/elements');
 
 var affixRoll = require('./affix-roll');
+var affixSpecial = require('./affix-special');
 
 var affixPick = function(item, rarity, slot, dClass) {
 	var primaries;
@@ -35,6 +36,40 @@ var affixPick = function(item, rarity, slot, dClass) {
 	//final primary/secondary stats
 	var primariesFinal = {};
 	var secondariesFinal = {};
+
+	//if a special stat is specified
+	var specialIndexPrimary = primaryKeys.indexOf('SPECIAL');
+	var specialIndexSecondary = secondaryKeys.indexOf('SPECIAL');
+	var tempSpecial;
+	if (specialIndexPrimary > -1) {
+		tempSpecial = affixSpecial(primaries.SPECIAL, dClass);
+	}
+	if (specialIndexSecondary > -1) {
+		tempSpecial = affixSpecial(secondaries.SPECIAL,dClass);
+	}
+	if (typeof tempSpecial !== 'undefined') {
+		if (tempSpecial.hasOwnProperty('primary')) {
+			for (var keyP in tempSpecial.primary) {
+				//sometimes a special will return random so we must check to add to existing random properties
+				if (keyP === 'RANDOM' && primaries.hasOwnProperty('RANDOM')) {
+					primaries[keyP] += tempSpecial.primary[keyP];
+				}
+				else {
+					primariesFinal[keyP] = tempSpecial.primary[keyP];
+				}
+			}
+		}
+		if (tempSpecial.hasOwnProperty('secondary')) {
+			for (var keyS in tempSpecial.secondary) {
+				if (keyS === 'RANDOM' && secondaries.hasOwnProperty('RANDOM')) {
+					secondaries[keyS] += tempSpecial.secondary[keyS];
+				}
+				else {
+					secondariesFinal[keyS] = tempSpecial.secondary[keyS];
+				}
+			}
+		}
+	}
 
 	//if a main stat is specified add to finals and splice
 	var mainIndex = primaryKeys.indexOf('MAIN');

@@ -7,12 +7,12 @@ var pWizard = require('./passives/wizard');
 
 var skills = {
 	passives:{
-		barbarian:pBarbarian,
-		crusader:pCrusader,
-		demonHunter:pDemonHunter,
-		monk:pMonk,
-		witchDoctor:pWitchDoctor,
-		wizard:pWizard
+		Barbarian:pBarbarian,
+		Crusader:pCrusader,
+		'Demon Hunter':pDemonHunter,
+		Monk:pMonk,
+		'Witch Doctor':pWitchDoctor,
+		Wizard:pWizard
 	}
 };
 
