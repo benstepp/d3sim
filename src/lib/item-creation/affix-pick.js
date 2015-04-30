@@ -197,7 +197,10 @@ var affixPick = function(item, rarity, slot, dClass) {
 		}
 
 		//set text for primary
-		primariesFinal[primary].text = affixMap[primary].text_en;
+		if (affixMap.hasOwnProperty(primary) && affixMap[primary].hasOwnProperty('text_en')) {
+			primariesFinal[primary].text = affixMap[primary].text_en;
+		}
+
 		//add type (for legs) if exists
 		if (affixMap[primary].hasOwnProperty('type')) {
 			primariesFinal[primary].type = affixMap[primary].type;
@@ -216,7 +219,10 @@ var affixPick = function(item, rarity, slot, dClass) {
 		}
 
 		//set text for secondary
-		secondariesFinal[secondary].text = affixMap[secondary].text_en;
+		if (affixMap.hasOwnProperty(secondary) && affixMap[secondary].hasOwnProperty('text_en')) {
+			secondariesFinal[secondary].text = affixMap[secondary].text_en;
+		}
+
 		//add type (for legs) if exists
 		if (affixMap[secondary].hasOwnProperty('type')) {
 			secondariesFinal[secondary].type = affixMap[secondary].type;
