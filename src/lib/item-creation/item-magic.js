@@ -39,7 +39,7 @@ var itemMagic = function(rarity, slot, dClass) {
 				prefixes.push(affixDump[i]);
 			}
 			//if it doesnt have an excludes
-			else {
+			else if(!affix.hasOwnProperty('exclude')){
 				prefixes.push(affixDump[i]);
 			}
 		}
@@ -49,7 +49,7 @@ var itemMagic = function(rarity, slot, dClass) {
 				affix.exclude.indexOf(this.type) === -1)) {
 				suffixes.push(affixDump[i]);
 			}
-			else {
+			else if(!affix.hasOwnProperty('exclude')) {
 				suffixes.push(affixDump[i]);
 			}
 		}
