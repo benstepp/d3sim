@@ -91,6 +91,8 @@ Increases Wrath Regeneration by {$} per Second (Crusader Only)
 {+$} Maximum Wrath (Crusader Only)
 {+$} Maximum Mana (Witch Doctor Only
 Increases Mana Regeneration by {$} per Second (Witch Doctor Only)
+
+pretty much every non-demon hunter skill based affix
 ```
 
 ###other
