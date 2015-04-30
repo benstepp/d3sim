@@ -5,7 +5,7 @@ var passives = require('../../data/skills').passives;
 var affixSpecial = function(affix,dClass) {
 	switch (affix){
 		case 'HELLFIRE':
-			return hellFire(dClass);
+			return hellfire(dClass);
 	}
 };
 
