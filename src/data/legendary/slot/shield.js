@@ -44,6 +44,32 @@ var shield = [
 		flavor:'Frydehr was near death, his wounds outnumbered only by his foes. It was then that he discovered that the depth of a crusader’s wrath is far greater than anyone had ever suspected.'
 	},
 	{
+		name:"Hallowed Barricade",
+		type:"Shield",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Crusader"
+		],
+		primary:{
+			HolyDamage:{
+				min:15,
+				max:20
+			},
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Hallowed Protectors',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shield_012_x1_demonhunter_male.png',
+		flavor:'Based upon a damaged angelic shield recently unearthed and subsequently identified as dating from the very earliest days of the world.'
+	},
+	{
 		name: "Hallowed Bulwark",
 		type: "Crusader Shield",
 		weight: 100,
@@ -108,6 +134,31 @@ var shield = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_crushield_102_x1_demonhunter_male.png',
 		flavor:'"Centuries ago, the mysterious and morbid warrior Jekang found staunch allies among the crusaders of Zakarum. He fought alongside that order for many years, and when he left for lands unknown, he made a parting gift of his grim tower shield." —Rennold\'s Catalogue of Arms'
+	},
+	{
+		name:"Piro Marella",
+		type:"Crusader Shield",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Crusader"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			PiroMarella:{
+				min:40,
+				max:50
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_crushield_101_x1_demonhunter_male.png',
+		flavor:'"I have shaped too much steel for the purpose of killing. I offer these shields in the hope that you will bring safety and mercy back to our world." —Mastersmith Oskar Iach on presenting the Alma Negra and the Piro Marella to Akkhan'
 	},
 	{
 		name: "Sublime Conviction",
@@ -377,6 +428,35 @@ var shield = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_shield_104_x1_demonhunter_male.png',
 		flavor:'The demon smith Vo\'Toyias designed this shield to inflict great injury upon those daring to attack its bearer. The wicked brass spikes that bristle along the shield\'s surface make it a formidable weapon in its own right, however, allowing its wielder to make deadly counterattacks.'
+	},
+	{
+		name:"Wall of Man",
+		type:"Shield",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			WallOfMan:{
+				min:20,
+				max:30
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shield_011_x1_demonhunter_male.png',
+		flavor:'Named for the Battle of Josqueira, a conflict so long and fierce that men used the skeletons of their fallen comrades to build fortifications.'
 	}
 ];
 

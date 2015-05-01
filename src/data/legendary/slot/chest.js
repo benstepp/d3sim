@@ -45,6 +45,33 @@ var chest = [
 		flavor:'"Yoel, the so called \'Kind Regent\' of Taubej, was anything but. He took great pleasure in torturing his enemies, real or imagined, and periodically would have a random peon dragged out into the square to be tortured to death, just to keep his people scared and docile. Yoel named himself the Kind Regent, as he truly believed he was a benevolent ruler. Of course, he was quite mad." —Deckard Cain'
 	},
 	{
+		name:"Aughild's Rule",
+		type:"Chest Armor",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2,db:14
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Aughild\'s Authority',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_026_x1_demonhunter_male.png',
+		flavor:'Aughild\'s vestments were originally crafted to reflect both his savagery and his nobility.'
+	},
+	{
 		name: "Blackthorne's Surcoat",
 		type: "Chest Armor",
 		weight: 100,
@@ -73,6 +100,30 @@ var chest = [
 		set:'Blackthorne\'s Battlegear',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_chestarmor_028_x1_demonhunter_male.png',
 		flavor:'Baron Blackthorne led his knights to prevent the escape of King Leoric\'s forces during their defeat against Westmarch, forcing them to choose between surrender and death in the quagmire.'
+	},
+	{
+		name:"Born's Frozen Soul",
+		type:"Chest Armor",
+		weight:0,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",	
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Born\'s Command',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_025_x1_demonhunter_male.png',
+		flavor:'This armor is designed after that worn by the famed warrior Born, who was known to rush headlong into battle against superior numbers with no thought for his own safety.'
 	},
 	{
 		name: "Breastplate of Akkhan",
@@ -179,6 +230,33 @@ var chest = [
 		set:'Wrath of the Wastes',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_01_p2_demonhunter_male.png',
 		flavor:'Narthal of the Bear Tribe discovered the aftermath of a great battle in the wastes. He did not recognize the dead, but noticed that many had filed their teeth to points. Among the debris of the battle, he found this cuirass.'
+	},
+	{
+		name:"Demon's Marrow",
+		type:"Chest Armor",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Demon\'s Hide',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_027_x1_demonhunter_male.png',
+		flavor:'Sulam had a vision of creating a suit of armor, crafted from the flesh of demons, in order to use their power against them.'
 	},
 	{
 		name: "Firebird's Breast",
@@ -401,6 +479,32 @@ var chest = [
 		set:'Raiment of the Jade Harvester',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_set_09_x1_demonhunter_male.png',
 		flavor:'Tukam had outlived both his children and grandchildren by the time he finally fell in battle. As his rivals prepared him for ritual sacrifice, he wept tears of joy at the thought of meeting his loved ones again.'
+	},
+	{
+		name:"Mantle of the Rydraelm",
+		type:"Chest Armor",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_chest_019_x1_demonhunter_male.png',
+		flavor:'The Rydraelm, a shadowy group of mages, concerned itself with the most arcane forms of magic until its mysterious and grisly demise.'
 	},
 	{
 		name: "Marauder's Carapace",

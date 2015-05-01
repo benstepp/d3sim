@@ -1,5 +1,32 @@
 var pants = [
 	{
+		name:"Asheara's Pace",
+		type:"Pants",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Asheara\'s Vestments',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_009_x1_demonhunter_male.png',
+		flavor:'Asheara envisioned this armor as a testament to the might of the Iron Wolves.'
+	},
+	{
 		name: "Blackthorne's Jousting Mail",
 		type: "Pants",
 		weight: 100,
@@ -29,6 +56,60 @@ var pants = [
 		flavor:'Tailored to exact specifications for comfort in riding, walking, fencing and jousting.'
 	},
 	{
+		name:"Cain's Habit",
+		type:"Pants",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Cain\'s Destiny',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_010_x1_demonhunter_male.png',
+		flavor:'Inspired by Deckard Cain\'s Horadric robes, these pants are perfect for those who, like Cain, have dedicated themselves to eradicating the demons\' threat from this world.'
+	},
+	{
+		name:"Captain Crimson's Thrust",
+		type:"Pants",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Captain Crimson\'s Trimmings',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_012_x1_demonhunter_male.png',
+		flavor:'Captain Crimson was known for his flamboyant dress, particularly his prodigious codpiece.'
+	},
+	{
 		name: "Cuisses of Akkhan",
 		type: "Pants",
 		weight: 100,
@@ -51,6 +132,33 @@ var pants = [
 		set:'Armor of Akkhan',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_10_x1_demonhunter_male.png',
 		flavor:'"Let the crusaders wrap their legs in plate of wondrous strength. Their stride will take them to the salvation of the Zakarum faith. Thus shall Akarat\'s word be cleansed." -Akkhan'
+	},
+	{
+		name:"Demon's Plate",
+		type:"Pants",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Demon\'s Hide',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_014_x1_demonhunter_male.png',
+		flavor:'Patterned after the work of Sulam, the armorer who followed in the path of the warrior Myrdgar and collected the skins of fallen demons in order to craft a nearly impenetrable suit of armor.'
 	},
 	{
 		name: "Depth Diggers",
@@ -403,6 +511,32 @@ var pants = [
 		set:'Raiment of a Thousand Storms',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_set_08_x1_demonhunter_male.png',
 		flavor:'"The dancing form slipped lithely through the rustling forest, hypnotic and beautiful. I did not understand my fate until I felt the sting, looked down, and saw the blood pour from my chest..." —Journey to the South'
+	},
+	{
+		name:"Skelon's Deceit",
+		type:"Pants",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_pants_005_x1_demonhunter_male.png',
+		flavor:'These pants are the result of an unfortunate bargain struck between the demon Skelon and an unwitting human.'
 	},
 	{
 		name: "Swamp Land Waders",

@@ -24,6 +24,29 @@ var source = [
 		flavor:'Only a master of the mystical arts can harness the forces contained within this orb.'
 	},
 	{
+		name:"Cosmic Strand",
+		type:"Source",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			AvgDamage:null,
+			RANDOM:4
+		},
+		secondary:{
+			CosmicStrand:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_orb_004_x1_demonhunter_male.png',
+		flavor:'Holds the secret to existence for those who can decipher its intricate design.'
+	},
+	{
 		name: "Firebird's Eye",
 		type: "Source",
 		weight: 100,

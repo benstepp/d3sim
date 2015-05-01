@@ -35,9 +35,9 @@ function legendaryTest(item) {
 			expect(item.secondary).to.be.an('object');
 		});
 
-		it('should have between 3 and 8 affixes', function() {
+		it('should have between 2 and 8 affixes', function() {
 			var affixes = Object.keys(item.primary).concat(Object.keys(item.secondary));
-			expect(affixes.length).to.be.at.least(3);
+			expect(affixes.length).to.be.at.least(2);
 			expect(affixes.length).to.be.at.most(8);
 		});
 	});

@@ -93,6 +93,30 @@ var mojo = [
 		flavor:'The inhuman organ set into the center of this mojo once belonged to the demon Zagraal. At the end of a titanic battle during which all of her fellows were slain, the surviving witch doctor carved the still-beating heart from the fallen demon. Mounting it in a spirit cage, Shukrani harnessed the dark power of the heart that she might stride the realm of Mbwiru Eikura unchallenged.'
 	},
 	{
+		name:"Spite",
+		type:"Mojo",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Witch Doctor"
+		],
+		primary:{
+			AvgDamage:null,
+			CritChance:null,
+			RANDOM:3
+		},
+		secondary:{
+			MaxMana:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mojo_002_x1_demonhunter_male.png',
+		flavor:'You hold your enemy\'s future in your hand.'
+	},
+	{
 		name: "Thing of the Deep",
 		type: "Mojo",
 		weight: 100,

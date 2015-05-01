@@ -76,6 +76,33 @@ var onehand = [
 		flavor:'This crude, makeshift axe was made from skeletal remains picked out of the Desolate Sands. Despite its primitive origins, the weapon is extremely effective, perhaps as a result of residual magics that seeped into its components since the time of area\'s devastation during the Mage Clan Wars.'
 	},
 	{
+		name:"Hallowed Breach",
+		type:"Axe",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Holy:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Hallowed Protectors',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_1h_013_x1_demonhunter_male.png',
+		flavor:'This axe derives its awesome and majestic power from the High Heavens.'
+	},
+	{
 		name: "The Burning Axe of Sankis",
 		type: "Axe",
 		weight: 100,
@@ -131,6 +158,36 @@ var onehand = [
 		flavor:'Used by the Butcher demon to snare and drag victims closer that he may feed on their flesh.'
 	},
 	{
+		name:"Utar's Roar",
+		type:"Axe",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:4
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Cold:null,
+			ColdDamage:{
+				min:15,
+				max:20
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_1h_004_x1_demonhunter_male.png',
+		flavor:'"Utar\'s mighty blade was colder than the bitterest winter chill, hewn from the never-melting ice of the summit of Mount Paolarr." —Chronicles of the North'
+	},
+	{
 		name: "Anessazi Edge",
 		type: "Ceremonial Knife",
 		weight: 50,
@@ -174,6 +231,34 @@ var onehand = [
 		flavor:'The restless dead are drawn up from the earth by the presence of this blade.'
 	},
 	{
+		name:"Hallowed Sufferance",
+		type:"Ceremonial Knife",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Holy:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Hallowed Protectors',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_011_x1_demonhunter_male.png',
+		flavor:'An angelic weapon re-forged to suit the needs of a hero wielding the powers of the nephalem.'
+	},
+	{
 		name: "Last Breath",
 		type: "Ceremonial Knife",
 		weight: 100,
@@ -196,6 +281,28 @@ var onehand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_008_x1_demonhunter_male.png',
 		flavor:'Even an immortal could be felled by the power of this blade.'
+	},
+	{
+		name:"Living Umbral Oath",
+		type:"Ceremonial Knife",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Black:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_006_x1_demonhunter_male.png',
+		flavor:'The Umbral Oath exists in both the living and spirit worlds.'
 	},
 	{
 		name: "Manajuma's Carving Knife",
@@ -352,6 +459,34 @@ var onehand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_ceremonialdagger_004_x1_demonhunter_male.png',
 		flavor:'The blessing of Araneae drips from this blade.'
+	},
+	{
+		name:"Blood-Magic Edge",
+		type:"",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Black_dagger:null,
+			AttackSpeed:null,
+			RANDOM:2
+		},
+		secondary:{
+			BloodMagicEdge:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_dagger_006_x1_demonhunter_male.png',
+		flavor:'The taste of blood unleashes a magic few can control.'
 	},
 	{
 		name:"Eun-jang-do",
@@ -511,6 +646,28 @@ var onehand = [
 		flavor:'Indestructible, pure and clear. So the body follows the mind.'
 	},
 	{
+		name:"Demon Claw",
+		type:"Fist Weapon",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Monk"
+		],
+		primary:{
+			Dmg_Fire:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_004_x1_demonhunter_male.png',
+		flavor:'The only student to survive the Demon Road returned with her hand cut off. A smoldering claw was sewn in its place.'
+	},
+	{
 		name: "Fleshrake",
 		type: "Fist Weapon",
 		weight: 100,
@@ -530,6 +687,34 @@ var onehand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_007_x1_demonhunter_male.png',
 		flavor:'The very sight of this weapon is enough to settle disputes that would otherwise lead to war.'
+	},
+	{
+		name:"Hallowed Hold",
+		type:"Fist Weapon",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Holy:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Hallowed Protectors',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_fist_015_x1_demonhunter_male.png',
+		flavor:'An angelic weapon re-forged to suit the needs of a hero wielding the powers of the nephalem.'
 	},
 	{
 		name: "Jawbreaker",
@@ -784,6 +969,33 @@ var onehand = [
 		flavor:'The cold-tempered steel of this weapon cradles a mote of pale light. Ancient beyond measure, its creator and original purpose is unknown, but the flail is now revered by the crusaders as a symbol for the role they play in the world: a light to pierce the darkness.'
 	},
 	{
+		name:"Golden Scourge",
+		type:"Flail",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:4
+		},
+		smartLoot:[
+			"Crusader"
+		],
+		primary:{
+			Dmg_Holy:null,
+			HolyDamage:{
+				min:15,
+				max:20
+			},
+			RANDOM:2
+		},
+		secondary:{
+			GoldenScourge:null,
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_flail_1h_101_x1_demonhunter_male.png',
+		flavor:'Originally wielded by the crusader Anajinn, the Golden Scourge has felled numerous enemies of the Light. At one point, Anajinn\'s apprentice tried to count them all, and determined that their corpses would span the distance from Kurast to Westmarch—twice.'
+	},
+	{
 		name: "Gyrfalcon's Foote",
 		type: "Flail",
 		weight: 25,
@@ -916,6 +1128,28 @@ var onehand = [
 		flavor:'"Use fire to fight fire, I always say." —Demon Hunter Raykal'
 	},
 	{
+		name:"Blitzbolter",
+		type:"Hand Crossbow",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dmg_Holy_hc:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_handxbow_006_x1_demonhunter_male.png',
+		flavor:'Good for putting the dead back in the ground.'
+	},
+	{
 		name: "Calamity",
 		type: "Hand Crossbow",
 		weight: 25,
@@ -1005,6 +1239,34 @@ var onehand = [
 		flavor:'Energy that shimmers in the morning light leaps from the surface of this crossbow.'
 	},
 	{
+		name:"Hallowed Condemnation",
+		type:"Hand Crossbow",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Holy_hc:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Hallowed Protectors',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_handxbow_016_x1_demonhunter_male.png',
+		flavor:'An angelic weapon re-forged to suit the needs of a hero wielding the powers of the nephalem.'
+	},
+	{
 		name: "Izzuccob",
 		type: "Hand Crossbow",
 		weight: 100,
@@ -1072,6 +1334,36 @@ var onehand = [
 		set:'Natalya\'s Vengeance',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_handxbow_003_x1_demonhunter_male.png',
 		flavor:'Natalya turned from the ways of the Viz-Jaq\'taar and sought redemption in the weapons of the demon hunters.'
+	},
+	{
+		name:"Devastator",
+		type:"Mace",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:4
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Fire:null,
+			FireDamage:{
+				min:15,
+				max:20
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_1h_009_x1_demonhunter_male.png',
+		flavor:'The ground cracks and disintegrates with each strike.'
 	},
 	{
 		name: "Echoing Fury",
@@ -1442,6 +1734,55 @@ var onehand = [
 		flavor:'It takes a sturdy weapon to survive on the shores of the Frozen Sea.'
 	},
 	{
+		name:"Hallowed Nemesis",
+		type:"Mighty Weapon",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Barbarian",
+		],
+		primary:{
+			Dmg_Holy:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Hallowed Protectors',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mighty_1h_015_x1_demonhunter_male.png',
+		flavor:'An angelic weapon re-forged to suit the needs of a hero wielding the powers of the nephalem.'
+	},
+	{
+		name:"Night's Reaping",
+		type:"Mighty Weapon",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Barbarian"
+		],
+		primary:{
+			Dmg_Cold:null,
+			PercLife:{
+				min:14,
+				max:18
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mighty_1h_001_x1_demonhunter_male.png',
+		flavor:'The righteous must cull the corrupt from this world just as a farmer would separate the wheat from the chaff.'
+	},
+	{
 		name: "Remorseless",
 		type: "Mighty Weapon",
 		weight: 100,
@@ -1630,6 +1971,33 @@ var onehand = [
 		flavor:'Before he fell, Izual was the bearer of the runeblade Azurewrath, an ancient sword blessed by the Song of the Arch as an instrument of the righteous.'
 	},
 	{
+		name:"Born's Furious Wrath",
+		type:"Sword",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Holy:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Born\'s Command',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_1h_018_x1_demonhunter_male.png',
+		flavor:'Born often carried the day on nothing more than his unrelenting fury.'
+	},
+	{
 		name: "Devil Tongue",
 		type: "Sword",
 		weight: 100,
@@ -1766,6 +2134,32 @@ var onehand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_1h_103_x1_demonhunter_male.png',
 		flavor:'Silaria, a renowned explorer, traveled the length and breadth of Sanctuary in search of adventure. This sword was designed with her compact build and lethally efficient fighting style in mind, and it is reputed to imbue its wielder with Silaria\'s prowess.'
+	},
+	{
+		name:"Griswold's Perfection",
+		type:"Sword",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Fire:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_sword_1h_019_x1_demonhunter_male.png',
+		flavor:'Griswold labored and studied for years to devise the perfect sword. Sadly, he died a horrible death before he himself could forge it.'
 	},
 	{
 		name:'In-geom',
@@ -2077,6 +2471,28 @@ var onehand = [
 		flavor:'Virgil quickly lashed together remnants of his old broken wands and an unidentified artifact and sanctified them with his own blood, allowing him to teleport to safety and to begin formulating his revenge.'
 	},
 	{
+		name:"Atrophy",
+		type:"Wand",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ap:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Dmg_Fire:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_wand_009_x1_demonhunter_male.png',
+		flavor:'Crafted by demonic hands.'
+	},
+	{
 		name: "Blackhand Key",
 		type: "Wand",
 		weight: 100,
@@ -2169,6 +2585,29 @@ var onehand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_wand_002_demonhunter_male.png',
 		flavor:'An old Skartaran legend tells of Orpheus rescuing his wife from the underworld using this wand.'
+	},
+	{
+		name:"Hallowed Baton",
+		type:"Wand",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2,db:5
+		},
+		smartLoot:[
+			"Wizard"
+		],
+		primary:{
+			Dmg_Holy:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Hallowed Protectors',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_wand_018_x1_demonhunter_male.png',
+		flavor:'An angelic artifact re-forged to suit the needs of a hero wielding the powers of the nephalem.'
 	},
 	{
 		name: "Serpent's Sparker",

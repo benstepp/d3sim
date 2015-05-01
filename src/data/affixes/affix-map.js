@@ -1925,6 +1925,38 @@ var affixMap = {
 	'Sublime':{
 		type:'legendary',
 		text_en:'When you block, you have up to a {$%} chance to Stun the attacker for 1.5 seconds based on your current Wrath.'
+	},
+	'ReapersWraps':{
+		type:'legendary',
+		text_en:'Health globes restore {$%} of your primary resource.'
+	},
+	'CosmicStrand':{
+		type:'legendary',
+		text_en:'Teleport gains the effect of the Wormhole rune.'
+	},
+	'Sunder':{
+		type:'legendary',
+		text_en:'{$%} chance to sunder the ground your enemies walk on when you attack.'
+	},
+	'CinderSwitch':{
+		type:'legendary',
+		text_en:'{$%} chance to cast a fireball when attacking.'
+	},
+	'PiroMarella':{
+		type:'legendary',
+		text_en:'Reduces the Wrath cost of Shield Bash by {$%}.'
+	},
+	'WallOfMan':{
+		type:'legendary',
+		text_en:'{$%} chance to be protected by a shield of bones when you are hit.'
+	},
+	'BloodMagicEdge':{
+		type:'legendary',
+		text_en:'Blood oozes from you.'
+	},
+	'GoldenScourge':{
+		type:'legendary',
+		text_en:'Smite now jumps to 3 additional enemies.'
 	}
 
 

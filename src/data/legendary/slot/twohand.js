@@ -25,6 +25,36 @@ var twohand = [
 		flavor:'Foul weapon of the resurrected Butcher demon. Perfect for carving fresh meat.'
 	},
 	{
+		name:"Cinder Switch",
+		type:"Two-Handed Axe",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:80,ad:43,vc:30,fs:2,db:4
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Fire:null,
+			RANDOM:3
+		},
+		secondary:{
+			CinderSwitch:{
+				min:25,
+				max:50
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_axe_2h_010_x1_demonhunter_male.png',
+		flavor:'Ensorcelled with the essence of living flame.'
+	},
+	{
 		name: "Messerschmidt's Reaver",
 		type: "Two-Handed Axe",
 		weight: 100,
@@ -222,6 +252,30 @@ var twohand = [
 		flavor:'After her many travels, the heroine Aphaena returned home bearing the mightiest bow in all of Skovos. Only the strongest warriors may string it, and in modern times, the greatest of Skovos\'s champions compete for that honor.'
 	},
 	{
+		name:"Sydyru Crust",
+		type:"Bow",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:80,ad:43,vc:30,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dmg_Poison_ranged:null,
+			AttackSpeed:null,
+			EliteDamage:null,
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bow_010_x1_demonhunter_male.png',
+		flavor:'Carved from the bones of the dreaded giant sydyru demon.'
+	},
+	{
 		name: "The Raven's Wing",
 		type: "Bow",
 		weight: 100,
@@ -245,6 +299,33 @@ var twohand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_bow_008_x1_demonhunter_male.png',
 		flavor:'Legends say that ravens serve as Death\'s couriers, carrying souls to the afterlife. Blood Raven carried this bow in the tradition of that sacred duty until she fell to the forces of corruption.'
+	},
+	{
+		name:"Unbound Bolt",
+		type:"Bow",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:80,ad:43,vc:30,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dmg_Cold_ranged:null,
+			AttackSpeed:null,
+			CritDamage:{
+				min:31,
+				max:35
+			},
+			RANDOM:1
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bow_007_x1_demonhunter_male.png',
+		flavor:'Many a hero has wielded this bow through many an age, and the tales sung of it can be heard from one end of the world to the other.'
 	},
 	{
 		name: "Uskang",
@@ -389,6 +470,50 @@ var twohand = [
 		flavor:'Inlaid with prayers to Inna\'s righteous judgment.'
 	},
 	{
+		name:"Lai Yui's Persuader",
+		type:"Daibo",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:80,ad:43,vc:30,fs:2
+		},
+		smartLoot:[
+			"Monk"
+		],
+		primary:{
+			Dmg_Cold:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_combatstaff_2h_008_x1_demonhunter_male.png',
+		flavor:'"Remember what you learned here today," she told the defeated band of thieves, "or I will return to remind you."'
+	},
+	{
+		name: "Rozpedin's Force",
+		type:"Daibo",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:80,ad:43,vc:30,fs:2
+		},
+		smartLoot:[
+			"Monk"
+		],
+		primary:{
+			Dmg_Holy:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_combatstaff_2h_004_x1_demonhunter_male.png',
+		flavor:'Rozpedin purified himself through meditation for thirty days before crafting this staff out of a single piece of white oak.'
+	},
+	{
 		name: "Staff of Kyro",
 		type: "Daibo",
 		weight: 100,
@@ -478,6 +603,25 @@ var twohand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_combatstaff_2h_102_x1_demonhunter_male.png',
 		flavor:'"When he took the field himself, the General bore a demon-visaged staff shaped with a number of protrusions and barbs designed for tripping, disarming, and dismounting his opponents. Witnesses described the General moving through armies like a blur, leaving behind swaths of prone troops for his bodyguards to dispatch." —A History of War by Lord Jerem Kiel'
+	},
+	{
+		name:"Arcane Barb",
+		type:"Crossbow",
+		weight:0,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			Dmg_Arcane:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_xbow_004_x1_demonhunter_male.png',
+		flavor:'The shimmering metal stock conceals a strange power source capable of charging each shot with arcane energy.'
 	},
 	{
 		name: "Bakkan Caster",
@@ -777,7 +921,7 @@ var twohand = [
 			RANDOM:1
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_003_x1_demonhunter_male.png',
-		flavor:''
+		flavor:'Arthef of the Dying Ones crafted this weapon to translate the misbegotten life of the undead into the living.'
 	},
 	{
 		name: "Crushbane",
@@ -882,6 +1026,36 @@ var twohand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_002_x1_demonhunter_male.png',
 		flavor:'The berserkers of Athskeleng could not be stopped, their intricately carved white maces turning red with the blood of their enemies.'
+	},
+	{
+		name:"Sunder",
+		type:"Two-Handed Mace",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:80,ad:43,vc:30,fs:2,db:4
+		},
+		smartLoot:[
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Fire:null,
+			RANDOM:3
+		},
+		secondary:{
+			Sunder:{
+				min:25,
+				max:50
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_006_x1_demonhunter_male.png',
+		flavor:'A weapon of myth and legend. Some say that to use it is folly—that it will rip the land asunder and boil the oceans.'
 	},
 	{
 		name: "The Furnace",
@@ -1062,6 +1236,26 @@ var twohand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_mighty_2h_001_demonhunter_male.png',
 		flavor:'A mighty symbol of Tyrael, the archangel of Justice, though never actually used by him. Stolen from the Courts of Justice in the High Heavens by renegade angels.'
+	},
+	{
+		name:"War of the Dead",
+		type:"Two-Handed Mighty Weapon",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{},
+		smartLoot:[
+			"Barbarian"
+		],
+		primary:{
+			Dmg_Black:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_mighty_2h_012_x1_demonhunter_male.png',
+		flavor:'Only the dead have seen the end of war.'
 	},
 	{
 		name: "Bovine Bardiche",
@@ -1250,6 +1444,30 @@ var twohand = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_006_x1_demonhunter_male.png',
 		flavor:'Used as a focal point for Maloth\'s fearsome power. It took an army to pry it from his hands.'
+	},
+	{
+		name:"Mark of the Magi",
+		type:"Staff",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:80,ad:43,vc:30,fs:2
+		},
+		smartLoot:[
+			"Monk",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Dmg_Arcane:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_staff_002_x1_demonhunter_male.png',
+		flavor:'It is believed the magi, practitioners of strange and esoteric magics, died out long ago. The only proofs of their existence are the Behistun tomes and this staff.'
 	},
 	{
 		name: "The Broken Staff",
