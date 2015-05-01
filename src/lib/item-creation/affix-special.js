@@ -8,6 +8,8 @@ var affixSpecial = function(affix,dClass) {
 			return hellfire(dClass);
 		case 'LIDLESS':
 			return lidless(dClass);
+		case 'WRATHBONEKING':
+			return wrathBoneKing();
 	}
 };
 
@@ -69,6 +71,18 @@ function lidless(dClass) {
 		min:lidlessMap[dClass].min,
 		max:lidlessMap[dClass].max
 	};
+
+	return returnable;
+}
+
+function wrathBoneKing() {
+	var possibleAffixes = ['SlowHit','ChillHit','BlindHit'];
+	var picked = util.intRandom(0, possibleAffixes.length - 1);
+
+	var returnable = {
+		secondary:{}
+	};
+	returnable.secondary[possibleAffixes[picked]] = null;
 
 	return returnable;
 }
