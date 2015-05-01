@@ -304,8 +304,14 @@ var gloves = [
 		smartLoot: [
 			"Demon Hunter"
 		],
-		primary:{},
-		secondary:{},
+		primary:{
+			Dexterity:null,
+			CritChance:null,
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
 		set:'Embodiment of the Marauder',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_set_07_x1_demonhunter_male.png',
 		flavor:'"One day, your quivers will run empty, your traps will fail, and the enemy will surge forward. You will be left with nothing but the grip you keep on your blade. Never forget this."—Hunter Cie Wyrtam'
