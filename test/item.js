@@ -61,7 +61,7 @@ function test() {
 	for (var y = 0; y < dClassLength; y++) {
 		d3sim.setKadala(dClasses[y], true, true);
 		for (var t = 0; t < slotLength; t++) {
-			for (var i =0; i < 100; i++) {
+			for (var i =0; i < 10000; i++) {
 				var it = d3sim.kadalaRoll(slots[t]);
 				itemTest(it);
 			}
