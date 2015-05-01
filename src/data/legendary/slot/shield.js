@@ -325,7 +325,8 @@ var shield = [
 			RANDOM:2
 		},
 		secondary:{
-			RANDOM:2
+			SPECIAL:'LIDLESS',
+			RANDOM:1
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_shield_008_x1_demonhunter_male.png',
 		flavor:'Created by the followers of Rathma, favored by practitioners of magic.'
