@@ -4,12 +4,12 @@ var belt = {
 		'Belt':{
 			name_en:'Archon Sash',
 			image:{
-				'Demon Hunter':'media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
-				'Monk':'media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
-				'Barbarian':'media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
-				'Crusader':'media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
-				'Witch Doctor':'media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
-				'Wizard':'media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png'
+				'Demon Hunter':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
+				'Monk':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
+				'Barbarian':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
+				'Crusader':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
+				'Witch Doctor':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png',
+				'Wizard':'//media.blizzard.com/d3/icons/items/large/belt_208_demonhunter_male.png'
 			},
 			armor:{min:440,max:506}
 		},
