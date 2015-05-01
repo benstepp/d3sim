@@ -9,6 +9,7 @@
 	"author":"Benjamin Stepp <me@benstepp.com> (http://fightingdragonswithtaylorswift.com)",
 	"license":"MIT",
 	"devDependencies": {
+		"chai":"~2.1.0",
 		"gulp-browserify":"~0.5.1",
 		"gulp":"~3.8.10",
 		"gulp-concat":"~2.4.3",
