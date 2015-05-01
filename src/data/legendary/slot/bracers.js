@@ -28,6 +28,33 @@ var bracers = [
 		flavor:'These bracers were first worn in the distant past by members of the Partha Guard. Though musty from age, they retain power that has protected the city for centuries.'
 	},
 	{
+		name:"Aughild's Search",
+		type:"Bracers",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Aughild\'s Authority',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_009_x1_demonhunter_male.png',
+		flavor:'Aughild had fifty demands that had to be met before he would spare the lives of the nobles. Those demands are written in the wrappings of these bracers.'
+	},
+	{
 		name: "Custerian Wristguards",
 		type: "Bracers",
 		weight: 100,
@@ -54,6 +81,33 @@ var bracers = [
 		flavor:'"In ancient times, there lived a strange race of people—the Custerians. No one knows who they were, or what they were doing, but their legacy remains beaten into the very metal of these wristguards." —Yuan, wise man of Tufnyl'
 	},
 	{
+		name:"Demon's Animus",
+		type:"Bracers",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Demon\'s Hide',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_011_x1_demonhunter_male.png',
+		flavor:'Sulam met an unfortunate end when he tried to harvest the flesh of a demon that was not actually dead. He was never able to complete this, the last piece of his set. Fortunately, he left the plans for its construction.'
+	},
+	{
 		name:"Drakon's Lesson",
 		type:"Bracers",
 		weight:100,
@@ -74,6 +128,33 @@ var bracers = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_bracer_110_demonhunter_male.png',
 		flavor:'The Elder Crusader Drakon believed in precision, and trained his apprentice to strike fewer targets, but with more power. "Would you rather face ten opponents who are slightly injured? Or seven healthy opponents, who are distracted by the three corpses at your feet?"'
+	},
+	{
+		name:"Guardian's Aversion",
+		type:"Bracers",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Guardian\'s Jeopardy',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_010_x1_demonhunter_male.png',
+		flavor:'The enigmatic sorcerer known only as the Guardian was convinced the world would one day turn against magic users, and he prepared himself accordingly.'
 	},
 	{
 		name: "Gungdo Gear",
@@ -121,6 +202,32 @@ var bracers = [
 		set:'Krelm\'s Buff Bulwark',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_set_02_x1_demonhunter_male.png',
 		flavor:'“Twas hitherto eons past from whence Krelm the Immodest didst thitherward dash forth upon the Blazing Wastes clad only in his bogodile skin belt and bracers to face the loathsome Oglak beast and slew him thence mightily with nigh but his bare hands thereupon.” -Excerpt from Stories Meant to Frighten Small Children'
+	},
+		{
+		name:"Kethyes' Splint",
+		type:"Bracers",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:72,vc:7,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_001_x1_demonhunter_male.png',
+		flavor:'"Her arrows spent and bow snapped, she advanced into a cloud of enemy spears as they fell upon her cohort, turning them aside and throwing them back in kind." —The Amazon Princess'
 	},
 	{
 		name: "Lacuni Prowlers",
@@ -229,6 +336,33 @@ var bracers = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_108_x1_demonhunter_male.png',
 		flavor:'Ranslor, the chief crafter to the High Vizjerei, was concerned that the power contained within these bracers would prove too much for even the most seasoned warrior, so he scoured waterfront taverns for unfortunate souls to test them. After several catastrophic failures, he was so certain he had solved the problem he tried them himself. The bracers were found by his assistant in a pile of ash.'
+	},
+	{
+		name:"Reaper's Wraps",
+		type:"Bracers",
+		weight:0,
+		hc:false,
+		season:false,
+		smartLoot:[
+			"Barbarian",
+			"Crusader",
+			"Demon Hunter",
+			"Monk",
+			"Witch Doctor",
+			"Wizard"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			ReapersWraps:{
+				min:25,
+				max:30
+			},
+			RANDOM:1
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_bracer_103_x1_demonhunter_male.png',
+		flavor:'"The magic emanating from these bracers is strange and unknown to us. Prior to their discovery, it was thought impossible to utilize the powers that grant one health to also regenerate one\'s might. Their very existence forces us to reconsider some of our basic understandings of the nature of magic." —Archmage Valthek'
 	},
 	{
 		name: "Shackles of the Invoker",

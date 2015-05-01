@@ -64,6 +64,34 @@ var helm = [
 		flavor:'Some long-forgotten artisan crafted this helmet in the hideous likeness of the Maiden of Anguish. For what purpose, none can say.'
 	},
 	{
+		name:"Aughild's Spike",
+		type:"Helm",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			AllResist:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Aughild\'s Authority',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_014_x1_demonhunter_male.png',
+		flavor:'A detailed recreation of the ceremonial helmet Aughild used when he was crowned king of Entsteig.'
+	},
+	{
 		name: "Blind Faith",
 		type: "Helm",
 		weight: 100,
@@ -116,6 +144,34 @@ var helm = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/p2_unique_helm_001_demonhunter_male.png',
 		flavor:'The ancient crown of Rakkis, first ruler of Westmarch.'
+	},
+	{
+		name:"Cain's Insight",
+		type:"",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			BonusXp:null,
+			RANDOM:1
+		},
+		set:'Cain\'s Destiny',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_012_x1_demonhunter_male.png',
+		flavor:'This laurel represents the wisdom of the scholar Deckard Cain.'
 	},
 	{
 		name: "Crown of the Invoker",
@@ -213,6 +269,37 @@ var helm = [
 		set:'Firebird\'s Finery',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_set_06_x1_demonhunter_male.png',
 		flavor:'"The stylized crests of this headpiece are cunningly enchanted to channel and dissipate sudden and dangerous discharges of arcanum." —Ennead Sage Resko'
+	},
+	{
+		name:"Guardian's Gaze",
+		type:"Helm",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MoveSpeed:{
+				min:10,
+				max:12
+			},
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Guardian\'s Jeopardy',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_015_x1_demonhunter_male.png',
+		flavor:'Fashioned after the helmet of the notorious Guardian, which was made to protect his mind from those that would try to subvert it.'
 	},
 	{
 		name: "Helltooth Mask",
@@ -483,6 +570,34 @@ var helm = [
 		flavor:'"Time passes, but the memory of my master, and the knowledge of what he did for me, does not fade. In fact, it grows stronger. I swear his name shall never be forgotten." —Meditations on My Redemption'
 	},
 	{
+		name:"Sage's Apogee",
+		type:"Helm",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Socket:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Sage\'s Journey',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_016_x1_demonhunter_male.png',
+		flavor:'Patterned after Imris\'s unique circle of protection, which was powered by his own magic to not only ward off attackers but also strengthen his mind.'
+	},
+	{
 		name:"Shrouded Mask",
 		type:"Helm",
 		weight:100,
@@ -566,6 +681,37 @@ var helm = [
 		set:'Tal Rasha\'s Elements',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_010_x1_demonhunter_male.png',
 		flavor:'The symbol of the Horadric order.'
+	},
+	{
+		name:"The Helm of Rule",
+		type:"Helm",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			Vitality:null,
+			Block:{
+				min:11,
+				max:11
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_helm_011_x1_demonhunter_male.png',
+		flavor:'Worn by General Raylend while he stormed Yshrald\'s fortress during the War of the Hounds.'
 	},
 	{
 		name: "Bezoar Stone",

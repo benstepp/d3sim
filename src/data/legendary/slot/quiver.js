@@ -1,5 +1,32 @@
 var quiver = [
 	{
+		name:"Archfiend Arrows",
+		type:"Quiver",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:40,ad:38,vc:30,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter"
+		],
+		primary:{
+			AttackSpeed:null,
+			CritChance:null,
+			EliteDamage:{
+				min:5,
+				max:8
+			},
+			RANDOM:2
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_quiver_003_x1_demonhunter_male.png',
+		flavor:'Very rare. Made from bones harvested from a live demon—not an easy thing to do.'
+	},
+	{
 		name: "Bombadier's Rucksack",
 		type: "Quiver",
 		weight: 50,

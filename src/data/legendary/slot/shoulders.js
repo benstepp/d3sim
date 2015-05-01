@@ -1,5 +1,86 @@
 var shoulders = [
 	{
+		name:"Asheara's Custodian",
+		type:"Shoulders",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Asheara\'s Vestments',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_017_x1_demonhunter_male.png',
+		flavor:'Asheara vows that no harm will ever befall one who is under the sworn protection of her Iron Wolves.'
+	},
+	{
+		name:"Aughild's Power",
+		type:"Shoulders",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2,db:4
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Aughild\'s Authority',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_008_x1_demonhunter_male.png',
+		flavor:'Aughild was the only warlord to successfully lay siege to Entsteig. But, in the end, it proved to be his undoing.'
+	},
+	{
+		name:"Born's Privledge",
+		type:"Shoulders",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Born\'s Command',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_006_x1_demonhunter_male.png',
+		flavor:'Many have tried and failed to duplicate the subtle qualities of Born\'s intricate armor—until now.'
+	},
+	{
 		name: "Burden of the Invoker",
 		type: "Shoulders",
 		weight: 100,
@@ -22,6 +103,32 @@ var shoulders = [
 		set:'Thorns of the Invoker',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_set_12_x1_demonhunter_male.png',
 		flavor:'Ancient Vizjerei mages would infuse their armor and weaponry with demon blood. Over time, these implements often twisted the sorcerers into instruments of torment.'
+	},
+	{
+		name:"Corruption",
+		type:"Shoulders",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_007_x1_demonhunter_male.png',
+		flavor:'The alchemist Lyekurn spent many years formulating the exact shape and nature of this armor so that it would draw upon the power of Azmodan, yet keep the wearer safe from his corrupting influence.'
 	},
 	{
 		name:"Dashing Pauldrons of Despair",
@@ -71,6 +178,33 @@ var shoulders = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_002_p2_demonhunter_male.png',
 		flavor:'These vicious pads draw their power from the very life force of your enemies.'
+	},
+	{
+		name:"Demon's Aileron",
+		type:"Shoulders",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:7,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Demon\'s Hide',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shoulder_009_x1_demonhunter_male.png',
+		flavor:'Sulam knew that encountering armor made from the flesh of their fallen brethren would infuriate the demons, and this brought him great joy.'
 	},
 	{
 		name: "Firebird's Pinions",

@@ -1,5 +1,59 @@
 var gloves = [
 	{
+		name:"Asheara's Ward",
+		type:"Gloves",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Asheara\'s Vestments',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_009_x1_demonhunter_male.png',
+		flavor:'These gloves represent the unspoken bond between Asheara and her mercenaries.'
+	},
+	{
+		name:"Cain's Scrivener",
+		type:"Gloves",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Cain\'s Destiny',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_015_x1_demonhunter_male.png',
+		flavor:'These wrappings are covered with Horadric symbols and runes, and are perfect for keeping your arms warm while you search for elusive arcane knowledge.'
+	},
+	{
 		name:"Fiendish Grips",
 		type:"Gloves",
 		weight:100,
@@ -338,6 +392,32 @@ var gloves = [
 		flavor:'She used these gloves while learning the finer points of murderous archery.'
 	},
 	{
+		name:"Penders Purchase",
+		type:"Gloves",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_001_x1_demonhunter_male.png',
+		flavor:'Only the wisest adventurer is fit to don these powerful gauntlets.'
+	},
+	{
 		name: "Pride of the Invoker",
 		type: "Gloves",
 		weight: 100,
@@ -424,6 +504,33 @@ var gloves = [
 		set:'Roland\'s Legacy',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_set_01_p1_demonhunter_male.png',
 		flavor:'"I slew many an opponent with my bare hands before my master rescued me from the fighting pits of Kalden. His gauntlets now sanctify these instruments of death." —Meditations on My Redemption'
+	},
+	{
+		name:"Sage's Purchase",
+		type:"Gloves",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:6,vc:90,fs:2,db:5
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Sage\'s Journey',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_gloves_017_x1_demonhunter_male.png',
+		flavor:'Imris designed these gloves to help him channel the awesome forces at his command.'
 	},
 	{
 		name: "St. Archew's Gage",

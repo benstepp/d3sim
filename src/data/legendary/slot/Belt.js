@@ -301,6 +301,33 @@ var belt = [
 		flavor:'The Crusader Haull traveled with three others; Inhora, Drakon, and Roland. They shared knowledge and wine. While instructing his apprentice in the application of Justice the next day, Haull was struck by an insight, and set to work modifying his belt.'
 	},
 	{
+		name:"Captain Crimson\'s Silk Girdle",
+		type:"",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:22,fs:2,db:8
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Captain Crimson\'s Trimmings',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_012_x1_demonhunter_male.png',
+		flavor:'Patterned after the famed belt where Captain Crimson buckled his swash.'
+	},
+	{
 		name:"Crashing Rain",
 		type:"Belt",
 		weight:100,
@@ -354,6 +381,62 @@ var belt = [
 		flavor:'"During battle, confusion quickly gives way to panic, and a frightened enemy is the easiest to defeat." —Rakkis\'s Strategies of War'
 	},
 	{
+		name:"Demon's Restraint",
+		type:"Belt",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:22,fs:2,db:8
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Demon\'s Hide',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_014_x1_demonhunter_male.png',
+		flavor:'The original version of this belt was composed of the flesh and teeth of five different demons.'
+	},
+	{
+		name:"Fleeting Strap",
+		type:"Belt",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:22,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			AttackSpeed:{
+				min:5,max:7
+			},
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_004_x1_demonhunter_male.png',
+		flavor:'"The demon hunter drew her crossbow faster than the eye could follow, impaling her targets before they could move against her." —Tales of the Wasteland'
+	},
+	{
 		name: "Goldwrap",
 		type: "Belt",
 		weight: 100,
@@ -377,6 +460,33 @@ var belt = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_010_x1_demonhunter_male.png',
 		flavor:'Crafted in the Amaral Mountains by the Kaniuga artisans, its fibers seem to draw gold from the very air.'
+	},
+	{
+		name:"Guardian's Case",
+		type:"Belt",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:22,fs:2,db:8
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Guardian\'s Jeopardy',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_belt_013_x1_demonhunter_male.png',
+		flavor:'Many believe the symbol emblazoned on the Guardian\'s scabbard represents a brotherhood he founded to implement his unfathomable plans.'
 	},
 	{
 		name: "Harrington Waistguard",

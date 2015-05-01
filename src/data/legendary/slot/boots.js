@@ -1,5 +1,32 @@
 var boots = [
 	{
+		name:"Asheara's Finders",
+		type:"",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:45,fs:2,db:8
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Asheara\'s Vestments',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_014_x1_demonhunter_male.png',
+		flavor:'The Iron Wolves have traveled far and done much in the last twenty years. From the docks of Kurast to the palaces of Caldeum, they upheld their duty until they were driven from the emperor\'s side by the Imperial Guard.'
+	},
+	{
 		name: "Blackthorne's Spurs",
 		type: "Boots",
 		weight: 100,
@@ -26,6 +53,33 @@ var boots = [
 		flavor:'The leather and scale joints provide improved flexibility for better foot positioning in dueling and stability in mounted combat.'
 	},
 	{
+		name:"Board Walkers",
+		type:"Boots",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:45,fs:2
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			MoveSpeed:null,
+			RANDOM:3
+		},
+		secondary:{
+			RANDOM:2
+		},
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_005_x1_demonhunter_male.png',
+		flavor:'Well worn, but still sturdy, these boots look as if they have traveled all the lands of Sanctuary many times over.'
+	},
+	{
 		name: "Boj Anglers",
 		type: "Boots",
 		weight: 100,
@@ -49,6 +103,60 @@ var boots = [
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_001_x1_demonhunter_male.png',
 		flavor:'Do not overlook the importance of a good boot.'
+	},
+	{
+		name:"Cain's Travelers",
+		type:"Boots",
+		weight: 0,
+		hc: false,
+		season: false,
+		craft:{
+			rp:25,ad:12,vc:45,fs:2,db:8
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Cain\'s Destiny',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_015_x1_demonhunter_male.png',
+		flavor:'Deckard Cain spent the last twenty years of his life traveling the world in search of information needed to defeat the Lords of Hell.'
+	},
+	{
+		name:"Captain Crimson's Waders",
+		type:"Boots",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:45,fs:2,db:8
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Captain Crimson\'s Trimmings',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_017_x1_demonhunter_male.png',
+		flavor:'Captain Crimson, scourge of the Twin Seas, claimed his numerous victories were the result of sensible—yet fashionable—footwear.'
 	},
 	{
 		name: "Eight-Demon Boots",
@@ -452,6 +560,33 @@ var boots = [
 		set:'Armor of Akkhan',
 		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_set_10_x1_demonhunter_male.png',
 		flavor:'"Let the crusaders sheathe their feet in sabatons of unquestionable strength, for the crusade will take them all over the world." -Akkhan'
+	},
+	{
+		name:"Sage's Passage",
+		type:"Boots",
+		weight:0,
+		hc:false,
+		season:false,
+		craft:{
+			rp:25,ad:12,vc:45,fs:2,db:8
+		},
+		smartLoot:[
+			"Demon Hunter",
+			"Monk",
+			"Barbarian",
+			"Crusader",
+			"Wizard",
+			"Witch Doctor"
+		],
+		primary:{
+			RANDOM:4
+		},
+		secondary:{
+			RANDOM:2
+		},
+		set:'Sage\'s Journey',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_boots_018_x1_demonhunter_male.png',
+		flavor:'The ancient sage Imris crafted the original version of these boots to protect him while he traveled the world, seeking a way to retune the Worldstone to restore the power of the nephalem.'
 	},
 	{
 		name: "The Crudest Boots",
