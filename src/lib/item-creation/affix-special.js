@@ -69,7 +69,7 @@ function lidless(dClass) {
 	var returnable = {
 		secondary:{}
 	};
-	returnable[lidlessMap[dClass].affix] = {
+	returnable.secondary[lidlessMap[dClass].affix] = {
 		min:lidlessMap[dClass].min,
 		max:lidlessMap[dClass].max
 	};
@@ -84,7 +84,7 @@ function wrathBoneKing() {
 	var returnable = {
 		secondary:{}
 	};
-	returnable.secondary[possibleAffixes[picked]] = null;
+	returnable.secondary[possibleAffixes[picked]] = {};
 
 	return returnable;
 }
