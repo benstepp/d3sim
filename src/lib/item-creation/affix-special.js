@@ -146,7 +146,7 @@ function manald(dClass) {
 	else if (affix.type === 's') {
 		returnable.secondary[affix.affix] = {
 			min:affix.min,
-			max:affix.map
+			max:affix.max
 		};
 		returnable.primary.RANDOM = 1;
 	}
