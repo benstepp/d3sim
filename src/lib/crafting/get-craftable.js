@@ -1,6 +1,6 @@
 var legendaryData = require('../../data/legendary');
 
-var getCraftable = function() {
+var getCraftable = function(dClass) {
 
 	var craftable = {};
 
@@ -14,11 +14,13 @@ var getCraftable = function() {
 
 		var items = legendaryData[slots[i]];
 		var itemsCount = items.length;
-		//loop through all items and check for smartLoot
+		//loop through all items and check if item is craftable
 		for (var j = 0; j < itemsCount;j++) {
 
+			//has a kadala weight of zero and
 			//smartloot has the class so it is craftable
-			if(items[j].smartLoot.indexOf(dClass) > -1) {
+			if(items[j].weight === 0 &&
+				items[j].smartLoot.indexOf(dClass) > -1) {
 				craftable[slots[i]].push(items[j]);
 			}
 		}

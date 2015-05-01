@@ -10,6 +10,8 @@ require/run in browser
 ##Methods
 * [d3sim.setKadala()](#d3simsetkadalaclassseasonalhardcore)
 * [d3sim.kadalaRoll()](#d3simkadalarollslot)
+* [d3sim.craftItem()](#d3simcraftitemslotclassname)
+* [d3sim.getCraftable()](#d3simgetcraftableclass)
 * [d3sim.createItem()](#d3simcreateitemrarityclassname)
 
 ---
@@ -46,9 +48,40 @@ d3sim.kadalaRoll('twohand');
 ```
 
 ---
+####d3sim.craftItem(slot,class,name)
+
+This crafts any item and rolls the rarity for a chance at ancient.
+
+*Arguments*
+
+1. `slot` (string): The Diablo III slot to roll. Must be one of: 'amulet', 'belt', 'boots', 'bracers', 'chest', 'gloves', 'helm', 'mojo', 'onehand', 'pants', 'quiver', 'ring', 'shield', 'shoulders', 'source', or 'twohand'
+2. `class` (string): The Diablo III class to use. Must be one of: 'Barbarian', 'Crusader, 'Demon Hunter', 'Monk', 'Witch Doctor', or 'Wizard'
+3. `name` (string): The name of the item to craft
+
+*Example*
+
+```javascript
+d3sim.craftItem('amulet','Demon Hunter','Hellfire Amulet');
+```
+
+---
+####d3sim.getCraftable(class)
+
+This returns an object which defines what items are craftable by a given class. Only legendary crafting is currently supported.
+
+*Arguments*
+
+1. `class` (string): The Diablo III class to use. Must be one of: 'Barbarian', 'Crusader, 'Demon Hunter', 'Monk', 'Witch Doctor', or 'Wizard'
+
+*Example*
+```javascript
+d3sim.getCraftable('Barbarian');
+```
+
+---
 ####d3sim.createItem(rarity,slot,class,name)
 
-Creates a new randomly generated item with given parameters.
+Creates a new randomly generated item with given parameters. This is the internal method used to generate items from all sources (crafted/kadala).
 
 *Arguments*
 
@@ -60,7 +93,7 @@ Creates a new randomly generated item with given parameters.
 *Example*
 
 ```javascript
-d3sim.createItem('ancient','amulet','Monk','Hellfire Amulet');
+d3sim.createItem('ancient','twohand','Monk','Flying Dragon');
 ```
 
 ---
