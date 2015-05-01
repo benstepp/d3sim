@@ -933,7 +933,7 @@ var twohand = [
 		},
 		secondary:{
 			LifeAfterKill:null,
-			RANDOM:1
+			SPECIAL:'WRATHBONEKING'
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_mace_2h_012_p1_demonhunter_male.png',
 		flavor:'Used by the Skeleton King to punish those who would stand against him.'

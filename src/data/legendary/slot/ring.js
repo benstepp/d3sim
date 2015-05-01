@@ -356,10 +356,11 @@ var ring = [
 		],
 		primary:{
 			MAIN:null,
-			RANDOM:3
+			RANDOM:2
 		},
 		secondary:{
-			RANDOM:2
+			SPECIAL:'MANALD',
+			RANDOM:1
 		},
 		image:'//media.blizzard.com/d3/icons/items/large/unique_ring_021_x1_demonhunter_male.png',
 		flavor:'Crafted by the healers of Viz-jun to protect their warriors from harm.'

@@ -99,7 +99,7 @@ var affixPick = function(item, rarity, slot, dClass) {
 		var classPossibleElements = [];
 		for (var k = 0; k < elementsLength; k++) {
 			if (affixMap[elements[k]].hasOwnProperty('exclude') && 
-				affixMap[elements[k]].exclude.indexOf(dClass) > -1){
+				affixMap[elements[k]].exclude.indexOf(dClass) === -1){
 					classPossibleElements.push(elements[k]);
 			}
 		}
@@ -194,6 +194,9 @@ var affixPick = function(item, rarity, slot, dClass) {
 		if(primaries.hasOwnProperty(primary) && primaries[primary] !== null) {
 			primariesFinal[primary].value = affixRoll(primary,rarity,slot,'primary',primaries[primary].min,primaries[primary].max);
 		}
+		else if(primariesFinal[primary].hasOwnProperty('min') && primariesFinal[primary].hasOwnProperty('max')) {
+			primariesFinal[primary].value = affixRoll(primary,rarity,slot,'primary',primariesFinal[primary].min,primariesFinal[primary].max);
+		}
 		else if(elements.indexOf(primary) > -1 && primaries.hasOwnProperty('ELEMENTAL') && primaries.ELEMENTAL !== null) {
 			primariesFinal[primary].value = affixRoll(primary,rarity,slot,'primary',primaries.ELEMENTAL.min,primaries.ELEMENTAL.max);
 		}
@@ -223,6 +226,9 @@ var affixPick = function(item, rarity, slot, dClass) {
 		//if min/max was given use those
 		if(secondaries.hasOwnProperty(secondary) && secondaries[secondary] !== null) {
 			secondariesFinal[secondary].value = affixRoll(secondary,rarity,slot,'secondary',secondaries[secondary].min,secondaries[secondary].max);
+		}
+		else if(secondariesFinal[secondary].hasOwnProperty('min') && secondariesFinal[secondary].hasOwnProperty('max')) {
+			secondariesFinal[secondary].value = affixRoll(secondary,rarity,slot,'secondary',secondariesFinal[secondary].min,secondariesFinal[secondary].max);
 		}
 
 		//otherwise just roll using slot defaults
