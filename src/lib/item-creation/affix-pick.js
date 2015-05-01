@@ -99,7 +99,7 @@ var affixPick = function(item, rarity, slot, dClass) {
 		var classPossibleElements = [];
 		for (var k = 0; k < elementsLength; k++) {
 			if (affixMap[elements[k]].hasOwnProperty('exclude') && 
-				affixMap[elements[k]].exclude.indexOf(dClass) > -1){
+				affixMap[elements[k]].exclude.indexOf(dClass) === -1){
 					classPossibleElements.push(elements[k]);
 			}
 		}
