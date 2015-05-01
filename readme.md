@@ -100,6 +100,5 @@ pretty much every non-demon hunter skill based affix
 ###other
 ```
 slave bonds life after kill value unknown
-manald heal ring needs special
 faithful memory 2h sword needs thorns value
 ```
