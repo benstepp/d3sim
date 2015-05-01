@@ -455,7 +455,7 @@ var shield = [
 			},
 			RANDOM:1
 		},
-		image:'{$%} chance to be protected by a shield of bones when you are hit.',
+		image:'//media.blizzard.com/d3/icons/items/large/unique_shield_011_x1_demonhunter_male.png',
 		flavor:'Named for the Battle of Josqueira, a conflict so long and fierce that men used the skeletons of their fallen comrades to build fortifications.'
 	}
 ];
