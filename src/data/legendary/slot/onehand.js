@@ -462,7 +462,7 @@ var onehand = [
 	},
 	{
 		name:"Blood-Magic Edge",
-		type:"",
+		type:"Dagger",
 		weight:0,
 		hc:false,
 		season:false,
