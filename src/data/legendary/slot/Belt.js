@@ -302,7 +302,7 @@ var belt = [
 	},
 	{
 		name:"Captain Crimson\'s Silk Girdle",
-		type:"",
+		type:"Belt",
 		weight:0,
 		hc:false,
 		season:false,

@@ -27,3 +27,7 @@ $RECYCLE.BIN/
 templates.js
 bundle.js
 index.html
+
+*~
+*.swp
+*.swo

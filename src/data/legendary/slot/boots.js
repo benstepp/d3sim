@@ -1,7 +1,7 @@
 var boots = [
 	{
 		name:"Asheara's Finders",
-		type:"",
+		type:"Boots",
 		weight:0,
 		hc:false,
 		season:false,

@@ -147,7 +147,7 @@ var helm = [
 	},
 	{
 		name:"Cain's Insight",
-		type:"",
+		type:"Helm",
 		weight:0,
 		hc:false,
 		season:false,
